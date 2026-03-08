@@ -1,6 +1,6 @@
 baseURL = "https://vanvj00001.github.io/oldvan/"
 languageCode = "zh-cn"
-title = "oldvan"
+title = "老梵"
 theme = "PaperMod"
 paginate = 8
 
@@ -16,10 +16,10 @@ paginate = 8
   TocOpen = false
 
   [params.author]
-    name = "oldvan"
+    name = "老梵"
 
 [params.homeInfoParams]
-  Title = "oldvan 的文章站"
+  Title = "老梵的文章站"
   Content = "记录与发布文章。"
 
 [[menu.main]]
@@ -39,6 +39,12 @@ paginate = 8
   name = "标签"
   url = "/tags/"
   weight = 30
+
+[[menu.main]]
+  identifier = "about"
+  name = "关于"
+  url = "/about/"
+  weight = 40
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
