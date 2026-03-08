@@ -2,8 +2,11 @@ baseURL = "https://vanvj00001.github.io/oldvan/"
 languageCode = "zh-cn"
 title = "oldvan"
 theme = "PaperMod"
+paginate = 8
 
 [params]
+  mainSections = ["posts"]
+  disableSpecial1stPost = true
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowPostNavLinks = true
