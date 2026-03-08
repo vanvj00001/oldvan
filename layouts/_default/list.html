@@ -79,17 +79,16 @@
       {{- end }}
     </h2>
   </header>
-  {{- $summaryText := "" }}
+  {{- $summaryHTML := "" }}
   {{- if .Description }}
-    {{- $summaryText = .Description | plainify | htmlUnescape | strings.TrimSpace }}
+    {{- $summaryHTML = .Description | markdownify }}
   {{- else }}
-    {{- $summaryText = .Plain | htmlUnescape | strings.TrimSpace }}
+    {{- $summaryHTML = .Summary }}
   {{- end }}
-  {{- $summaryText = replaceRE "\\s+" " " $summaryText }}
-  {{- $summaryText = truncate 180 $summaryText }}
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
-    <p>{{ $summaryText }}</p>
+    {{- $summaryHTML | safeHTML }}
+    {{- if .Truncated }}<p>...</p>{{- end }}
   </div>
   {{- end }}
   {{- if not (.Param "hideMeta") }}

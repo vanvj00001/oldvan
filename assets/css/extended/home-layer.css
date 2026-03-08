@@ -15,15 +15,20 @@
   margin-bottom: 0.35rem;
 }
 
-.main .entry-content p {
+.main .entry-content {
   font-size: 0.97rem;
   color: var(--secondary);
   line-height: 1.8;
   margin: 0.35rem 0 0.6rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+}
+
+.main .entry-content > * {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.main .entry-content p:first-child {
+  margin-top: 0;
 }
 
 .main .entry-footer {
