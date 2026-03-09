@@ -1,8 +1,11 @@
-baseURL = "https://oldvan.top/"
+baseURL = "http://oldvan.top/"
 languageCode = "zh-cn"
 title = "老梵"
 theme = "PaperMod"
 paginate = 8
+hasCJKLanguage = true
+defaultContentLanguage = "zh-cn"
+disablePathToLower = true
 
 [params]
   mainSections = ["posts"]
