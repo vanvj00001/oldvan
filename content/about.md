@@ -8,4 +8,3 @@ title: "关于"
 
 网站使用 Hugo + GitHub Pages 搭建，感谢小暖的帮助！
 
-<a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2026013379号-1</a>
