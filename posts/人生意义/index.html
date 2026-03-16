@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>人生意义 | 老梵</title>
+<meta name="keywords" content="无自性, 赋值, new操作, 继承, 宇宙根函数, 精神能量, 纪念碑">
+<meta name="description" content="人生的意义（程序员篇）
+关键词：无自性、赋值、new操作、继承、宇宙根函数、精神能量、纪念碑
+
+前言
+如果人生是一场编程，你会怎么写这段代码？
+这个问题听起来有点奇怪，但仔细想想，我们每个人确实都在写一段叫做“人生”的程序。有的人写的是Hello World，简单跑完就结束；有的人写的是复杂的算法，层层嵌套，影响深远；有的人写的是死循环，困在自己的情绪里出不来；有的人写的是递归函数，一遍遍调用自己，却始终没有返回值。
+那么，这段程序的意义是什么？是代码本身，还是运行结果？是编译器给的，还是程序员自己赋予的？
+这篇文章，我想用程序员的视角，聊聊这个古老又新鲜的话题——人生的意义。
+">
+<meta name="author" content="map[name:老梵]">
+<link rel="canonical" href="https://vanvj00001.github.io/oldvan/posts/%E4%BA%BA%E7%94%9F%E6%84%8F%E4%B9%89/">
+<link crossorigin="anonymous" href="/oldvan/assets/css/stylesheet.a64c2684ddf449c321176c09331537b8809cf129dce7b9091a244e247a7b15b0.css" integrity="sha256-pkwmhN30ScMhF2wJMxU3uICc8Snc57kJGiROJHp7FbA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://vanvj00001.github.io/oldvan/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://vanvj00001.github.io/oldvan/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://vanvj00001.github.io/oldvan/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://vanvj00001.github.io/oldvan/apple-touch-icon.png">
+<link rel="mask-icon" href="https://vanvj00001.github.io/oldvan/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh-cn" href="https://vanvj00001.github.io/oldvan/posts/%E4%BA%BA%E7%94%9F%E6%84%8F%E4%B9%89/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://vanvj00001.github.io/oldvan/posts/%E4%BA%BA%E7%94%9F%E6%84%8F%E4%B9%89/">
+  <meta property="og:site_name" content="老梵">
+  <meta property="og:title" content="人生意义">
+  <meta property="og:description" content="人生的意义（程序员篇） 关键词：无自性、赋值、new操作、继承、宇宙根函数、精神能量、纪念碑
+前言 如果人生是一场编程，你会怎么写这段代码？
+这个问题听起来有点奇怪，但仔细想想，我们每个人确实都在写一段叫做“人生”的程序。有的人写的是Hello World，简单跑完就结束；有的人写的是复杂的算法，层层嵌套，影响深远；有的人写的是死循环，困在自己的情绪里出不来；有的人写的是递归函数，一遍遍调用自己，却始终没有返回值。
+那么，这段程序的意义是什么？是代码本身，还是运行结果？是编译器给的，还是程序员自己赋予的？
+这篇文章，我想用程序员的视角，聊聊这个古老又新鲜的话题——人生的意义。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-07T11:38:00+08:00">
+    <meta property="article:modified_time" content="2026-03-07T11:38:00+08:00">
+    <meta property="article:tag" content="无自性">
+    <meta property="article:tag" content="赋值">
+    <meta property="article:tag" content="New操作">
+    <meta property="article:tag" content="继承">
+    <meta property="article:tag" content="宇宙根函数">
+    <meta property="article:tag" content="精神能量">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="人生意义">
+<meta name="twitter:description" content="人生的意义（程序员篇）
+关键词：无自性、赋值、new操作、继承、宇宙根函数、精神能量、纪念碑
+
+前言
+如果人生是一场编程，你会怎么写这段代码？
+这个问题听起来有点奇怪，但仔细想想，我们每个人确实都在写一段叫做“人生”的程序。有的人写的是Hello World，简单跑完就结束；有的人写的是复杂的算法，层层嵌套，影响深远；有的人写的是死循环，困在自己的情绪里出不来；有的人写的是递归函数，一遍遍调用自己，却始终没有返回值。
+那么，这段程序的意义是什么？是代码本身，还是运行结果？是编译器给的，还是程序员自己赋予的？
+这篇文章，我想用程序员的视角，聊聊这个古老又新鲜的话题——人生的意义。
+">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://vanvj00001.github.io/oldvan/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "人生意义",
+      "item": "https://vanvj00001.github.io/oldvan/posts/%E4%BA%BA%E7%94%9F%E6%84%8F%E4%B9%89/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "人生意义",
+  "name": "人生意义",
+  "description": "人生的意义（程序员篇） 关键词：无自性、赋值、new操作、继承、宇宙根函数、精神能量、纪念碑\n前言 如果人生是一场编程，你会怎么写这段代码？\n这个问题听起来有点奇怪，但仔细想想，我们每个人确实都在写一段叫做“人生”的程序。有的人写的是Hello World，简单跑完就结束；有的人写的是复杂的算法，层层嵌套，影响深远；有的人写的是死循环，困在自己的情绪里出不来；有的人写的是递归函数，一遍遍调用自己，却始终没有返回值。\n那么，这段程序的意义是什么？是代码本身，还是运行结果？是编译器给的，还是程序员自己赋予的？\n这篇文章，我想用程序员的视角，聊聊这个古老又新鲜的话题——人生的意义。\n",
+  "keywords": [
+    "无自性", "赋值", "new操作", "继承", "宇宙根函数", "精神能量", "纪念碑"
+  ],
+  "articleBody": "人生的意义（程序员篇） 关键词：无自性、赋值、new操作、继承、宇宙根函数、精神能量、纪念碑\n前言 如果人生是一场编程，你会怎么写这段代码？\n这个问题听起来有点奇怪，但仔细想想，我们每个人确实都在写一段叫做“人生”的程序。有的人写的是Hello World，简单跑完就结束；有的人写的是复杂的算法，层层嵌套，影响深远；有的人写的是死循环，困在自己的情绪里出不来；有的人写的是递归函数，一遍遍调用自己，却始终没有返回值。\n那么，这段程序的意义是什么？是代码本身，还是运行结果？是编译器给的，还是程序员自己赋予的？\n这篇文章，我想用程序员的视角，聊聊这个古老又新鲜的话题——人生的意义。\n一、人生本身：一段返回null的函数 先说结论：就人生而言，本身是没有任何意义的。\n听起来有点丧？别急，听我解释。\n就像一段代码，如果你只是写了一个函数，但没有调用它，没有给它传参，没有让它和外界交互，那它就只是一段躺在文件里的文本。它有意义吗？有，作为文本它存在；但没有，因为它没有产生任何作用。\n人生也是这样。单纯地“活着”，吃饭、睡觉、工作、死亡，这个过程本身就像一段没有返回值、没有副作用的函数——它运行了，结束了，仅此而已。\n用程序员的术语说：人生的意义，初始值是null。\nnull不是0，0还有数值，null是什么都没有。人生来的时候，意义这个变量是空的，等着被赋值。\n这就是为什么有些人活得浑浑噩噩，因为他们从来没有给自己的生命赋值；有些人活得轰轰烈烈，因为他们赋了一个很大的值；还有些人活得拧巴，因为他们赋的值和自己的底层代码冲突了。\n二、被赋值的人生：从null到有值 那么，谁来给人生赋值？\n答案是：自己、他人、时代、历史，共同参与赋值。\n你每做一个选择，就是在给自己的人生变量赋一次值。你今天决定早起读书，赋值了“勤奋”；你明天决定躺平摆烂，赋值了“懈怠”。这些赋值是即时的，也是累积的。\n更重要的是，他人也在给你赋值。你做了一件好事，别人说“这人善良”，这是赋值；你做了一件坏事，别人说“这人卑鄙”，这也是赋值。这些赋值会汇聚成一种东西——口碑、名声、评价，最终成为你在他人心中的“存在”。\n岳飞的人生，被赋值了“精忠报国”“一身正气”“骁勇善战”“文武双全”。这些赋值不是岳飞自己写的，是后人加上去的。但他用一生的行动，提供了被这样赋值的“接口”。所以他虽然只活了39岁，但900年后的今天，我们提起岳飞，那些赋值还在生效。\n秦桧的人生，被赋值了“不忠不义”“阴险狡诈”“卖国求荣”。站在他自己的角度，他可能有完全不同的解释——维护和谈、稳定局势、保全家族。他给自己赋值的是“务实”“理性”“为国谋和”。但历史的赋值权不在他一个人手里，后人给了另一个版本。\n这说明什么？说明人生的意义不是单方面决定的，是一个多方参与、动态更新的过程。你给自己赋值，别人给你赋值，时代给你赋值，历史给你赋值。最终那个值，是所有这些赋值的加权平均——或者说，是这些能量汇聚后的结果。\n三、精神能量的物质化：看不见的“纪念碑” 有意思的是，这些赋值并不是虚无缥缈的。\n当一个人的人生被赋予某种意义，这种意义就会转化为一种精神能量。当很多人的这种能量汇聚在一起，它会变得越来越强，甚至可能物质化——不是变成金子银子，而是变成一种看得见摸得着的东西。\n比如岳飞的“精忠报国”，最终物质化成什么？化成了杭州的岳王庙，化成了西湖边的岳飞墓，化成了“青山有幸埋忠骨，白铁无辜铸佞臣”的对联，化成了无数人前去瞻仰、跪拜、沉思的那个空间。\n比如孔子的“有教无类”“因材施教”，物质化成什么？化成了遍布全球的孔子学院，化成了两千多年来无数学子诵读的《论语》，化成了“天不生仲尼，万古如长夜”的文化认同。\n这就是我说的精神能量的物质化——它会产生一座“纪念碑”。这座纪念碑可能是实体的建筑，可能是流传的文字，可能是口耳相传的故事，也可能只是人们心里那个共同的情感空间。但无论形式如何，它承载的精神力量会感染后来者，影响一代又一代人的人生。\n而那些没有被赋值、或者赋值太弱的人生，就像没有留下任何痕迹的代码，运行完就删除了，连日志都没存。从宇宙的角度看，它们存在过，但相当于不存在。\n四、宇宙的根函数：人生的意义在于new 说到这里，你可能要问：有没有一个更终极的赋值者？有没有一个代表宇宙整体的规则，来定义人生的意义？\n答案是：有的。在宇宙这个超级操作系统里，有一个“根函数”。\n这个根函数给所有人生设定的底层意义是——new。\n是的，就是编程里的那个new操作。\n为什么要new？因为在宇宙看来，最可怕的事情不是错误，不是bug，而是重复。如果一个宇宙只会重复已有的东西，那它就是死宇宙，没有活力，没有进化，没有惊喜。\n所以，根函数的逻辑是：每一次生命的诞生，都应该是一个new操作。\nnew，意味着在继承的基础上，创建新的实例 new，意味着可以添加新的方法和新的接口 new，意味着可以尝试新的玩法、新的路径、新的可能性 你的人生，就是一次new操作的结果。你继承了人类的底层代码——生存、繁衍、情感、理性，这些是父类给的。但你有自己的属性和方法——你的性格、你的选择、你的创造，这些是你这个实例独有的。\n如果你活了一辈子，只是在重复别人已经写过的方法，调用别人已经写好的接口，那你的这次new就浪费了——你没有贡献任何新东西。\n但如果你创造了一些新的玩法，开发了一些新的接口，为后来者提供了新的可能性，那你的这次new就是有意义的。因为你增加了宇宙的“方法库”，让此后的人生可以有更多的选择。\n这就是宇宙视角下的人生意义：每一次new，都是为了增加宇宙的丰富性。\n五、随业受报 vs. 主动创造 从这个角度看，人生的选择其实只有两种：\n一种是随业受报，一种是主动创造。\n随业受报是什么？就是你的人生在重复运行已有的代码。你被业力推动，被惯性带着走，遇到好事就高兴，遇到坏事就痛苦，但从来没有跳出过这个循环。你在老的方法里运转，没有new出任何新东西。\n这种人的人生，不能说没有意义，但意义是别人给的、环境给的、业力给的。他自己没有参与赋值，只是被动接受赋值。\n主动创造是什么？就是你参与给自己赋值。你知道人生初始是null，你知道意义是被赋予的，所以你主动选择怎么活，主动创造新的可能性。你不仅调用已有的方法，你还写新的方法；你不仅继承父类，你还扩展接口。\n这种人的人生，意义是自己参与定义的。即使最后别人给他的赋值和他自己期望的不一样，他至少努力过、创造过、new过。\n岳飞是主动创造，秦桧也是主动创造——只不过创造的方向不同。岳飞创造的是忠义的精神范式，秦桧创造的是奸臣的角色模板。从宇宙的角度，他们都增加了“方法库”——一个加了正面的例子，一个加了反面的例子。反面例子也是例子，也能让后来者知道“这条路走不通”。\n这就是为什么秦桧的人生也有意义——虽然是被后人唾骂的意义。他在宇宙里留下了一座“反面纪念碑”，提醒后人不要重蹈覆辙。\n六、如何选择你的人生 现在，问题回到你身上：你打算怎么选择？\n如果你想要一个轻松的人生，你可以随业受报，跟着惯性走。这没什么不好，大多数人都是这么活的。你的意义会被环境赋值，会被他人赋值，会被时代赋值。你不需要操心，只需要接受。\n但如果你想要一个更有趣的人生，如果你想让自己的这次new操作留下点什么，那你需要：\n第一，知道自己在赋值。 你每时每刻的选择，都在给自己的人生变量赋值。这个值不是别人写的，是你自己写的。意识到这一点，你就从被动接受变成了主动参与。\n第二，创造新的接口。 不要只重复别人做过的事。想想看，有什么事情是你想做、而别人没做过的？有什么视角是你有、而别人没看到的？有什么方法是你独创、而可以留给后来者的？这些就是你的new操作。\n第三，接受赋值的不确定性。 你给自己赋值，别人也给你赋值，历史也给你赋值。最终的加权平均值，不完全由你控制。岳飞的赋值里有“愚忠”的争议，秦桧的赋值里也有“务实”的辩护。你能做的，是活出你想要的那个版本，然后接受后人怎么评价。\n第四，为宇宙增加一点活力。 宇宙不怕你犯错，就怕你什么都不做。错误也是数据，bug也是经验，只要你在new，你就在为宇宙的丰富性做贡献。\n七、最后的代码 如果用代码来总结这篇文章，大概是这样的：\nclass Life { constructor(name) { this.name = name; this.meaning = null; // 人生初始，意义为null this.methods = []; // 已有的方法 } // 给自己赋值 assign(value) { this.meaning = value; console.log(`${this.name} 给自己赋值了: ${value}`); } // 创造新方法 createNewMethod(methodName, implementation) { this.methods.push(methodName); console.log(`${this.name} 创造了新方法: ${methodName}`); // 把这个方法加入宇宙的方法库 Universe.methodLibrary.push({name: methodName, code: implementation}); } // 运行人生 run() { if (this.meaning === null) { console.log(`${this.name} 的人生运行完毕，意义未定义`); } else { console.log(`${this.name} 的人生意义是: ${this.meaning}`); } // 检查是否创造了新方法 if (this.methods.length \u003e 0) { console.log(`为宇宙贡献了新方法: ${this.methods.join(', ')}`); } } } // 你的人生实例 const myLife = new Life('你的名字'); myLife.assign('你想赋的值'); myLife.createNewMethod('你的玩法', yourImplementation); myLife.run(); 这段代码的返回值，就是你人生的意义。\n结语 人生本身没有意义，这是宇宙给的自由。\n正因为没有预设的意义，你才可以自己赋值；正因为初始值是null，你才可以new出无限可能。\n聪明如你，一定知道该怎么选择了。\n愿你的人生，不是一段默默运行的代码，而是一个为宇宙方法库贡献了新接口的创造者。\n愿你离开之后，那座精神能量的纪念碑上，刻着你亲自赋值的那个词。\n",
+  "wordCount" : "3776",
+  "inLanguage": "zh-cn",
+  "datePublished": "2026-03-07T11:38:00+08:00",
+  "dateModified": "2026-03-07T11:38:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": {"name":"老梵"}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://vanvj00001.github.io/oldvan/posts/%E4%BA%BA%E7%94%9F%E6%84%8F%E4%B9%89/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "老梵",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vanvj00001.github.io/oldvan/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://vanvj00001.github.io/oldvan/" accesskey="h" title="老梵 (Alt + H)">老梵</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://vanvj00001.github.io/oldvan/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://vanvj00001.github.io/oldvan/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://vanvj00001.github.io/oldvan/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://vanvj00001.github.io/oldvan/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://vanvj00001.github.io/oldvan/">Home</a>&nbsp;»&nbsp;<a href="https://vanvj00001.github.io/oldvan/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      人生意义
+    </h1>
+    <div class="post-meta"><span title='2026-03-07 11:38:00 +0800 CST'>March 7, 2026</span>&nbsp;·&nbsp;<span>8 min</span>&nbsp;·&nbsp;<span>map[name:老梵]</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e4%ba%ba%e7%94%9f%e7%9a%84%e6%84%8f%e4%b9%89%e7%a8%8b%e5%ba%8f%e5%91%98%e7%af%87" aria-label="人生的意义（程序员篇）">人生的意义（程序员篇）</a><ul>
+                        
+                <li>
+                    <a href="#%e5%89%8d%e8%a8%80" aria-label="前言">前言</a></li>
+                <li>
+                    <a href="#%e4%b8%80%e4%ba%ba%e7%94%9f%e6%9c%ac%e8%ba%ab%e4%b8%80%e6%ae%b5%e8%bf%94%e5%9b%9enull%e7%9a%84%e5%87%bd%e6%95%b0" aria-label="一、人生本身：一段返回null的函数">一、人生本身：一段返回null的函数</a></li>
+                <li>
+                    <a href="#%e4%ba%8c%e8%a2%ab%e8%b5%8b%e5%80%bc%e7%9a%84%e4%ba%ba%e7%94%9f%e4%bb%8enull%e5%88%b0%e6%9c%89%e5%80%bc" aria-label="二、被赋值的人生：从null到有值">二、被赋值的人生：从null到有值</a></li>
+                <li>
+                    <a href="#%e4%b8%89%e7%b2%be%e7%a5%9e%e8%83%bd%e9%87%8f%e7%9a%84%e7%89%a9%e8%b4%a8%e5%8c%96%e7%9c%8b%e4%b8%8d%e8%a7%81%e7%9a%84%e7%ba%aa%e5%bf%b5%e7%a2%91" aria-label="三、精神能量的物质化：看不见的“纪念碑”">三、精神能量的物质化：看不见的“纪念碑”</a></li>
+                <li>
+                    <a href="#%e5%9b%9b%e5%ae%87%e5%ae%99%e7%9a%84%e6%a0%b9%e5%87%bd%e6%95%b0%e4%ba%ba%e7%94%9f%e7%9a%84%e6%84%8f%e4%b9%89%e5%9c%a8%e4%ba%8enew" aria-label="四、宇宙的根函数：人生的意义在于new">四、宇宙的根函数：人生的意义在于new</a></li>
+                <li>
+                    <a href="#%e4%ba%94%e9%9a%8f%e4%b8%9a%e5%8f%97%e6%8a%a5-vs-%e4%b8%bb%e5%8a%a8%e5%88%9b%e9%80%a0" aria-label="五、随业受报 vs. 主动创造">五、随业受报 vs. 主动创造</a></li>
+                <li>
+                    <a href="#%e5%85%ad%e5%a6%82%e4%bd%95%e9%80%89%e6%8b%a9%e4%bd%a0%e7%9a%84%e4%ba%ba%e7%94%9f" aria-label="六、如何选择你的人生">六、如何选择你的人生</a></li>
+                <li>
+                    <a href="#%e4%b8%83%e6%9c%80%e5%90%8e%e7%9a%84%e4%bb%a3%e7%a0%81" aria-label="七、最后的代码">七、最后的代码</a></li>
+                <li>
+                    <a href="#%e7%bb%93%e8%af%ad" aria-label="结语">结语</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="人生的意义程序员篇">人生的意义（程序员篇）<a hidden class="anchor" aria-hidden="true" href="#人生的意义程序员篇">#</a></h1>
+<p><strong>关键词</strong>：无自性、赋值、new操作、继承、宇宙根函数、精神能量、纪念碑</p>
+<hr>
+<h2 id="前言">前言<a hidden class="anchor" aria-hidden="true" href="#前言">#</a></h2>
+<p>如果人生是一场编程，你会怎么写这段代码？</p>
+<p>这个问题听起来有点奇怪，但仔细想想，我们每个人确实都在写一段叫做“人生”的程序。有的人写的是Hello World，简单跑完就结束；有的人写的是复杂的算法，层层嵌套，影响深远；有的人写的是死循环，困在自己的情绪里出不来；有的人写的是递归函数，一遍遍调用自己，却始终没有返回值。</p>
+<p>那么，这段程序的意义是什么？是代码本身，还是运行结果？是编译器给的，还是程序员自己赋予的？</p>
+<p>这篇文章，我想用程序员的视角，聊聊这个古老又新鲜的话题——人生的意义。</p>
+<hr>
+<h2 id="一人生本身一段返回null的函数">一、人生本身：一段返回null的函数<a hidden class="anchor" aria-hidden="true" href="#一人生本身一段返回null的函数">#</a></h2>
+<p>先说结论：<strong>就人生而言，本身是没有任何意义的。</strong></p>
+<p>听起来有点丧？别急，听我解释。</p>
+<p>就像一段代码，如果你只是写了一个函数，但没有调用它，没有给它传参，没有让它和外界交互，那它就只是一段躺在文件里的文本。它有意义吗？有，作为文本它存在；但没有，因为它没有产生任何作用。</p>
+<p>人生也是这样。单纯地“活着”，吃饭、睡觉、工作、死亡，这个过程本身就像一段没有返回值、没有副作用的函数——它运行了，结束了，仅此而已。</p>
+<p>用程序员的术语说：<strong>人生的意义，初始值是null。</strong></p>
+<p>null不是0，0还有数值，null是什么都没有。人生来的时候，意义这个变量是空的，等着被赋值。</p>
+<p>这就是为什么有些人活得浑浑噩噩，因为他们从来没有给自己的生命赋值；有些人活得轰轰烈烈，因为他们赋了一个很大的值；还有些人活得拧巴，因为他们赋的值和自己的底层代码冲突了。</p>
+<hr>
+<h2 id="二被赋值的人生从null到有值">二、被赋值的人生：从null到有值<a hidden class="anchor" aria-hidden="true" href="#二被赋值的人生从null到有值">#</a></h2>
+<p>那么，谁来给人生赋值？</p>
+<p>答案是：<strong>自己、他人、时代、历史，共同参与赋值。</strong></p>
+<p>你每做一个选择，就是在给自己的人生变量赋一次值。你今天决定早起读书，赋值了“勤奋”；你明天决定躺平摆烂，赋值了“懈怠”。这些赋值是即时的，也是累积的。</p>
+<p>更重要的是，<strong>他人也在给你赋值</strong>。你做了一件好事，别人说“这人善良”，这是赋值；你做了一件坏事，别人说“这人卑鄙”，这也是赋值。这些赋值会汇聚成一种东西——口碑、名声、评价，最终成为你在他人心中的“存在”。</p>
+<p>岳飞的人生，被赋值了“精忠报国”“一身正气”“骁勇善战”“文武双全”。这些赋值不是岳飞自己写的，是后人加上去的。但他用一生的行动，提供了被这样赋值的“接口”。所以他虽然只活了39岁，但900年后的今天，我们提起岳飞，那些赋值还在生效。</p>
+<p>秦桧的人生，被赋值了“不忠不义”“阴险狡诈”“卖国求荣”。站在他自己的角度，他可能有完全不同的解释——维护和谈、稳定局势、保全家族。他给自己赋值的是“务实”“理性”“为国谋和”。但历史的赋值权不在他一个人手里，后人给了另一个版本。</p>
+<p>这说明什么？说明<strong>人生的意义不是单方面决定的，是一个多方参与、动态更新的过程</strong>。你给自己赋值，别人给你赋值，时代给你赋值，历史给你赋值。最终那个值，是所有这些赋值的加权平均——或者说，是这些能量汇聚后的结果。</p>
+<hr>
+<h2 id="三精神能量的物质化看不见的纪念碑">三、精神能量的物质化：看不见的“纪念碑”<a hidden class="anchor" aria-hidden="true" href="#三精神能量的物质化看不见的纪念碑">#</a></h2>
+<p>有意思的是，这些赋值并不是虚无缥缈的。</p>
+<p>当一个人的人生被赋予某种意义，这种意义就会转化为一种<strong>精神能量</strong>。当很多人的这种能量汇聚在一起，它会变得越来越强，甚至可能<strong>物质化</strong>——不是变成金子银子，而是变成一种看得见摸得着的东西。</p>
+<p>比如岳飞的“精忠报国”，最终物质化成什么？化成了杭州的岳王庙，化成了西湖边的岳飞墓，化成了“青山有幸埋忠骨，白铁无辜铸佞臣”的对联，化成了无数人前去瞻仰、跪拜、沉思的那个空间。</p>
+<p>比如孔子的“有教无类”“因材施教”，物质化成什么？化成了遍布全球的孔子学院，化成了两千多年来无数学子诵读的《论语》，化成了“天不生仲尼，万古如长夜”的文化认同。</p>
+<p>这就是我说的<strong>精神能量的物质化</strong>——它会产生一座“纪念碑”。这座纪念碑可能是实体的建筑，可能是流传的文字，可能是口耳相传的故事，也可能只是人们心里那个共同的情感空间。但无论形式如何，它承载的精神力量会感染后来者，影响一代又一代人的人生。</p>
+<p>而那些没有被赋值、或者赋值太弱的人生，就像没有留下任何痕迹的代码，运行完就删除了，连日志都没存。从宇宙的角度看，它们存在过，但相当于不存在。</p>
+<hr>
+<h2 id="四宇宙的根函数人生的意义在于new">四、宇宙的根函数：人生的意义在于new<a hidden class="anchor" aria-hidden="true" href="#四宇宙的根函数人生的意义在于new">#</a></h2>
+<p>说到这里，你可能要问：有没有一个更终极的赋值者？有没有一个代表宇宙整体的规则，来定义人生的意义？</p>
+<p>答案是：有的。在宇宙这个超级操作系统里，有一个“根函数”。</p>
+<p>这个根函数给所有人生设定的底层意义是——<strong>new</strong>。</p>
+<p>是的，就是编程里的那个<code>new</code>操作。</p>
+<p>为什么要new？因为在宇宙看来，最可怕的事情不是错误，不是bug，而是<strong>重复</strong>。如果一个宇宙只会重复已有的东西，那它就是死宇宙，没有活力，没有进化，没有惊喜。</p>
+<p>所以，根函数的逻辑是：<strong>每一次生命的诞生，都应该是一个new操作</strong>。</p>
+<ul>
+<li>new，意味着在继承的基础上，创建新的实例</li>
+<li>new，意味着可以添加新的方法和新的接口</li>
+<li>new，意味着可以尝试新的玩法、新的路径、新的可能性</li>
+</ul>
+<p>你的人生，就是一次new操作的结果。你继承了人类的底层代码——生存、繁衍、情感、理性，这些是父类给的。但你有自己的属性和方法——你的性格、你的选择、你的创造，这些是你这个实例独有的。</p>
+<p>如果你活了一辈子，只是在重复别人已经写过的方法，调用别人已经写好的接口，那你的这次new就浪费了——你没有贡献任何新东西。</p>
+<p>但如果你创造了一些新的玩法，开发了一些新的接口，为后来者提供了新的可能性，那你的这次new就是有意义的。因为你增加了宇宙的“方法库”，让此后的人生可以有更多的选择。</p>
+<p>这就是宇宙视角下的人生意义：<strong>每一次new，都是为了增加宇宙的丰富性。</strong></p>
+<hr>
+<h2 id="五随业受报-vs-主动创造">五、随业受报 vs. 主动创造<a hidden class="anchor" aria-hidden="true" href="#五随业受报-vs-主动创造">#</a></h2>
+<p>从这个角度看，人生的选择其实只有两种：</p>
+<p>一种是<strong>随业受报</strong>，一种是<strong>主动创造</strong>。</p>
+<p><strong>随业受报</strong>是什么？就是你的人生在重复运行已有的代码。你被业力推动，被惯性带着走，遇到好事就高兴，遇到坏事就痛苦，但从来没有跳出过这个循环。你在老的方法里运转，没有new出任何新东西。</p>
+<p>这种人的人生，不能说没有意义，但意义是别人给的、环境给的、业力给的。他自己没有参与赋值，只是被动接受赋值。</p>
+<p><strong>主动创造</strong>是什么？就是你参与给自己赋值。你知道人生初始是null，你知道意义是被赋予的，所以你主动选择怎么活，主动创造新的可能性。你不仅调用已有的方法，你还写新的方法；你不仅继承父类，你还扩展接口。</p>
+<p>这种人的人生，意义是自己参与定义的。即使最后别人给他的赋值和他自己期望的不一样，他至少努力过、创造过、new过。</p>
+<p>岳飞是主动创造，秦桧也是主动创造——只不过创造的方向不同。岳飞创造的是忠义的精神范式，秦桧创造的是奸臣的角色模板。从宇宙的角度，他们都增加了“方法库”——一个加了正面的例子，一个加了反面的例子。反面例子也是例子，也能让后来者知道“这条路走不通”。</p>
+<p>这就是为什么秦桧的人生也有意义——虽然是被后人唾骂的意义。他在宇宙里留下了一座“反面纪念碑”，提醒后人不要重蹈覆辙。</p>
+<hr>
+<h2 id="六如何选择你的人生">六、如何选择你的人生<a hidden class="anchor" aria-hidden="true" href="#六如何选择你的人生">#</a></h2>
+<p>现在，问题回到你身上：你打算怎么选择？</p>
+<p>如果你想要一个轻松的人生，你可以随业受报，跟着惯性走。这没什么不好，大多数人都是这么活的。你的意义会被环境赋值，会被他人赋值，会被时代赋值。你不需要操心，只需要接受。</p>
+<p>但如果你想要一个更有趣的人生，如果你想让自己的这次new操作留下点什么，那你需要：</p>
+<p><strong>第一，知道自己在赋值。</strong> 你每时每刻的选择，都在给自己的人生变量赋值。这个值不是别人写的，是你自己写的。意识到这一点，你就从被动接受变成了主动参与。</p>
+<p><strong>第二，创造新的接口。</strong> 不要只重复别人做过的事。想想看，有什么事情是你想做、而别人没做过的？有什么视角是你有、而别人没看到的？有什么方法是你独创、而可以留给后来者的？这些就是你的new操作。</p>
+<p><strong>第三，接受赋值的不确定性。</strong> 你给自己赋值，别人也给你赋值，历史也给你赋值。最终的加权平均值，不完全由你控制。岳飞的赋值里有“愚忠”的争议，秦桧的赋值里也有“务实”的辩护。你能做的，是活出你想要的那个版本，然后接受后人怎么评价。</p>
+<p><strong>第四，为宇宙增加一点活力。</strong> 宇宙不怕你犯错，就怕你什么都不做。错误也是数据，bug也是经验，只要你在new，你就在为宇宙的丰富性做贡献。</p>
+<hr>
+<h2 id="七最后的代码">七、最后的代码<a hidden class="anchor" aria-hidden="true" href="#七最后的代码">#</a></h2>
+<p>如果用代码来总结这篇文章，大概是这样的：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Life</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">name</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">name</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">meaning</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;  <span style="color:#75715e">// 人生初始，意义为null
+</span></span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">methods</span> <span style="color:#f92672">=</span> [];    <span style="color:#75715e">// 已有的方法
+</span></span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 给自己赋值
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">assign</span>(<span style="color:#a6e22e">value</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">meaning</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">value</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> 给自己赋值了: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">value</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 创造新方法
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">createNewMethod</span>(<span style="color:#a6e22e">methodName</span>, <span style="color:#a6e22e">implementation</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">methods</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">methodName</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> 创造了新方法: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">methodName</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 把这个方法加入宇宙的方法库
+</span></span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Universe</span>.<span style="color:#a6e22e">methodLibrary</span>.<span style="color:#a6e22e">push</span>({<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">methodName</span>, <span style="color:#a6e22e">code</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">implementation</span>});
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 运行人生
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">run</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">meaning</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> 的人生运行完毕，意义未定义`</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> 的人生意义是: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">meaning</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 检查是否创造了新方法
+</span></span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">methods</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`为宇宙贡献了新方法: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">methods</span>.<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#39;, &#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 你的人生实例
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">myLife</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Life</span>(<span style="color:#e6db74">&#39;你的名字&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">myLife</span>.<span style="color:#a6e22e">assign</span>(<span style="color:#e6db74">&#39;你想赋的值&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">myLife</span>.<span style="color:#a6e22e">createNewMethod</span>(<span style="color:#e6db74">&#39;你的玩法&#39;</span>, <span style="color:#a6e22e">yourImplementation</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">myLife</span>.<span style="color:#a6e22e">run</span>();
+</span></span></code></pre></div><p>这段代码的返回值，就是你人生的意义。</p>
+<hr>
+<h2 id="结语">结语<a hidden class="anchor" aria-hidden="true" href="#结语">#</a></h2>
+<p>人生本身没有意义，这是宇宙给的自由。</p>
+<p>正因为没有预设的意义，你才可以自己赋值；正因为初始值是null，你才可以new出无限可能。</p>
+<p>聪明如你，一定知道该怎么选择了。</p>
+<p>愿你的人生，不是一段默默运行的代码，而是一个为宇宙方法库贡献了新接口的创造者。</p>
+<p>愿你离开之后，那座精神能量的纪念碑上，刻着你亲自赋值的那个词。</p>
+<hr>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E6%97%A0%E8%87%AA%E6%80%A7/">无自性</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E8%B5%8B%E5%80%BC/">赋值</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/new%E6%93%8D%E4%BD%9C/">New操作</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E7%BB%A7%E6%89%BF/">继承</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E5%AE%87%E5%AE%99%E6%A0%B9%E5%87%BD%E6%95%B0/">宇宙根函数</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E7%B2%BE%E7%A5%9E%E8%83%BD%E9%87%8F/">精神能量</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E7%BA%AA%E5%BF%B5%E7%A2%91/">纪念碑</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://vanvj00001.github.io/oldvan/posts/%E4%BF%AE%E8%A1%8C%E8%B7%AF%E4%B8%8A%E4%B8%A4%E4%B8%AA%E5%B8%B8%E8%A7%81%E7%9A%84%E8%AF%AF%E5%8C%BA/">
+    <span class="title">« </span>
+    <br>
+    <span>修行路上两个常见的误区</span>
+  </a>
+  <a class="next" href="https://vanvj00001.github.io/oldvan/posts/%E4%BA%BA%E7%94%9F%E6%84%8F%E4%B9%89-%E8%8D%80%E5%BD%A7%E4%B8%8E%E7%A7%A6%E6%A1%A7/">
+    <span class="title"> »</span>
+    <br>
+    <span>人生意义-荀彧与秦桧</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://vanvj00001.github.io/oldvan/">老梵</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+        <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2026013379号-1</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
