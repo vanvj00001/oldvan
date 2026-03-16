@@ -1,5 +1,5 @@
 ---
-title: "不见世间过2323231111111"
+title: "过2323231111111"
 url: /posts/not-seeing-worlds-faults/
 date: 2026-03-15T21:30:00+08:00
 draft: false
