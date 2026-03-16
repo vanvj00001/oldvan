@@ -1,7 +1,7 @@
 ---
-title: "不见世间过1111111"
+title: "不见世间过2323231111111"
 url: /posts/not-seeing-worlds-faults/
-date: 2026-03-15T22:30:00+08:00
+date: 2026-03-15T21:30:00+08:00
 draft: false
 tags:
 - 六祖坛经
