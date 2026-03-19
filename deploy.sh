@@ -14,6 +14,11 @@ git push origin main
 echo "发布到 GitHub Pages..."
 ./deploy_ghpages.sh
 
+echo "发布到 Cloudflare Pages..."
+if ! ./deploy_cfpages.sh; then
+  echo "Cloudflare Pages 发布失败，继续后续步骤。"
+fi
+
 echo "同步到服务器..."
 rsync -avz -e "ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no" --delete /Users/fanweijun/oldvan/public/ root@122.51.71.6:/www/wwwroot/oldvan/
 
