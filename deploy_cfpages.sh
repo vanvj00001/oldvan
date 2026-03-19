@@ -2,10 +2,11 @@
 set -euo pipefail
 
 BASEURL="https://oldvan.pages.dev/"
-OUTDIR="public"
+OUTDIR=".cf-pages"
 PROJECT="oldvan"
 
 echo "构建 Hugo (Cloudflare Pages)..."
+rm -rf "$OUTDIR"
 hugo -b "$BASEURL" -d "$OUTDIR"
 
 if ! command -v wrangler >/dev/null 2>&1; then
