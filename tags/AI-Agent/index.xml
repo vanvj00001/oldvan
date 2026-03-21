@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>资本控制 on 老梵</title>
-    <link>https://vanvj00001.github.io/oldvan/tags/%E8%B5%84%E6%9C%AC%E6%8E%A7%E5%88%B6/</link>
-    <description>Recent content in 资本控制 on 老梵</description>
+    <title>AI Agent on 老梵</title>
+    <link>https://vanvj00001.github.io/oldvan/tags/AI-Agent/</link>
+    <description>Recent content in AI Agent on 老梵</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 21 Mar 2026 15:30:00 +0800</lastBuildDate>
-    <atom:link href="https://vanvj00001.github.io/oldvan/tags/%E8%B5%84%E6%9C%AC%E6%8E%A7%E5%88%B6/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vanvj00001.github.io/oldvan/tags/AI-Agent/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI的崛起:通过agent走进生活</title>
       <link>https://vanvj00001.github.io/oldvan/posts/ai-agent-revolution/</link>
@@ -20,17 +20,6 @@
 &lt;p&gt;2024年末，字节跳动推出的“豆包手机”尝试在系统层面集成AI Agent，让用户通过语音直接完成购物、订票等操作。然而，它很快被主流电商和内容平台屏蔽——原因并非技术故障，而是它触动了互联网商业模式的根基：流量分发与广告变现的闭环。几个月后，开源项目OpenClaw在开发者社区爆火，它允许用户在自己的设备上部署个性化AI代理，再次点燃了人们对“自主Agent”的想象。&lt;/p&gt;
 &lt;p&gt;这两件事看似孤立，实则指向同一个趋势：&lt;strong&gt;AI正在从“工具”走向“代理”，而代理的本质是替代商业链条中的“中介环节”&lt;/strong&gt;。当用户可以绕过平台直接触达服务，当信息不对称被技术抹平，当Agent开始替人做决策——商业模式、社会结构、甚至权力的分配都将被重新书写。&lt;/p&gt;
 &lt;p&gt;本文将从豆包手机和OpenClaw出发，梳理AI Agent对现有商业体系的冲击，并推演未来社会结构的分化路径。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>中美科技博弈的底层逻辑</title>
-      <link>https://vanvj00001.github.io/oldvan/posts/tech-geopolitics/</link>
-      <pubDate>Sat, 21 Mar 2026 10:30:00 +0800</pubDate>
-      <guid>https://vanvj00001.github.io/oldvan/posts/tech-geopolitics/</guid>
-      <description>&lt;h1 id=&#34;中美科技博弈的底层逻辑从出海困境到ai开源革命&#34;&gt;中美科技博弈的底层逻辑：从出海困境到AI开源革命&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：中美科技博弈、数据安全、TikTok、华为、AI开源、资本控制、技术主权、数据主权&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;过去三十年，全球科技产业的叙事由美国资本与技术主导：硅谷创新、美元投资、美股上市，形成了一套“先垄断、后收割”的成熟剧本。然而，随着中国科技力量的崛起——从华为的5G领先，到TikTok的全球流行，再到AI领域的开源突破——这套剧本正在被改写。技术本身是否具有国家属性？数据主权如何界定？当中国技术不再受美国资本控制，全球科技格局将走向何方？本文试图从几组代表性案例切入，剖析当前科技地缘政治的核心矛盾。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
