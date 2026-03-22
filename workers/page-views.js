@@ -2,7 +2,8 @@ function json(data, init) {
   const requestOrigin = init?.origin || "";
   const allowedOrigins = new Set([
     "https://oldvan.top",
-    "https://oldvan.pages.dev"
+    "https://oldvan.pages.dev",
+    "https://vanvj00001.github.io"
   ]);
   const corsOrigin = allowedOrigins.has(requestOrigin) ? requestOrigin : "https://oldvan.top";
   const headers = new Headers(init?.headers || {});
@@ -55,7 +56,8 @@ export default {
     if (request.method === "OPTIONS") {
       const allowedOrigins = new Set([
         "https://oldvan.top",
-        "https://oldvan.pages.dev"
+        "https://oldvan.pages.dev",
+        "https://vanvj00001.github.io"
       ]);
       const corsOrigin = allowedOrigins.has(requestOrigin) ? requestOrigin : "https://oldvan.top";
       return new Response(null, {
