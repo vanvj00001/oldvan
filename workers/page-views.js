@@ -1,9 +1,13 @@
 function json(data, init) {
+  const headers = new Headers(init?.headers || {});
+  headers.set("content-type", "application/json; charset=utf-8");
+  headers.set("cache-control", "no-store");
+  headers.set("access-control-allow-origin", "https://oldvan.top");
+  headers.set("access-control-allow-methods", "POST, OPTIONS");
+  headers.set("access-control-allow-headers", "content-type");
+
   return new Response(JSON.stringify(data), {
-    headers: {
-      "content-type": "application/json; charset=utf-8",
-      "cache-control": "no-store"
-    },
+    headers,
     ...init
   });
 }
@@ -12,18 +16,6 @@ function normalizeKey(value) {
   return String(value || "")
     .trim()
     .replace(/[^a-zA-Z0-9:_-]/g, "");
-}
-
-async function ensureSchema(db) {
-  await db.exec(`
-    CREATE TABLE IF NOT EXISTS page_views (
-      namespace TEXT NOT NULL,
-      page_key TEXT NOT NULL,
-      views INTEGER NOT NULL DEFAULT 0,
-      updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
-      PRIMARY KEY (namespace, page_key)
-    );
-  `);
 }
 
 async function getCount(db, namespace, key) {
@@ -54,7 +46,7 @@ export default {
     if (request.method === "OPTIONS") {
       return new Response(null, {
         headers: {
-          "access-control-allow-origin": "*",
+          "access-control-allow-origin": "https://oldvan.top",
           "access-control-allow-methods": "POST, OPTIONS",
           "access-control-allow-headers": "content-type"
         }
@@ -83,8 +75,6 @@ export default {
     if (!namespace || !key) {
       return json({ error: "invalid_key" }, { status: 400 });
     }
-
-    await ensureSchema(env.PAGE_VIEWS_DB);
 
     const value =
       mode === "hit"

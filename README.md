@@ -21,6 +21,9 @@ hugo new content posts/your-post-title.md
 
 当前主题里的文章阅读量会请求同域接口 `/api/page-views`。
 
+如果暂时无法把 Worker 直接挂到 `oldvan.top/api/page-views`，也可以先把
+`params.pageViews.endpoint` 指向一个 `workers.dev` 地址。
+
 Cloudflare 侧需要额外配置一个 Worker 和一个 D1 数据库：
 
 1. 创建 D1 数据库，例如 `oldvan-page-views`

@@ -18,6 +18,12 @@ disablePathToLower = true
   ShowToc = true
   TocOpen = false
 
+  [params.pageViews]
+    enabled = true
+    label = "阅读量"
+    namespace = "oldvan-top"
+    endpoint = "https://oldvan-page-views.vanvjvanvj.workers.dev"
+
   [params.comments]
     enabled = true
     provider = "giscus"
