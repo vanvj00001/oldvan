@@ -1,0 +1,12 @@
+name = "oldvan-page-views"
+main = "workers/page-views.js"
+compatibility_date = "2026-03-22"
+
+[[routes]]
+pattern = "oldvan.top/api/page-views"
+zone_name = "oldvan.top"
+
+[[d1_databases]]
+binding = "PAGE_VIEWS_DB"
+database_name = "oldvan-page-views"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"

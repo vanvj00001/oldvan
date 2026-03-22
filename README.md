@@ -17,6 +17,23 @@ hugo new content posts/your-post-title.md
 
 默认 `draft = false`，提交到 `main` 后会自动发布。
 
+## 阅读量接口
+
+当前主题里的文章阅读量会请求同域接口 `/api/page-views`。
+
+Cloudflare 侧需要额外配置一个 Worker 和一个 D1 数据库：
+
+1. 创建 D1 数据库，例如 `oldvan-page-views`
+2. 执行 [workers/page-views.schema.sql](/Users/fanweijun/oldvan/workers/page-views.schema.sql)
+3. 复制 [wrangler.page-views.toml.example](/Users/fanweijun/oldvan/wrangler.page-views.toml.example) 为本地 `wrangler.toml`
+4. 把 `database_id` 改成真实的 D1 Database ID
+5. 部署 [workers/page-views.js](/Users/fanweijun/oldvan/workers/page-views.js) 到路由 `oldvan.top/api/page-views`
+
+接口职责：
+
+- 文章详情页调用 `mode=hit`，浏览量加一
+- 首页/归档页调用 `mode=get`，只读取，不加一
+
 ## 批量导入现有文章
 
 目录规范：
