@@ -18,6 +18,23 @@ disablePathToLower = true
   ShowToc = true
   TocOpen = false
 
+  [params.comments]
+    enabled = true
+    provider = "giscus"
+
+    [params.comments.giscus]
+      repo = "vanvj00001/oldvan"
+      repoID = "R_kgDORe3TgA"
+      category = "General"
+      categoryID = "DIC_kwDORe3TgM4C4_S_"
+      mapping = "pathname"
+      strict = "0"
+      reactionsEnabled = "1"
+      emitMetadata = "0"
+      inputPosition = "bottom"
+      theme = "preferred_color_scheme"
+      lang = "zh-CN"
+
   [params.author]
     name = "老梵"
 
