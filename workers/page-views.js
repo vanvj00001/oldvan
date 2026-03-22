@@ -1,10 +1,17 @@
 function json(data, init) {
+  const requestOrigin = init?.origin || "";
+  const allowedOrigins = new Set([
+    "https://oldvan.top",
+    "https://oldvan.pages.dev"
+  ]);
+  const corsOrigin = allowedOrigins.has(requestOrigin) ? requestOrigin : "https://oldvan.top";
   const headers = new Headers(init?.headers || {});
   headers.set("content-type", "application/json; charset=utf-8");
   headers.set("cache-control", "no-store");
-  headers.set("access-control-allow-origin", "https://oldvan.top");
+  headers.set("access-control-allow-origin", corsOrigin);
   headers.set("access-control-allow-methods", "POST, OPTIONS");
   headers.set("access-control-allow-headers", "content-type");
+  headers.set("vary", "Origin");
 
   return new Response(JSON.stringify(data), {
     headers,
@@ -43,12 +50,20 @@ async function hitCount(db, namespace, key) {
 
 export default {
   async fetch(request, env) {
+    const requestOrigin = request.headers.get("Origin") || "";
+
     if (request.method === "OPTIONS") {
+      const allowedOrigins = new Set([
+        "https://oldvan.top",
+        "https://oldvan.pages.dev"
+      ]);
+      const corsOrigin = allowedOrigins.has(requestOrigin) ? requestOrigin : "https://oldvan.top";
       return new Response(null, {
         headers: {
-          "access-control-allow-origin": "https://oldvan.top",
+          "access-control-allow-origin": corsOrigin,
           "access-control-allow-methods": "POST, OPTIONS",
-          "access-control-allow-headers": "content-type"
+          "access-control-allow-headers": "content-type",
+          "vary": "Origin"
         }
       });
     }
@@ -86,6 +101,6 @@ export default {
       namespace,
       key,
       value
-    });
+    }, { origin: requestOrigin });
   }
 };
