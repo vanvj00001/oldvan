@@ -37,6 +37,12 @@ Cloudflare 侧需要额外配置一个 Worker 和一个 D1 数据库：
 - 文章详情页调用 `mode=hit`，浏览量加一
 - 首页/归档页调用 `mode=get`，只读取，不加一
 
+计数键规则：
+
+- 默认优先使用文章源文件路径生成 key，不再直接依赖 `RelPermalink`
+- 如果你希望某篇文章在将来改路径、改文件名后仍保留同一计数，可以在 Front Matter 里手动加 `pageViewsKey`
+- 当前前端在接口异常时会显示 `--`，避免把临时故障误看成“清零”
+
 ## 批量导入现有文章
 
 目录规范：
@@ -66,7 +72,7 @@ python3 scripts/import_posts.py --no-archive
 说明：
 
 - 有 Front Matter 的 Markdown 会原样保留
-- 无 Front Matter 的文件会自动补：`title`、`date`、`draft=false`、`tags=["导入"]`
+- 无 Front Matter 的文件会自动补：`title`、`url`、`pageViewsKey`、`date`、`draft=false`、`tags=["导入"]`
 - 同名文件会自动追加后缀避免覆盖
 
 

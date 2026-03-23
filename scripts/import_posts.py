@@ -103,15 +103,18 @@ def unique_path(path: Path) -> Path:
         idx += 1
 
 
-def build_front_matter(title: str, dt: datetime, default_tag: str) -> str:
+def build_front_matter(title: str, dt: datetime, default_tag: str, slug: str) -> str:
     timestamp = dt.strftime("%Y-%m-%dT%H:%M:%S%z")
     if len(timestamp) == 24:
         timestamp = f"{timestamp[:-2]}:{timestamp[-2:]}"
     escaped_title = title.replace('"', '\\"')
     escaped_tag = default_tag.replace('"', '\\"')
+    page_url = f"/posts/{slug}/"
     return (
         "+++\n"
         f'title = "{escaped_title}"\n'
+        f'url = "{page_url}"\n'
+        f'pageViewsKey = "{page_url}"\n'
         f"date = {timestamp}\n"
         "draft = false\n"
         f'tags = ["{escaped_tag}"]\n'
@@ -135,7 +138,7 @@ def import_one(
     if has_front_matter(raw):
         content = raw
     else:
-        content = build_front_matter(title, dt, args.default_tag) + raw.lstrip()
+        content = build_front_matter(title, dt, args.default_tag, slug) + raw.lstrip()
 
     archive_path = None
     if not args.no_archive:
