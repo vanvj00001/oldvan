@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>OpenClaw on 老梵</title>
+    <link>https://oldvan.top/tags/OpenClaw/</link>
+    <description>Recent content in OpenClaw on 老梵</description>
+    <generator>Hugo -- 0.157.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Mar 2026 15:30:00 +0800</lastBuildDate>
+    <atom:link href="https://oldvan.top/tags/OpenClaw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI的崛起:通过agent走进生活</title>
+      <link>https://oldvan.top/posts/ai-agent-revolution/</link>
+      <pubDate>Sat, 21 Mar 2026 15:30:00 +0800</pubDate>
+      <guid>https://oldvan.top/posts/ai-agent-revolution/</guid>
+      <description>&lt;h1 id=&#34;ai-agent的崛起从豆包手机到openclaw技术如何重构商业与社会&#34;&gt;AI Agent的崛起：从豆包手机到OpenClaw，技术如何重构商业与社会&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：AI Agent、豆包手机、OpenClaw、商业模式重构、社会分化、中介替代、复合型人才&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;2025年末，字节跳动推出的“豆包手机”尝试在系统层面集成AI Agent，让用户通过语音直接完成购物、订票等操作。然而，它很快被主流电商和内容平台屏蔽——原因并非技术故障，而是它触动了互联网商业模式的根基：流量分发与广告变现的闭环。几个月后，开源项目OpenClaw在开发者社区爆火，它允许用户在自己的设备上部署个性化AI代理，再次点燃了人们对“自主Agent”的想象。&lt;/p&gt;
+&lt;p&gt;这两件事看似孤立，实则指向同一个趋势：&lt;strong&gt;AI正在从“工具”走向“代理”，而代理的本质是替代商业链条中的“中介环节”&lt;/strong&gt;。当用户可以绕过平台直接触达服务，当信息不对称被技术抹平，当Agent开始替人做决策——商业模式、社会结构、甚至权力的分配都将被重新书写。&lt;/p&gt;
+&lt;p&gt;本文将从豆包手机和OpenClaw出发，梳理AI Agent对现有商业体系的冲击，并推演未来社会结构的分化路径。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

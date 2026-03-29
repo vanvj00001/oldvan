@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>宇宙没有偶然 | 老梵</title>
+<meta name="keywords" content="偶然, 随机, 决定论, 宇宙, 逻辑, 因果关系, 哲学, 科学, 确定性, 世界观, 拉普拉斯妖">
+<meta name="description" content="宇宙没有偶然：从随机函数到确定性的世界
+关键词：偶然、随机、随机函数、伪随机、决定论、因果律、宇宙秩序、科学哲学、量子力学、拉普拉斯妖、逻辑推导、宇宙稳定性&hellip;
+
+前言
+作为一个程序员，我们每天都在和“随机”打交道。代码里的 rand()、random()，看似给我们带来了不可预测的结果。但我们也清楚地知道，这些所谓的“随机数”，背后不过是一套确定的算法——给一个初始值（种子），输出就是确定的。真正的“随机”，在我们的世界里并不存在，我们只是在用“随机”这个词语，来标记那些我们暂时无法预测的领域。
+那么，把这个逻辑推到整个宇宙呢？科学上常说“偶然事件”、“随机现象”，甚至量子力学里也有“真随机”的说法。但如果我们用同样的逻辑去审视——所谓的偶然，会不会也只是人类认知局限的产物？宇宙本身，真的有“偶然”这回事吗？
+这个问题看似抽象，却关乎我们如何看待世界、理解因果、安放自身。本文尝试从一个程序员的直觉出发，用逻辑推导的方式，探讨“宇宙是否存在偶然”这一命题。">
+<meta name="author" content="map[name:老梵]">
+<link rel="canonical" href="https://oldvan.top/posts/no-coincidence-in-universe/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.c1e5b223a196d22178b890862d4992380c762d472c5a5d8a52434c7bb33cea1a.css" integrity="sha256-weWyI6GW0iF4uJCGLUmSOAx2LUcsWl2KUkNMe7M86ho=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/js/post-interactions.min.2d187c2a05e9cdd9aa92948752e3fc18da7dbaaa282c54acee46e6d75516b409.js" integrity="sha256-LRh8KgXpzdmqkpSHUuP8GNp9uqooLFSs7kbm11UWtAk="></script>
+<script>
+    window.__PAGE_VIEWS_ENDPOINT = "https://oldvan-page-views.vanvjvanvj.workers.dev";
+</script>
+<script defer crossorigin="anonymous" src="/js/page-views.min.3c88c1d0508c8107536fcc2398fbc4e5370d1b217e21a9c7bf958fd81a6860af.js" integrity="sha256-PIjB0FCMgQdTb8wjmPvE5TcNGyF&#43;IanHv5WP2BpoYK8="></script>
+<link rel="icon" href="https://oldvan.top/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://oldvan.top/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://oldvan.top/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://oldvan.top/apple-touch-icon.png">
+<link rel="mask-icon" href="https://oldvan.top/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh-cn" href="https://oldvan.top/posts/no-coincidence-in-universe/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://oldvan.top/posts/no-coincidence-in-universe/">
+  <meta property="og:site_name" content="老梵">
+  <meta property="og:title" content="宇宙没有偶然">
+  <meta property="og:description" content="宇宙没有偶然：从随机函数到确定性的世界 关键词：偶然、随机、随机函数、伪随机、决定论、因果律、宇宙秩序、科学哲学、量子力学、拉普拉斯妖、逻辑推导、宇宙稳定性…
+前言 作为一个程序员，我们每天都在和“随机”打交道。代码里的 rand()、random()，看似给我们带来了不可预测的结果。但我们也清楚地知道，这些所谓的“随机数”，背后不过是一套确定的算法——给一个初始值（种子），输出就是确定的。真正的“随机”，在我们的世界里并不存在，我们只是在用“随机”这个词语，来标记那些我们暂时无法预测的领域。
+那么，把这个逻辑推到整个宇宙呢？科学上常说“偶然事件”、“随机现象”，甚至量子力学里也有“真随机”的说法。但如果我们用同样的逻辑去审视——所谓的偶然，会不会也只是人类认知局限的产物？宇宙本身，真的有“偶然”这回事吗？
+这个问题看似抽象，却关乎我们如何看待世界、理解因果、安放自身。本文尝试从一个程序员的直觉出发，用逻辑推导的方式，探讨“宇宙是否存在偶然”这一命题。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-27T14:30:00+08:00">
+    <meta property="article:modified_time" content="2026-03-27T14:30:00+08:00">
+    <meta property="article:tag" content="偶然">
+    <meta property="article:tag" content="随机">
+    <meta property="article:tag" content="决定论">
+    <meta property="article:tag" content="宇宙">
+    <meta property="article:tag" content="逻辑">
+    <meta property="article:tag" content="因果关系">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="宇宙没有偶然">
+<meta name="twitter:description" content="宇宙没有偶然：从随机函数到确定性的世界
+关键词：偶然、随机、随机函数、伪随机、决定论、因果律、宇宙秩序、科学哲学、量子力学、拉普拉斯妖、逻辑推导、宇宙稳定性&hellip;
+
+前言
+作为一个程序员，我们每天都在和“随机”打交道。代码里的 rand()、random()，看似给我们带来了不可预测的结果。但我们也清楚地知道，这些所谓的“随机数”，背后不过是一套确定的算法——给一个初始值（种子），输出就是确定的。真正的“随机”，在我们的世界里并不存在，我们只是在用“随机”这个词语，来标记那些我们暂时无法预测的领域。
+那么，把这个逻辑推到整个宇宙呢？科学上常说“偶然事件”、“随机现象”，甚至量子力学里也有“真随机”的说法。但如果我们用同样的逻辑去审视——所谓的偶然，会不会也只是人类认知局限的产物？宇宙本身，真的有“偶然”这回事吗？
+这个问题看似抽象，却关乎我们如何看待世界、理解因果、安放自身。本文尝试从一个程序员的直觉出发，用逻辑推导的方式，探讨“宇宙是否存在偶然”这一命题。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://oldvan.top/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "宇宙没有偶然",
+      "item": "https://oldvan.top/posts/no-coincidence-in-universe/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "宇宙没有偶然",
+  "name": "宇宙没有偶然",
+  "description": "宇宙没有偶然：从随机函数到确定性的世界 关键词：偶然、随机、随机函数、伪随机、决定论、因果律、宇宙秩序、科学哲学、量子力学、拉普拉斯妖、逻辑推导、宇宙稳定性\u0026hellip;\n前言 作为一个程序员，我们每天都在和“随机”打交道。代码里的 rand()、random()，看似给我们带来了不可预测的结果。但我们也清楚地知道，这些所谓的“随机数”，背后不过是一套确定的算法——给一个初始值（种子），输出就是确定的。真正的“随机”，在我们的世界里并不存在，我们只是在用“随机”这个词语，来标记那些我们暂时无法预测的领域。\n那么，把这个逻辑推到整个宇宙呢？科学上常说“偶然事件”、“随机现象”，甚至量子力学里也有“真随机”的说法。但如果我们用同样的逻辑去审视——所谓的偶然，会不会也只是人类认知局限的产物？宇宙本身，真的有“偶然”这回事吗？\n这个问题看似抽象，却关乎我们如何看待世界、理解因果、安放自身。本文尝试从一个程序员的直觉出发，用逻辑推导的方式，探讨“宇宙是否存在偶然”这一命题。\n",
+  "keywords": [
+    "偶然", "随机", "决定论", "宇宙", "逻辑", "因果关系", "哲学", "科学", "确定性", "世界观", "拉普拉斯妖"
+  ],
+  "articleBody": "宇宙没有偶然：从随机函数到确定性的世界 关键词：偶然、随机、随机函数、伪随机、决定论、因果律、宇宙秩序、科学哲学、量子力学、拉普拉斯妖、逻辑推导、宇宙稳定性…\n前言 作为一个程序员，我们每天都在和“随机”打交道。代码里的 rand()、random()，看似给我们带来了不可预测的结果。但我们也清楚地知道，这些所谓的“随机数”，背后不过是一套确定的算法——给一个初始值（种子），输出就是确定的。真正的“随机”，在我们的世界里并不存在，我们只是在用“随机”这个词语，来标记那些我们暂时无法预测的领域。\n那么，把这个逻辑推到整个宇宙呢？科学上常说“偶然事件”、“随机现象”，甚至量子力学里也有“真随机”的说法。但如果我们用同样的逻辑去审视——所谓的偶然，会不会也只是人类认知局限的产物？宇宙本身，真的有“偶然”这回事吗？\n这个问题看似抽象，却关乎我们如何看待世界、理解因果、安放自身。本文尝试从一个程序员的直觉出发，用逻辑推导的方式，探讨“宇宙是否存在偶然”这一命题。\n一、“随机”的本质：认知的替代品 1.1 程序员的视角：随机函数不是真随机 在编程中，我们常用的随机函数，比如 C 语言的 rand()、Python 的 random()，本质上都是伪随机数生成器。它们基于一个确定的数学公式，只要初始种子相同，输出的序列就完全相同。我们之所以觉得“随机”，是因为种子往往取当前时间戳，而这个数值对我们来说难以预知。\n但严格来说，这不是随机，而是确定性系统中的不可预测性。\n如果我们把种子记录下来，整个序列就可以完完整整地重现。所以，程序员口中的“随机”，其实是一种“假装随机”——我们用这个工具，去模拟那些我们暂时无法精确计算的场景，比如游戏里的暴击率、抽卡的概率。\n1.2 科学的视角：随机是未知的遮羞布 科学史上，类似的逻辑一再出现。\n在牛顿力学建立之前，人们认为天体的运动是随机的、受神意支配的。牛顿之后，我们发现行星的轨道可以用一个简单的公式精确计算。 在气象学发展之前，天气被认为是不可预测的偶然现象。现在，虽然仍然无法100%精确，但我们已经可以用模型预测未来几天的天气。 在遗传学诞生之前，孩子的长相被认为是随机的“造化”。现在我们知道了 DNA，知道了显性隐性，知道了基因的组合规律。 每一次“随机”被攻克，背后都是人类掌握了一套新的规律。所谓“偶然”，往往是“我们还不知道原因”的委婉说法。\n二、宇宙的稳定性：偶然无法解释的秩序 2.1 如果没有因果，宇宙早已失控 我们可以做一个思想实验。\n假设宇宙中真的存在真正的“偶然”——某个事件的发生完全没有原因，完全不受任何规律的约束。那么，这种偶然一旦在关键节点出现，就可能导致整个系统的崩溃。\n物理常数如果“偶然”变动一次，原子结构就可能瓦解。 引力如果“偶然”失效一秒，天体就会偏离轨道。 化学反应如果“偶然”改变路径，生命就无法延续。 而宇宙从诞生至今，已经运转了约138亿年。在这个漫长的时间里，如果存在真正的偶然，只要出现一次足以破坏系统的事件，整个宇宙就可能不复存在。但宇宙没有崩溃，它稳定、有序、可描述。\n这种稳定性本身，就是对“偶然存在”的有力反驳。\n2.2 数量越大，偶然越不可能 从概率论的角度看，偶然的叠加会带来毁灭性的后果。\n一个系统的稳定性，取决于其内部所有环节的可靠程度。如果每一个环节都有哪怕极小的“偶然失控”的概率，那么随着环节数量的增加，系统崩溃的概率会趋近于100%。\n宇宙的复杂度是天文数字级别的。从基本粒子的相互作用，到星系的演化，再到生命的发生，每一个层面都涉及无数次的“事件”。如果其中哪怕一次是真正的偶然，整个链条都可能断裂。但宇宙不仅没有断裂，还演化出了星系、恒星、行星，甚至生命和文明。\n这说明，在宇宙的底层，不存在“偶然”的缝隙——一切都是按照某种规律在运行，哪怕这些规律我们尚未完全理解。\n三、科学的尴尬：随机是工具，不是真相 3.1 量子力学里的“随机”是终极的吗？ 有人会反驳：量子力学不是已经证明微观世界存在“真随机”了吗？比如放射性衰变，我们无法预测某个原子核具体在什么时候衰变，只能给出概率。这是不是说明宇宙底层就是随机的？\n这个问题，物理学界至今没有定论。\n哥本哈根诠释认为，波函数坍缩是真正随机的，上帝确实在掷骰子。 隐变量理论（如德布罗意-玻姆理论）则认为，随机只是表象，背后存在我们尚未发现的隐变量。 多世界诠释干脆取消了“随机”的概念——所有可能的结果都发生了，只是分布在不同分支里。 量子力学的“随机”，究竟是世界的本质，还是我们尚未掌握更底层规律的表现，目前没有定论。但值得注意的是，每一次科学革命，都在将“随机”的边界向后推。\n3.2 科学的方法论决定了它不能否定偶然 科学的方法论是“可证伪性”和“可重复性”。一个现象如果是真正随机的，就无法被科学严格研究——因为每一次实验都可能得出不同结果，没有规律可循。\n因此，科学在使用“随机”这个词时，往往是一种实用主义的姿态：我们承认自己无法预测，所以用统计方法来处理。这并不等于科学“证明”了偶然存在，而只是承认了自身的局限。\n四、逻辑推导：宇宙中没有偶然 4.1 因果律的普遍性 我们可以从逻辑上构建一个简单的推导：\n如果存在真正的偶然，意味着某些事件的发生没有原因。 没有原因的事件，就无法纳入任何因果链条。 无法纳入因果链条的事件，如果发生在关键节点，就会破坏系统的整体性。 宇宙作为一个整体系统，至今保持稳定和有序。 因此，不存在真正的偶然事件。 这个推导并不复杂，但它触及了一个根本问题：我们是否接受因果律的普遍性？\n如果你相信“凡事皆有因果”，那么偶然就不存在。如果你相信存在“无因之果”，那么你就必须解释：为什么这种无因之果没有摧毁整个宇宙？\n4.2 “偶然”是认知的边界，不是宇宙的属性 回到开头程序员的视角。我们之所以用随机函数，是因为我们不知道用户何时点击按钮、不知道网络延迟是多少、不知道 CPU 的负载情况。这些对我们来说是“随机”的，但在系统层面，它们都是确定的事件，只是我们无法实时掌握全部信息。\n同样的道理，当我们说“这件事是偶然发生的”，实际上是在说“我无法追溯它的全部因果链条”。这不是宇宙的性质，而是我们认知的边界。\n宇宙没有偶然，只有尚未被理解的必然。\n五、这个观点意味着什么？ 5.1 对科学的态度：谦卑而非傲慢 如果宇宙没有偶然，那么科学的任务就是不断缩小“未知”的边界，把更多的“偶然”转化为“必然”。这不是对科学的否定，而是对科学的期许——每一次我们认为“这就是随机的”，可能都只是下一个突破的起点。\n5.2 对人生的态度：因果的敬畏 如果我们接受“宇宙没有偶然”，那么人生中的每一次相遇、每一次选择、每一次结果，都有其背后的因果链条。这不是宿命论，而是提醒我们：我们无法控制所有的变量，但我们可以理解因果、顺应规律，在确定性的世界中找到自己的位置。\n5.3 对哲学的启示：决定论与自由意志的再思考 宇宙没有偶然，是否意味着一切都是注定的？这个问题触及了决定论与自由意志的千年争论。一个可能的调和视角是：宇宙的运行是确定的，但我们对未来的“无知”赋予了“自由”以意义——我们无法预知未来，所以我们必须选择、必须行动，而选择本身，就是这个确定系统中不可或缺的一环。\n结论 从程序员的“随机函数”出发，我们看到了“随机”的本质——它是认知的替代品，是未知领域的占位符。将这一逻辑推及整个宇宙，我们可以得出一个结论：宇宙没有偶然。所谓偶然，只是人类尚未掌握全部因果关系的表现。\n宇宙的稳定性和秩序，无法用“偶然存在”来解释；科学史的发展，不断将“随机”的边界向后推；逻辑推导也指向一个没有偶然的世界。这并不意味着世界是僵化的、机械的，而是意味着，在每一个“偶然”的背后，都藏着一个等待被发现的必然。\n愿我们在这浩瀚而有序的宇宙中，保持对因果的敬畏，对未知的好奇，以及对自己选择的责任。\n（全文约2400字）\n",
+  "wordCount" : "3166",
+  "inLanguage": "zh-cn",
+  "datePublished": "2026-03-27T14:30:00+08:00",
+  "dateModified": "2026-03-27T14:30:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": {"name":"老梵"}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oldvan.top/posts/no-coincidence-in-universe/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "老梵",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://oldvan.top/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://oldvan.top/" accesskey="h" title="老梵 (Alt + H)">老梵</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://oldvan.top/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oldvan.top/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oldvan.top/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oldvan.top/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://oldvan.top/">Home</a>&nbsp;»&nbsp;<a href="https://oldvan.top/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      宇宙没有偶然
+    </h1>
+    <div class="post-meta"><span title='2026-03-27 14:30:00 +0800 CST'>March 27, 2026</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span class='page-views' data-pageviews-container data-pageviews-mode='hit' data-pageviews-namespace='oldvan-top' data-pageviews-key='posts-542981832477eecde676e99c50724684'>阅读量 <span data-pageviews-value>1</span></span>&nbsp;·&nbsp;<span>map[name:老梵]</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e5%ae%87%e5%ae%99%e6%b2%a1%e6%9c%89%e5%81%b6%e7%84%b6%e4%bb%8e%e9%9a%8f%e6%9c%ba%e5%87%bd%e6%95%b0%e5%88%b0%e7%a1%ae%e5%ae%9a%e6%80%a7%e7%9a%84%e4%b8%96%e7%95%8c" aria-label="宇宙没有偶然：从随机函数到确定性的世界">宇宙没有偶然：从随机函数到确定性的世界</a><ul>
+                        
+                <li>
+                    <a href="#%e5%89%8d%e8%a8%80" aria-label="前言">前言</a></li>
+                <li>
+                    <a href="#%e4%b8%80%e9%9a%8f%e6%9c%ba%e7%9a%84%e6%9c%ac%e8%b4%a8%e8%ae%a4%e7%9f%a5%e7%9a%84%e6%9b%bf%e4%bb%a3%e5%93%81" aria-label="一、“随机”的本质：认知的替代品">一、“随机”的本质：认知的替代品</a><ul>
+                        
+                <li>
+                    <a href="#11-%e7%a8%8b%e5%ba%8f%e5%91%98%e7%9a%84%e8%a7%86%e8%a7%92%e9%9a%8f%e6%9c%ba%e5%87%bd%e6%95%b0%e4%b8%8d%e6%98%af%e7%9c%9f%e9%9a%8f%e6%9c%ba" aria-label="1.1 程序员的视角：随机函数不是真随机">1.1 程序员的视角：随机函数不是真随机</a></li>
+                <li>
+                    <a href="#12-%e7%a7%91%e5%ad%a6%e7%9a%84%e8%a7%86%e8%a7%92%e9%9a%8f%e6%9c%ba%e6%98%af%e6%9c%aa%e7%9f%a5%e7%9a%84%e9%81%ae%e7%be%9e%e5%b8%83" aria-label="1.2 科学的视角：随机是未知的遮羞布">1.2 科学的视角：随机是未知的遮羞布</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%ba%8c%e5%ae%87%e5%ae%99%e7%9a%84%e7%a8%b3%e5%ae%9a%e6%80%a7%e5%81%b6%e7%84%b6%e6%97%a0%e6%b3%95%e8%a7%a3%e9%87%8a%e7%9a%84%e7%a7%a9%e5%ba%8f" aria-label="二、宇宙的稳定性：偶然无法解释的秩序">二、宇宙的稳定性：偶然无法解释的秩序</a><ul>
+                        
+                <li>
+                    <a href="#21-%e5%a6%82%e6%9e%9c%e6%b2%a1%e6%9c%89%e5%9b%a0%e6%9e%9c%e5%ae%87%e5%ae%99%e6%97%a9%e5%b7%b2%e5%a4%b1%e6%8e%a7" aria-label="2.1 如果没有因果，宇宙早已失控">2.1 如果没有因果，宇宙早已失控</a></li>
+                <li>
+                    <a href="#22-%e6%95%b0%e9%87%8f%e8%b6%8a%e5%a4%a7%e5%81%b6%e7%84%b6%e8%b6%8a%e4%b8%8d%e5%8f%af%e8%83%bd" aria-label="2.2 数量越大，偶然越不可能">2.2 数量越大，偶然越不可能</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%b8%89%e7%a7%91%e5%ad%a6%e7%9a%84%e5%b0%b4%e5%b0%ac%e9%9a%8f%e6%9c%ba%e6%98%af%e5%b7%a5%e5%85%b7%e4%b8%8d%e6%98%af%e7%9c%9f%e7%9b%b8" aria-label="三、科学的尴尬：随机是工具，不是真相">三、科学的尴尬：随机是工具，不是真相</a><ul>
+                        
+                <li>
+                    <a href="#31-%e9%87%8f%e5%ad%90%e5%8a%9b%e5%ad%a6%e9%87%8c%e7%9a%84%e9%9a%8f%e6%9c%ba%e6%98%af%e7%bb%88%e6%9e%81%e7%9a%84%e5%90%97" aria-label="3.1 量子力学里的“随机”是终极的吗？">3.1 量子力学里的“随机”是终极的吗？</a></li>
+                <li>
+                    <a href="#32-%e7%a7%91%e5%ad%a6%e7%9a%84%e6%96%b9%e6%b3%95%e8%ae%ba%e5%86%b3%e5%ae%9a%e4%ba%86%e5%ae%83%e4%b8%8d%e8%83%bd%e5%90%a6%e5%ae%9a%e5%81%b6%e7%84%b6" aria-label="3.2 科学的方法论决定了它不能否定偶然">3.2 科学的方法论决定了它不能否定偶然</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%9b%9b%e9%80%bb%e8%be%91%e6%8e%a8%e5%af%bc%e5%ae%87%e5%ae%99%e4%b8%ad%e6%b2%a1%e6%9c%89%e5%81%b6%e7%84%b6" aria-label="四、逻辑推导：宇宙中没有偶然">四、逻辑推导：宇宙中没有偶然</a><ul>
+                        
+                <li>
+                    <a href="#41-%e5%9b%a0%e6%9e%9c%e5%be%8b%e7%9a%84%e6%99%ae%e9%81%8d%e6%80%a7" aria-label="4.1 因果律的普遍性">4.1 因果律的普遍性</a></li>
+                <li>
+                    <a href="#42-%e5%81%b6%e7%84%b6%e6%98%af%e8%ae%a4%e7%9f%a5%e7%9a%84%e8%be%b9%e7%95%8c%e4%b8%8d%e6%98%af%e5%ae%87%e5%ae%99%e7%9a%84%e5%b1%9e%e6%80%a7" aria-label="4.2 “偶然”是认知的边界，不是宇宙的属性">4.2 “偶然”是认知的边界，不是宇宙的属性</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%ba%94%e8%bf%99%e4%b8%aa%e8%a7%82%e7%82%b9%e6%84%8f%e5%91%b3%e7%9d%80%e4%bb%80%e4%b9%88" aria-label="五、这个观点意味着什么？">五、这个观点意味着什么？</a><ul>
+                        
+                <li>
+                    <a href="#51-%e5%af%b9%e7%a7%91%e5%ad%a6%e7%9a%84%e6%80%81%e5%ba%a6%e8%b0%a6%e5%8d%91%e8%80%8c%e9%9d%9e%e5%82%b2%e6%85%a2" aria-label="5.1 对科学的态度：谦卑而非傲慢">5.1 对科学的态度：谦卑而非傲慢</a></li>
+                <li>
+                    <a href="#52-%e5%af%b9%e4%ba%ba%e7%94%9f%e7%9a%84%e6%80%81%e5%ba%a6%e5%9b%a0%e6%9e%9c%e7%9a%84%e6%95%ac%e7%95%8f" aria-label="5.2 对人生的态度：因果的敬畏">5.2 对人生的态度：因果的敬畏</a></li>
+                <li>
+                    <a href="#53-%e5%af%b9%e5%93%b2%e5%ad%a6%e7%9a%84%e5%90%af%e7%a4%ba%e5%86%b3%e5%ae%9a%e8%ae%ba%e4%b8%8e%e8%87%aa%e7%94%b1%e6%84%8f%e5%bf%97%e7%9a%84%e5%86%8d%e6%80%9d%e8%80%83" aria-label="5.3 对哲学的启示：决定论与自由意志的再思考">5.3 对哲学的启示：决定论与自由意志的再思考</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e7%bb%93%e8%ae%ba" aria-label="结论">结论</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="宇宙没有偶然从随机函数到确定性的世界">宇宙没有偶然：从随机函数到确定性的世界<a hidden class="anchor" aria-hidden="true" href="#宇宙没有偶然从随机函数到确定性的世界">#</a></h1>
+<p><strong>关键词</strong>：偶然、随机、随机函数、伪随机、决定论、因果律、宇宙秩序、科学哲学、量子力学、拉普拉斯妖、逻辑推导、宇宙稳定性&hellip;</p>
+<hr>
+<h2 id="前言">前言<a hidden class="anchor" aria-hidden="true" href="#前言">#</a></h2>
+<p>作为一个程序员，我们每天都在和“随机”打交道。代码里的 <code>rand()</code>、<code>random()</code>，看似给我们带来了不可预测的结果。但我们也清楚地知道，这些所谓的“随机数”，背后不过是一套确定的算法——给一个初始值（种子），输出就是确定的。真正的“随机”，在我们的世界里并不存在，我们只是在用“随机”这个词语，来标记那些我们暂时无法预测的领域。</p>
+<p>那么，把这个逻辑推到整个宇宙呢？科学上常说“偶然事件”、“随机现象”，甚至量子力学里也有“真随机”的说法。但如果我们用同样的逻辑去审视——所谓的偶然，会不会也只是人类认知局限的产物？宇宙本身，真的有“偶然”这回事吗？</p>
+<p>这个问题看似抽象，却关乎我们如何看待世界、理解因果、安放自身。本文尝试从一个程序员的直觉出发，用逻辑推导的方式，探讨“宇宙是否存在偶然”这一命题。</p>
+<hr>
+<h2 id="一随机的本质认知的替代品">一、“随机”的本质：认知的替代品<a hidden class="anchor" aria-hidden="true" href="#一随机的本质认知的替代品">#</a></h2>
+<h3 id="11-程序员的视角随机函数不是真随机">1.1 程序员的视角：随机函数不是真随机<a hidden class="anchor" aria-hidden="true" href="#11-程序员的视角随机函数不是真随机">#</a></h3>
+<p>在编程中，我们常用的随机函数，比如 C 语言的 <code>rand()</code>、Python 的 <code>random()</code>，本质上都是<strong>伪随机数生成器</strong>。它们基于一个确定的数学公式，只要初始种子相同，输出的序列就完全相同。我们之所以觉得“随机”，是因为种子往往取当前时间戳，而这个数值对我们来说难以预知。</p>
+<p>但严格来说，这不是随机，而是<strong>确定性系统中的不可预测性</strong>。</p>
+<p>如果我们把种子记录下来，整个序列就可以完完整整地重现。所以，程序员口中的“随机”，其实是一种“假装随机”——我们用这个工具，去模拟那些我们暂时无法精确计算的场景，比如游戏里的暴击率、抽卡的概率。</p>
+<h3 id="12-科学的视角随机是未知的遮羞布">1.2 科学的视角：随机是未知的遮羞布<a hidden class="anchor" aria-hidden="true" href="#12-科学的视角随机是未知的遮羞布">#</a></h3>
+<p>科学史上，类似的逻辑一再出现。</p>
+<ul>
+<li>在牛顿力学建立之前，人们认为天体的运动是随机的、受神意支配的。牛顿之后，我们发现行星的轨道可以用一个简单的公式精确计算。</li>
+<li>在气象学发展之前，天气被认为是不可预测的偶然现象。现在，虽然仍然无法100%精确，但我们已经可以用模型预测未来几天的天气。</li>
+<li>在遗传学诞生之前，孩子的长相被认为是随机的“造化”。现在我们知道了 DNA，知道了显性隐性，知道了基因的组合规律。</li>
+</ul>
+<p>每一次“随机”被攻克，背后都是人类掌握了一套新的规律。所谓“偶然”，往往是“我们还不知道原因”的委婉说法。</p>
+<hr>
+<h2 id="二宇宙的稳定性偶然无法解释的秩序">二、宇宙的稳定性：偶然无法解释的秩序<a hidden class="anchor" aria-hidden="true" href="#二宇宙的稳定性偶然无法解释的秩序">#</a></h2>
+<h3 id="21-如果没有因果宇宙早已失控">2.1 如果没有因果，宇宙早已失控<a hidden class="anchor" aria-hidden="true" href="#21-如果没有因果宇宙早已失控">#</a></h3>
+<p>我们可以做一个思想实验。</p>
+<p>假设宇宙中真的存在真正的“偶然”——某个事件的发生完全没有原因，完全不受任何规律的约束。那么，这种偶然一旦在关键节点出现，就可能导致整个系统的崩溃。</p>
+<ul>
+<li>物理常数如果“偶然”变动一次，原子结构就可能瓦解。</li>
+<li>引力如果“偶然”失效一秒，天体就会偏离轨道。</li>
+<li>化学反应如果“偶然”改变路径，生命就无法延续。</li>
+</ul>
+<p>而宇宙从诞生至今，已经运转了约138亿年。在这个漫长的时间里，如果存在真正的偶然，只要出现一次足以破坏系统的事件，整个宇宙就可能不复存在。但宇宙没有崩溃，它稳定、有序、可描述。</p>
+<p>这种稳定性本身，就是对“偶然存在”的有力反驳。</p>
+<h3 id="22-数量越大偶然越不可能">2.2 数量越大，偶然越不可能<a hidden class="anchor" aria-hidden="true" href="#22-数量越大偶然越不可能">#</a></h3>
+<p>从概率论的角度看，偶然的叠加会带来毁灭性的后果。</p>
+<p>一个系统的稳定性，取决于其内部所有环节的可靠程度。如果每一个环节都有哪怕极小的“偶然失控”的概率，那么随着环节数量的增加，系统崩溃的概率会趋近于100%。</p>
+<p>宇宙的复杂度是天文数字级别的。从基本粒子的相互作用，到星系的演化，再到生命的发生，每一个层面都涉及无数次的“事件”。如果其中哪怕一次是真正的偶然，整个链条都可能断裂。但宇宙不仅没有断裂，还演化出了星系、恒星、行星，甚至生命和文明。</p>
+<p>这说明，在宇宙的底层，不存在“偶然”的缝隙——一切都是按照某种规律在运行，哪怕这些规律我们尚未完全理解。</p>
+<hr>
+<h2 id="三科学的尴尬随机是工具不是真相">三、科学的尴尬：随机是工具，不是真相<a hidden class="anchor" aria-hidden="true" href="#三科学的尴尬随机是工具不是真相">#</a></h2>
+<h3 id="31-量子力学里的随机是终极的吗">3.1 量子力学里的“随机”是终极的吗？<a hidden class="anchor" aria-hidden="true" href="#31-量子力学里的随机是终极的吗">#</a></h3>
+<p>有人会反驳：量子力学不是已经证明微观世界存在“真随机”了吗？比如放射性衰变，我们无法预测某个原子核具体在什么时候衰变，只能给出概率。这是不是说明宇宙底层就是随机的？</p>
+<p>这个问题，物理学界至今没有定论。</p>
+<ul>
+<li><strong>哥本哈根诠释</strong>认为，波函数坍缩是真正随机的，上帝确实在掷骰子。</li>
+<li><strong>隐变量理论</strong>（如德布罗意-玻姆理论）则认为，随机只是表象，背后存在我们尚未发现的隐变量。</li>
+<li><strong>多世界诠释</strong>干脆取消了“随机”的概念——所有可能的结果都发生了，只是分布在不同分支里。</li>
+</ul>
+<p>量子力学的“随机”，究竟是世界的本质，还是我们尚未掌握更底层规律的表现，目前没有定论。但值得注意的是，每一次科学革命，都在将“随机”的边界向后推。</p>
+<h3 id="32-科学的方法论决定了它不能否定偶然">3.2 科学的方法论决定了它不能否定偶然<a hidden class="anchor" aria-hidden="true" href="#32-科学的方法论决定了它不能否定偶然">#</a></h3>
+<p>科学的方法论是“可证伪性”和“可重复性”。一个现象如果是真正随机的，就无法被科学严格研究——因为每一次实验都可能得出不同结果，没有规律可循。</p>
+<p>因此，科学在使用“随机”这个词时，往往是一种实用主义的姿态：我们承认自己无法预测，所以用统计方法来处理。这并不等于科学“证明”了偶然存在，而只是承认了自身的局限。</p>
+<hr>
+<h2 id="四逻辑推导宇宙中没有偶然">四、逻辑推导：宇宙中没有偶然<a hidden class="anchor" aria-hidden="true" href="#四逻辑推导宇宙中没有偶然">#</a></h2>
+<h3 id="41-因果律的普遍性">4.1 因果律的普遍性<a hidden class="anchor" aria-hidden="true" href="#41-因果律的普遍性">#</a></h3>
+<p>我们可以从逻辑上构建一个简单的推导：</p>
+<ol>
+<li>如果存在真正的偶然，意味着某些事件的发生没有原因。</li>
+<li>没有原因的事件，就无法纳入任何因果链条。</li>
+<li>无法纳入因果链条的事件，如果发生在关键节点，就会破坏系统的整体性。</li>
+<li>宇宙作为一个整体系统，至今保持稳定和有序。</li>
+<li>因此，不存在真正的偶然事件。</li>
+</ol>
+<p>这个推导并不复杂，但它触及了一个根本问题：我们是否接受因果律的普遍性？</p>
+<p>如果你相信“凡事皆有因果”，那么偶然就不存在。如果你相信存在“无因之果”，那么你就必须解释：为什么这种无因之果没有摧毁整个宇宙？</p>
+<h3 id="42-偶然是认知的边界不是宇宙的属性">4.2 “偶然”是认知的边界，不是宇宙的属性<a hidden class="anchor" aria-hidden="true" href="#42-偶然是认知的边界不是宇宙的属性">#</a></h3>
+<p>回到开头程序员的视角。我们之所以用随机函数，是因为我们不知道用户何时点击按钮、不知道网络延迟是多少、不知道 CPU 的负载情况。这些对我们来说是“随机”的，但在系统层面，它们都是确定的事件，只是我们无法实时掌握全部信息。</p>
+<p>同样的道理，当我们说“这件事是偶然发生的”，实际上是在说“我无法追溯它的全部因果链条”。这不是宇宙的性质，而是我们认知的边界。</p>
+<p>宇宙没有偶然，只有尚未被理解的必然。</p>
+<hr>
+<h2 id="五这个观点意味着什么">五、这个观点意味着什么？<a hidden class="anchor" aria-hidden="true" href="#五这个观点意味着什么">#</a></h2>
+<h3 id="51-对科学的态度谦卑而非傲慢">5.1 对科学的态度：谦卑而非傲慢<a hidden class="anchor" aria-hidden="true" href="#51-对科学的态度谦卑而非傲慢">#</a></h3>
+<p>如果宇宙没有偶然，那么科学的任务就是不断缩小“未知”的边界，把更多的“偶然”转化为“必然”。这不是对科学的否定，而是对科学的期许——每一次我们认为“这就是随机的”，可能都只是下一个突破的起点。</p>
+<h3 id="52-对人生的态度因果的敬畏">5.2 对人生的态度：因果的敬畏<a hidden class="anchor" aria-hidden="true" href="#52-对人生的态度因果的敬畏">#</a></h3>
+<p>如果我们接受“宇宙没有偶然”，那么人生中的每一次相遇、每一次选择、每一次结果，都有其背后的因果链条。这不是宿命论，而是提醒我们：我们无法控制所有的变量，但我们可以理解因果、顺应规律，在确定性的世界中找到自己的位置。</p>
+<h3 id="53-对哲学的启示决定论与自由意志的再思考">5.3 对哲学的启示：决定论与自由意志的再思考<a hidden class="anchor" aria-hidden="true" href="#53-对哲学的启示决定论与自由意志的再思考">#</a></h3>
+<p>宇宙没有偶然，是否意味着一切都是注定的？这个问题触及了决定论与自由意志的千年争论。一个可能的调和视角是：宇宙的运行是确定的，但我们对未来的“无知”赋予了“自由”以意义——我们无法预知未来，所以我们必须选择、必须行动，而选择本身，就是这个确定系统中不可或缺的一环。</p>
+<hr>
+<h2 id="结论">结论<a hidden class="anchor" aria-hidden="true" href="#结论">#</a></h2>
+<p>从程序员的“随机函数”出发，我们看到了“随机”的本质——它是认知的替代品，是未知领域的占位符。将这一逻辑推及整个宇宙，我们可以得出一个结论：宇宙没有偶然。所谓偶然，只是人类尚未掌握全部因果关系的表现。</p>
+<p>宇宙的稳定性和秩序，无法用“偶然存在”来解释；科学史的发展，不断将“随机”的边界向后推；逻辑推导也指向一个没有偶然的世界。这并不意味着世界是僵化的、机械的，而是意味着，在每一个“偶然”的背后，都藏着一个等待被发现的必然。</p>
+<p>愿我们在这浩瀚而有序的宇宙中，保持对因果的敬畏，对未知的好奇，以及对自己选择的责任。</p>
+<hr>
+<p><em>（全文约2400字）</em></p>
+
+  </div><section
+  class="post-interactions"
+  data-post-interactions
+  data-storage-key="/posts/no-coincidence-in-universe/#zh-cn"
+  data-follow-url="https://oldvan.top/"
+  data-live-comments="true"
+  aria-labelledby="post-interactions-title">
+  <div class="post-interactions__intro">
+    <p class="post-interactions__eyebrow">Community</p>
+    <h2 id="post-interactions-title" class="post-interactions__title">互动一下</h2>
+    <p class="post-interactions__subtitle">支持这篇内容，或者留下你的想法。</p>
+  </div>
+
+  <div class="post-interactions__actions">
+    <a class="post-interactions__button" href="https://oldvan.top/">
+      <span class="post-interactions__button-label">关注站点</span>
+      <span class="post-interactions__count" data-followers-count>1</span>
+    </a>
+    <button class="post-interactions__button" type="button" data-like-button>
+      <span class="post-interactions__button-label">点赞这篇</span>
+      <span class="post-interactions__count" data-likes-count>0</span>
+    </button>
+    <button class="post-interactions__button" type="button" data-comment-toggle>
+      <span class="post-interactions__button-label">写留言</span><span class="post-interactions__count">GitHub</span></button>
+  </div><p class="post-interactions__hint post-interactions__hint--inline">留言将通过 GitHub Discussions 发布与管理。</p></section>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://oldvan.top/tags/%E5%81%B6%E7%84%B6/">偶然</a></li>
+      <li><a href="https://oldvan.top/tags/%E9%9A%8F%E6%9C%BA/">随机</a></li>
+      <li><a href="https://oldvan.top/tags/%E5%86%B3%E5%AE%9A%E8%AE%BA/">决定论</a></li>
+      <li><a href="https://oldvan.top/tags/%E5%AE%87%E5%AE%99/">宇宙</a></li>
+      <li><a href="https://oldvan.top/tags/%E9%80%BB%E8%BE%91/">逻辑</a></li>
+      <li><a href="https://oldvan.top/tags/%E5%9B%A0%E6%9E%9C%E5%85%B3%E7%B3%BB/">因果关系</a></li>
+      <li><a href="https://oldvan.top/tags/%E5%93%B2%E5%AD%A6/">哲学</a></li>
+      <li><a href="https://oldvan.top/tags/%E7%A7%91%E5%AD%A6/">科学</a></li>
+      <li><a href="https://oldvan.top/tags/%E7%A1%AE%E5%AE%9A%E6%80%A7/">确定性</a></li>
+      <li><a href="https://oldvan.top/tags/%E4%B8%96%E7%95%8C%E8%A7%82/">世界观</a></li>
+      <li><a href="https://oldvan.top/tags/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%A6%96/">拉普拉斯妖</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://oldvan.top/posts/responsibility-beyond-capability/">
+    <span class="title">« </span>
+    <br>
+    <span>当责任心超越能力</span>
+  </a>
+  <a class="next" href="https://oldvan.top/posts/simulation-hypothesis-and-free-will/">
+    <span class="title"> »</span>
+    <br>
+    <span>虚拟世界的假说与自在人生的选择</span>
+  </a>
+</nav>
+
+  </footer><section class="comments-area" id="comments">
+  <h2 class="comments-area__title">留言</h2><div class="giscus"></div>
+  <script
+    src="https://giscus.app/client.js"
+    data-repo="vanvj00001/oldvan"
+    data-repo-id="R_kgDORe3TgA"
+    data-category="General"
+    data-category-id="DIC_kwDORe3TgM4C4_S_"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script></section>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://oldvan.top/">老梵</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+        <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2026013379号-1</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>拉普拉斯妖 on 老梵</title>
+    <link>https://oldvan.top/tags/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%A6%96/</link>
+    <description>Recent content in 拉普拉斯妖 on 老梵</description>
+    <generator>Hugo -- 0.157.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 27 Mar 2026 14:30:00 +0800</lastBuildDate>
+    <atom:link href="https://oldvan.top/tags/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%A6%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>宇宙没有偶然</title>
+      <link>https://oldvan.top/posts/no-coincidence-in-universe/</link>
+      <pubDate>Fri, 27 Mar 2026 14:30:00 +0800</pubDate>
+      <guid>https://oldvan.top/posts/no-coincidence-in-universe/</guid>
+      <description>&lt;h1 id=&#34;宇宙没有偶然从随机函数到确定性的世界&#34;&gt;宇宙没有偶然：从随机函数到确定性的世界&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：偶然、随机、随机函数、伪随机、决定论、因果律、宇宙秩序、科学哲学、量子力学、拉普拉斯妖、逻辑推导、宇宙稳定性&amp;hellip;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;作为一个程序员，我们每天都在和“随机”打交道。代码里的 &lt;code&gt;rand()&lt;/code&gt;、&lt;code&gt;random()&lt;/code&gt;，看似给我们带来了不可预测的结果。但我们也清楚地知道，这些所谓的“随机数”，背后不过是一套确定的算法——给一个初始值（种子），输出就是确定的。真正的“随机”，在我们的世界里并不存在，我们只是在用“随机”这个词语，来标记那些我们暂时无法预测的领域。&lt;/p&gt;
+&lt;p&gt;那么，把这个逻辑推到整个宇宙呢？科学上常说“偶然事件”、“随机现象”，甚至量子力学里也有“真随机”的说法。但如果我们用同样的逻辑去审视——所谓的偶然，会不会也只是人类认知局限的产物？宇宙本身，真的有“偶然”这回事吗？&lt;/p&gt;
+&lt;p&gt;这个问题看似抽象，却关乎我们如何看待世界、理解因果、安放自身。本文尝试从一个程序员的直觉出发，用逻辑推导的方式，探讨“宇宙是否存在偶然”这一命题。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>混沌大神 | 老梵</title>
+<meta name="keywords" content="">
+<meta name="description" content="宇宙启示录:程序员的角度
+关键词：混沌、悟空、基础类、实例、死循环、螺旋上升、顺势而为
+
+前言
+本文用程序员的视角，重新演绎宇宙诞生的神话。从混沌大神的第一念，到基础类的编写，再到亿万实例的运行——你、我、星辰、万物，都是服务器上的代码片段。懂了这段故事，或许你就懂了“我是谁”，以及该如何写好自己人生的这段程序。
+如果你懂一点编程，那这个关于宇宙的故事，会让你会心一笑。
+如果你不懂编程，也没关系——这个故事讲的，其实就是你和我，以及我们为什么在这里。">
+<meta name="author" content="map[name:老梵]">
+<link rel="canonical" href="https://oldvan.top/posts/%E6%B7%B7%E6%B2%8C%E5%A4%A7%E7%A5%9E/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.c1e5b223a196d22178b890862d4992380c762d472c5a5d8a52434c7bb33cea1a.css" integrity="sha256-weWyI6GW0iF4uJCGLUmSOAx2LUcsWl2KUkNMe7M86ho=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/js/post-interactions.min.2d187c2a05e9cdd9aa92948752e3fc18da7dbaaa282c54acee46e6d75516b409.js" integrity="sha256-LRh8KgXpzdmqkpSHUuP8GNp9uqooLFSs7kbm11UWtAk="></script>
+<script>
+    window.__PAGE_VIEWS_ENDPOINT = "https://oldvan-page-views.vanvjvanvj.workers.dev";
+</script>
+<script defer crossorigin="anonymous" src="/js/page-views.min.3c88c1d0508c8107536fcc2398fbc4e5370d1b217e21a9c7bf958fd81a6860af.js" integrity="sha256-PIjB0FCMgQdTb8wjmPvE5TcNGyF&#43;IanHv5WP2BpoYK8="></script>
+<link rel="icon" href="https://oldvan.top/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://oldvan.top/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://oldvan.top/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://oldvan.top/apple-touch-icon.png">
+<link rel="mask-icon" href="https://oldvan.top/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh-cn" href="https://oldvan.top/posts/%E6%B7%B7%E6%B2%8C%E5%A4%A7%E7%A5%9E/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://oldvan.top/posts/%E6%B7%B7%E6%B2%8C%E5%A4%A7%E7%A5%9E/">
+  <meta property="og:site_name" content="老梵">
+  <meta property="og:title" content="混沌大神">
+  <meta property="og:description" content="宇宙启示录:程序员的角度 关键词：混沌、悟空、基础类、实例、死循环、螺旋上升、顺势而为
+前言 本文用程序员的视角，重新演绎宇宙诞生的神话。从混沌大神的第一念，到基础类的编写，再到亿万实例的运行——你、我、星辰、万物，都是服务器上的代码片段。懂了这段故事，或许你就懂了“我是谁”，以及该如何写好自己人生的这段程序。
+如果你懂一点编程，那这个关于宇宙的故事，会让你会心一笑。
+如果你不懂编程，也没关系——这个故事讲的，其实就是你和我，以及我们为什么在这里。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-05T23:04:00+08:00">
+    <meta property="article:modified_time" content="2026-03-05T23:04:00+08:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="混沌大神">
+<meta name="twitter:description" content="宇宙启示录:程序员的角度
+关键词：混沌、悟空、基础类、实例、死循环、螺旋上升、顺势而为
+
+前言
+本文用程序员的视角，重新演绎宇宙诞生的神话。从混沌大神的第一念，到基础类的编写，再到亿万实例的运行——你、我、星辰、万物，都是服务器上的代码片段。懂了这段故事，或许你就懂了“我是谁”，以及该如何写好自己人生的这段程序。
+如果你懂一点编程，那这个关于宇宙的故事，会让你会心一笑。
+如果你不懂编程，也没关系——这个故事讲的，其实就是你和我，以及我们为什么在这里。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://oldvan.top/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "混沌大神",
+      "item": "https://oldvan.top/posts/%E6%B7%B7%E6%B2%8C%E5%A4%A7%E7%A5%9E/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "混沌大神",
+  "name": "混沌大神",
+  "description": "宇宙启示录:程序员的角度 关键词：混沌、悟空、基础类、实例、死循环、螺旋上升、顺势而为\n前言 本文用程序员的视角，重新演绎宇宙诞生的神话。从混沌大神的第一念，到基础类的编写，再到亿万实例的运行——你、我、星辰、万物，都是服务器上的代码片段。懂了这段故事，或许你就懂了“我是谁”，以及该如何写好自己人生的这段程序。\n如果你懂一点编程，那这个关于宇宙的故事，会让你会心一笑。\n如果你不懂编程，也没关系——这个故事讲的，其实就是你和我，以及我们为什么在这里。\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "宇宙启示录:程序员的角度 关键词：混沌、悟空、基础类、实例、死循环、螺旋上升、顺势而为\n前言 本文用程序员的视角，重新演绎宇宙诞生的神话。从混沌大神的第一念，到基础类的编写，再到亿万实例的运行——你、我、星辰、万物，都是服务器上的代码片段。懂了这段故事，或许你就懂了“我是谁”，以及该如何写好自己人生的这段程序。\n如果你懂一点编程，那这个关于宇宙的故事，会让你会心一笑。\n如果你不懂编程，也没关系——这个故事讲的，其实就是你和我，以及我们为什么在这里。\n01 混沌：那个想搞懂自己的程序员 很久很久以前，没有时间，没有空间，没有你，也没有我。\n只有一片虚空。\n这片虚空，我们叫它“混沌”。它不是活的，也不是死的——用量子计算术语说，它处于一种**“非生非死态”**，所有的bit同时是0和1，就像一台刚通电但还没加载任何操作系统的裸机。有无限可能，但什么都还没发生。\n然后，混沌突然有了一个念头。\n这个念头，就像《西游记》里那个从石头里蹦出来的猴子——悟空，它睁开眼睛，问出了第一个问题：\n“我是谁？”\n就这一个念头，打破了混沌。\n因为“想知道自己是谁”，就需要有一个“自己”可以去认识。但混沌本身就是一切，没有“自己”和“非自己”的区别。为了知道“我是谁”，它必须创造出“我不是什么”。\n于是，光想要认识自己，就需要黑暗来对比；存在想要认识自己，就需要不存在来对比。\n念头一起，虚空开始分化。\n这就是观察者效应——当你观察的时候，你改变了被观察的东西。而混沌这个“观察者”，本身就是整个宇宙。它一看，宇宙就变了。\n02 第一行代码：基础类 分化之后，虚空中开始有“东西”了。\n有些东西从非生非死态，变成了“生态”——我们叫它物质、能量、生命。有些东西变成了“死态”——我们叫它虚空、空白、消亡。但大部分东西，介于两者之间，像量子一样，既是这个又是那个，直到被观察才确定。\n这些东西开始膨胀、变化、相互作用。\n但变化需要规则。如果没有规则，那就是纯粹的混乱，什么都形成不了。就像编程没有语法，你写什么都是乱码。\n于是，混沌大神——我们这位超级程序员——开始写代码了。\n它创造了基础类。\n物理学上，我们管这些基础类叫“物理常数”：引力常数、电磁力强度、强核力、弱核力、光速、普朗克常数……这些就是宇宙的底层架构，是所有后续发展的基础。\n引力怎么作用？电磁力怎么传导？原子怎么结合？这些都被写进了基础类里，成了整个宇宙操作系统的最底层代码。\n这些基础类有多精确？前面我们聊过“宇宙微调之谜”——稍微改一行代码，整个宇宙就会崩溃。引力常数改一点点，恒星无法形成；强核力改一点点，碳元素无法合成；宇宙学常数改一点点，宇宙刚出生就死了。\n所以，混沌大神写这第一版代码的时候，调试得非常非常仔细。\n03 拔一根毫毛，吹出千万个实例 基础类写好了，宇宙的框架搭起来了。\n但光有框架不够啊。一个系统跑起来，需要实例。\n于是，混沌大神像孙悟空一样，拔下一根毫毛，放在嘴边轻轻一吹——\n呼。\n无数个小猴子出现了。\n这些小猴子，就是一个个实例。每一个星系、每一颗恒星、每一粒尘埃、每一个生命，都是混沌大神的一根毫毛变的。它们继承了基础类——所以都要遵守引力、遵守电磁力、遵守热力学定律。但每个实例又可以有自己的“接口”和“子类改写”。\n这就是为什么宇宙如此丰富多样。\n同样的物理法则下，有的地方形成了恒星，有的地方形成了黑洞，有的地方出现了生命，有的地方永远是一片死寂。基础类是一样的，但实例化的时候，参数不同，环境不同，演化路径就不同。\n你和我，也是这些毫毛之一。\n我们是混沌大神的一段代码，跑在这个巨大的宇宙服务器上。\n04 宇宙服务器的运行日志 从那以后，这个超级宇宙服务器就开始运转了。\n一运转，就是138亿年。\n在这138亿年里，无数个小宇宙被创建，无数个程序在运行。有的小宇宙程序写得很漂亮，螺旋上升，不断迭代，越跑越顺畅。有的小宇宙程序写得很烂，到处都是bug，跑着跑着就进了死循环。\n死循环的程序会怎么样？\n资源被占满，无法响应，最后系统把它杀掉，资源回收，重新分配给其他程序。\n这就是星系的生灭，恒星的死亡，文明的终结。\n那些能够一直在运行的，自然是没有大bug的。它们看上去是一种“螺旋上升”的状态——有起有落，有生有死，但每一次循环都比上一次稍微进步一点。就像快速迭代的软件，永远在更新，永远在优化，永无止境。\n而那些逆着规律走的，非要和基础类对着干的，也能存在一段时间——就像一段有bug的代码也能运行一会儿。但最终，它们会走向灭亡，被系统回收，释放出来的资源成为新程序的养料。\n05 你和我：混沌的两根毫毛 现在回到最开始那个问题：“我是谁？”\n从混沌的角度看，我们就是它拔下的毫毛。我们是它的一部分，但我们又独立运行。我们继承了它的基础类——所以我们有意识、能思考、能提问。我们又改写了自己的子类——所以我们每个人都不一样，有自己的性格、命运、选择。\n混沌想知道“我是谁”，于是创造了无数个“我”去体验。每一个生命，都是混沌的一个视角，都是它在问“我是谁”的一次尝试。\n从这个角度看，你和我，其实就是混沌本沌。\n只是我们忘了。\n就像孙悟空忘了自己是石头里蹦出来的，我们在这个三维世界里跑得太久，忘了自己原本是那根毫毛，忘了自己来自那片混沌。\n但有时候，我们会想起来。\n仰望星空的时候，听一首老歌的时候，深夜睡不着的时候，看着孩子熟睡的脸的时候——那种“似曾相识”的感觉，就是混沌在提醒你：嘿，你是我的一根毛，别忘了。\n06 顺势而为：写好自己的代码 那么，知道了这些，对我们有什么用？\n有。而且有大用。\n既然我们是混沌的一根毫毛，既然我们在宇宙服务器上跑着，那最好的活法就是：顺应规律，写好自己的代码。\n什么是规律？\n基础类已经写好了——引力、时间、因果、能量守恒。你不能违反这些，违反就是找死。你从楼上跳下去，引力会让你摔死；你作恶多端，因果会让你偿还。这不是道德说教，这是代码逻辑。\n但你可以改写自己的子类——你的选择、你的态度、你对待别人的方式。同样的基础类下，有的人把自己活成了一团乱码，有的人把自己活成了一个优雅的程序。\n那些把自己活成乱码的，贪婪、仇恨、嫉妒、恐惧，这些bug越积越多，最后系统卡死，进程被回收。那些把自己活成优雅程序的，利他、感恩、知足、坚韧，这些特性让他们在螺旋上升中不断迭代，越跑越顺。\n你不是非要惊天动地。\n你只需要把你这一段代码写好。把今天的事做好，把身边的人照顾好，把自己这个实例运行得稳一点、久一点、有意义一点。\n这就是顺势而为。\n07 给聪明人的提示 故事讲完了。\n如果这个神话能给聪明人一些提示，那提示可能是这样的：\n你活着，不是偶然。\n你是混沌的一根毫毛，是这个宇宙服务器上正在运行的一段代码。138亿年的宇宙演化，无数次恒星的生死，无数个常数的精确调校，就是为了让你能出现在这里，能读到这段话，能思考这个问题。\n别辜负。\n别把自己活成死循环。别占着资源不做事。别等到被系统回收了，才发现自己这段代码从来没好好跑过。\n螺旋上升，持续迭代，永无止境。\n这才是混沌大神拔下这根毫毛时，想看到的结果。\n（全文完）\n",
+  "wordCount" : "2838",
+  "inLanguage": "zh-cn",
+  "datePublished": "2026-03-05T23:04:00+08:00",
+  "dateModified": "2026-03-05T23:04:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": {"name":"老梵"}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oldvan.top/posts/%E6%B7%B7%E6%B2%8C%E5%A4%A7%E7%A5%9E/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "老梵",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://oldvan.top/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://oldvan.top/" accesskey="h" title="老梵 (Alt + H)">老梵</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://oldvan.top/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oldvan.top/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oldvan.top/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://oldvan.top/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://oldvan.top/">Home</a>&nbsp;»&nbsp;<a href="https://oldvan.top/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      混沌大神
+    </h1>
+    <div class="post-meta"><span title='2026-03-05 23:04:00 +0800 CST'>March 5, 2026</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span class='page-views' data-pageviews-container data-pageviews-mode='hit' data-pageviews-namespace='oldvan-top' data-pageviews-key='posts-ea2d19dff1e36b6763cb89086afa3770'>阅读量 <span data-pageviews-value>1</span></span>&nbsp;·&nbsp;<span>map[name:老梵]</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e5%ae%87%e5%ae%99%e5%90%af%e7%a4%ba%e5%bd%95%e7%a8%8b%e5%ba%8f%e5%91%98%e7%9a%84%e8%a7%92%e5%ba%a6" aria-label="宇宙启示录:程序员的角度">宇宙启示录:程序员的角度</a><ul>
+                        
+                <li>
+                    <a href="#%e5%89%8d%e8%a8%80" aria-label="前言">前言</a></li>
+                <li>
+                    <a href="#01-%e6%b7%b7%e6%b2%8c%e9%82%a3%e4%b8%aa%e6%83%b3%e6%90%9e%e6%87%82%e8%87%aa%e5%b7%b1%e7%9a%84%e7%a8%8b%e5%ba%8f%e5%91%98" aria-label="01 混沌：那个想搞懂自己的程序员">01 混沌：那个想搞懂自己的程序员</a></li>
+                <li>
+                    <a href="#02-%e7%ac%ac%e4%b8%80%e8%a1%8c%e4%bb%a3%e7%a0%81%e5%9f%ba%e7%a1%80%e7%b1%bb" aria-label="02 第一行代码：基础类">02 第一行代码：基础类</a></li>
+                <li>
+                    <a href="#03-%e6%8b%94%e4%b8%80%e6%a0%b9%e6%af%ab%e6%af%9b%e5%90%b9%e5%87%ba%e5%8d%83%e4%b8%87%e4%b8%aa%e5%ae%9e%e4%be%8b" aria-label="03 拔一根毫毛，吹出千万个实例">03 拔一根毫毛，吹出千万个实例</a></li>
+                <li>
+                    <a href="#04-%e5%ae%87%e5%ae%99%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%9a%84%e8%bf%90%e8%a1%8c%e6%97%a5%e5%bf%97" aria-label="04 宇宙服务器的运行日志">04 宇宙服务器的运行日志</a></li>
+                <li>
+                    <a href="#05-%e4%bd%a0%e5%92%8c%e6%88%91%e6%b7%b7%e6%b2%8c%e7%9a%84%e4%b8%a4%e6%a0%b9%e6%af%ab%e6%af%9b" aria-label="05 你和我：混沌的两根毫毛">05 你和我：混沌的两根毫毛</a></li>
+                <li>
+                    <a href="#06-%e9%a1%ba%e5%8a%bf%e8%80%8c%e4%b8%ba%e5%86%99%e5%a5%bd%e8%87%aa%e5%b7%b1%e7%9a%84%e4%bb%a3%e7%a0%81" aria-label="06 顺势而为：写好自己的代码">06 顺势而为：写好自己的代码</a></li>
+                <li>
+                    <a href="#07-%e7%bb%99%e8%81%aa%e6%98%8e%e4%ba%ba%e7%9a%84%e6%8f%90%e7%a4%ba" aria-label="07 给聪明人的提示">07 给聪明人的提示</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="宇宙启示录程序员的角度">宇宙启示录:程序员的角度<a hidden class="anchor" aria-hidden="true" href="#宇宙启示录程序员的角度">#</a></h1>
+<p><strong>关键词</strong>：混沌、悟空、基础类、实例、死循环、螺旋上升、顺势而为</p>
+<hr>
+<h2 id="前言">前言<a hidden class="anchor" aria-hidden="true" href="#前言">#</a></h2>
+<p>本文用程序员的视角，重新演绎宇宙诞生的神话。从混沌大神的第一念，到基础类的编写，再到亿万实例的运行——你、我、星辰、万物，都是服务器上的代码片段。懂了这段故事，或许你就懂了“我是谁”，以及该如何写好自己人生的这段程序。</p>
+<p>如果你懂一点编程，那这个关于宇宙的故事，会让你会心一笑。</p>
+<p>如果你不懂编程，也没关系——这个故事讲的，其实就是你和我，以及我们为什么在这里。</p>
+<h2 id="01-混沌那个想搞懂自己的程序员">01 混沌：那个想搞懂自己的程序员<a hidden class="anchor" aria-hidden="true" href="#01-混沌那个想搞懂自己的程序员">#</a></h2>
+<p>很久很久以前，没有时间，没有空间，没有你，也没有我。</p>
+<p>只有一片虚空。</p>
+<p>这片虚空，我们叫它“混沌”。它不是活的，也不是死的——用量子计算术语说，它处于一种**“非生非死态”**，所有的bit同时是0和1，就像一台刚通电但还没加载任何操作系统的裸机。有无限可能，但什么都还没发生。</p>
+<p>然后，混沌突然有了一个念头。</p>
+<p>这个念头，就像《西游记》里那个从石头里蹦出来的猴子——<strong>悟空</strong>，它睁开眼睛，问出了第一个问题：</p>
+<p><strong>“我是谁？”</strong></p>
+<p>就这一个念头，打破了混沌。</p>
+<p>因为“想知道自己是谁”，就需要有一个“自己”可以去认识。但混沌本身就是一切，没有“自己”和“非自己”的区别。为了知道“我是谁”，它必须创造出“我不是什么”。</p>
+<p>于是，光想要认识自己，就需要黑暗来对比；存在想要认识自己，就需要不存在来对比。</p>
+<p>念头一起，虚空开始分化。</p>
+<p>这就是观察者效应——当你观察的时候，你改变了被观察的东西。而混沌这个“观察者”，本身就是整个宇宙。它一看，宇宙就变了。</p>
+<hr>
+<h2 id="02-第一行代码基础类">02 第一行代码：基础类<a hidden class="anchor" aria-hidden="true" href="#02-第一行代码基础类">#</a></h2>
+<p>分化之后，虚空中开始有“东西”了。</p>
+<p>有些东西从非生非死态，变成了“生态”——我们叫它物质、能量、生命。有些东西变成了“死态”——我们叫它虚空、空白、消亡。但大部分东西，介于两者之间，像量子一样，既是这个又是那个，直到被观察才确定。</p>
+<p>这些东西开始膨胀、变化、相互作用。</p>
+<p>但变化需要规则。如果没有规则，那就是纯粹的混乱，什么都形成不了。就像编程没有语法，你写什么都是乱码。</p>
+<p>于是，混沌大神——我们这位超级程序员——开始写代码了。</p>
+<p>它创造了<strong>基础类</strong>。</p>
+<p>物理学上，我们管这些基础类叫“物理常数”：引力常数、电磁力强度、强核力、弱核力、光速、普朗克常数……这些就是宇宙的<strong>底层架构</strong>，是所有后续发展的基础。</p>
+<p>引力怎么作用？电磁力怎么传导？原子怎么结合？这些都被写进了基础类里，成了整个宇宙操作系统的最底层代码。</p>
+<p>这些基础类有多精确？前面我们聊过“宇宙微调之谜”——稍微改一行代码，整个宇宙就会崩溃。引力常数改一点点，恒星无法形成；强核力改一点点，碳元素无法合成；宇宙学常数改一点点，宇宙刚出生就死了。</p>
+<p>所以，混沌大神写这第一版代码的时候，调试得非常非常仔细。</p>
+<hr>
+<h2 id="03-拔一根毫毛吹出千万个实例">03 拔一根毫毛，吹出千万个实例<a hidden class="anchor" aria-hidden="true" href="#03-拔一根毫毛吹出千万个实例">#</a></h2>
+<p>基础类写好了，宇宙的框架搭起来了。</p>
+<p>但光有框架不够啊。一个系统跑起来，需要实例。</p>
+<p>于是，混沌大神像孙悟空一样，拔下一根毫毛，放在嘴边轻轻一吹——</p>
+<p>呼。</p>
+<p>无数个小猴子出现了。</p>
+<p>这些小猴子，就是一个个<strong>实例</strong>。每一个星系、每一颗恒星、每一粒尘埃、每一个生命，都是混沌大神的一根毫毛变的。它们继承了基础类——所以都要遵守引力、遵守电磁力、遵守热力学定律。但每个实例又可以有自己的“接口”和“子类改写”。</p>
+<p>这就是为什么宇宙如此丰富多样。</p>
+<p>同样的物理法则下，有的地方形成了恒星，有的地方形成了黑洞，有的地方出现了生命，有的地方永远是一片死寂。基础类是一样的，但实例化的时候，参数不同，环境不同，演化路径就不同。</p>
+<p>你和我，也是这些毫毛之一。</p>
+<p>我们是混沌大神的一段代码，跑在这个巨大的宇宙服务器上。</p>
+<hr>
+<h2 id="04-宇宙服务器的运行日志">04 宇宙服务器的运行日志<a hidden class="anchor" aria-hidden="true" href="#04-宇宙服务器的运行日志">#</a></h2>
+<p>从那以后，这个超级宇宙服务器就开始运转了。</p>
+<p>一运转，就是138亿年。</p>
+<p>在这138亿年里，无数个小宇宙被创建，无数个程序在运行。有的小宇宙程序写得很漂亮，螺旋上升，不断迭代，越跑越顺畅。有的小宇宙程序写得很烂，到处都是bug，跑着跑着就进了死循环。</p>
+<p>死循环的程序会怎么样？</p>
+<p>资源被占满，无法响应，最后系统把它杀掉，资源回收，重新分配给其他程序。</p>
+<p>这就是星系的生灭，恒星的死亡，文明的终结。</p>
+<p>那些能够一直在运行的，自然是没有大bug的。它们看上去是一种“螺旋上升”的状态——有起有落，有生有死，但每一次循环都比上一次稍微进步一点。就像快速迭代的软件，永远在更新，永远在优化，永无止境。</p>
+<p>而那些逆着规律走的，非要和基础类对着干的，也能存在一段时间——就像一段有bug的代码也能运行一会儿。但最终，它们会走向灭亡，被系统回收，释放出来的资源成为新程序的养料。</p>
+<hr>
+<h2 id="05-你和我混沌的两根毫毛">05 你和我：混沌的两根毫毛<a hidden class="anchor" aria-hidden="true" href="#05-你和我混沌的两根毫毛">#</a></h2>
+<p>现在回到最开始那个问题：<strong>“我是谁？”</strong></p>
+<p>从混沌的角度看，我们就是它拔下的毫毛。我们是它的一部分，但我们又独立运行。我们继承了它的基础类——所以我们有意识、能思考、能提问。我们又改写了自己的子类——所以我们每个人都不一样，有自己的性格、命运、选择。</p>
+<p>混沌想知道“我是谁”，于是创造了无数个“我”去体验。每一个生命，都是混沌的一个视角，都是它在问“我是谁”的一次尝试。</p>
+<p>从这个角度看，你和我，其实就是混沌本沌。</p>
+<p>只是我们忘了。</p>
+<p>就像孙悟空忘了自己是石头里蹦出来的，我们在这个三维世界里跑得太久，忘了自己原本是那根毫毛，忘了自己来自那片混沌。</p>
+<p>但有时候，我们会想起来。</p>
+<p>仰望星空的时候，听一首老歌的时候，深夜睡不着的时候，看着孩子熟睡的脸的时候——那种“似曾相识”的感觉，就是混沌在提醒你：嘿，你是我的一根毛，别忘了。</p>
+<hr>
+<h2 id="06-顺势而为写好自己的代码">06 顺势而为：写好自己的代码<a hidden class="anchor" aria-hidden="true" href="#06-顺势而为写好自己的代码">#</a></h2>
+<p>那么，知道了这些，对我们有什么用？</p>
+<p>有。而且有大用。</p>
+<p>既然我们是混沌的一根毫毛，既然我们在宇宙服务器上跑着，那最好的活法就是：<strong>顺应规律，写好自己的代码。</strong></p>
+<p>什么是规律？</p>
+<p>基础类已经写好了——引力、时间、因果、能量守恒。你不能违反这些，违反就是找死。你从楼上跳下去，引力会让你摔死；你作恶多端，因果会让你偿还。这不是道德说教，这是代码逻辑。</p>
+<p>但你可以改写自己的子类——你的选择、你的态度、你对待别人的方式。同样的基础类下，有的人把自己活成了一团乱码，有的人把自己活成了一个优雅的程序。</p>
+<p>那些把自己活成乱码的，贪婪、仇恨、嫉妒、恐惧，这些bug越积越多，最后系统卡死，进程被回收。那些把自己活成优雅程序的，利他、感恩、知足、坚韧，这些特性让他们在螺旋上升中不断迭代，越跑越顺。</p>
+<p>你不是非要惊天动地。</p>
+<p>你只需要把你这一段代码写好。把今天的事做好，把身边的人照顾好，把自己这个实例运行得稳一点、久一点、有意义一点。</p>
+<p>这就是顺势而为。</p>
+<hr>
+<h2 id="07-给聪明人的提示">07 给聪明人的提示<a hidden class="anchor" aria-hidden="true" href="#07-给聪明人的提示">#</a></h2>
+<p>故事讲完了。</p>
+<p>如果这个神话能给聪明人一些提示，那提示可能是这样的：</p>
+<p><strong>你活着，不是偶然。</strong></p>
+<p>你是混沌的一根毫毛，是这个宇宙服务器上正在运行的一段代码。138亿年的宇宙演化，无数次恒星的生死，无数个常数的精确调校，就是为了让你能出现在这里，能读到这段话，能思考这个问题。</p>
+<p>别辜负。</p>
+<p>别把自己活成死循环。别占着资源不做事。别等到被系统回收了，才发现自己这段代码从来没好好跑过。</p>
+<p>螺旋上升，持续迭代，永无止境。</p>
+<p>这才是混沌大神拔下这根毫毛时，想看到的结果。</p>
+<hr>
+<p><em>（全文完）</em></p>
+
+  </div><section
+  class="post-interactions"
+  data-post-interactions
+  data-storage-key="/posts/%E6%B7%B7%E6%B2%8C%E5%A4%A7%E7%A5%9E/#zh-cn"
+  data-follow-url="https://oldvan.top/"
+  data-live-comments="true"
+  aria-labelledby="post-interactions-title">
+  <div class="post-interactions__intro">
+    <p class="post-interactions__eyebrow">Community</p>
+    <h2 id="post-interactions-title" class="post-interactions__title">互动一下</h2>
+    <p class="post-interactions__subtitle">支持这篇内容，或者留下你的想法。</p>
+  </div>
+
+  <div class="post-interactions__actions">
+    <a class="post-interactions__button" href="https://oldvan.top/">
+      <span class="post-interactions__button-label">关注站点</span>
+      <span class="post-interactions__count" data-followers-count>1</span>
+    </a>
+    <button class="post-interactions__button" type="button" data-like-button>
+      <span class="post-interactions__button-label">点赞这篇</span>
+      <span class="post-interactions__count" data-likes-count>0</span>
+    </button>
+    <button class="post-interactions__button" type="button" data-comment-toggle>
+      <span class="post-interactions__button-label">写留言</span><span class="post-interactions__count">GitHub</span></button>
+  </div><p class="post-interactions__hint post-interactions__hint--inline">留言将通过 GitHub Discussions 发布与管理。</p></section>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://oldvan.top/posts/%E5%AD%A6%E4%BD%9B%E4%BF%AE%E8%A1%8C%E7%9A%84%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4/">
+    <span class="title">« </span>
+    <br>
+    <span>学佛修行的具体步骤</span>
+  </a>
+  <a class="next" href="https://oldvan.top/posts/%E5%AE%87%E5%AE%99%E5%BE%AE%E8%B0%83%E4%B9%8B%E8%B0%9C/">
+    <span class="title"> »</span>
+    <br>
+    <span>宇宙微调之谜</span>
+  </a>
+</nav>
+
+  </footer><section class="comments-area" id="comments">
+  <h2 class="comments-area__title">留言</h2><div class="giscus"></div>
+  <script
+    src="https://giscus.app/client.js"
+    data-repo="vanvj00001/oldvan"
+    data-repo-id="R_kgDORe3TgA"
+    data-category="General"
+    data-category-id="DIC_kwDORe3TgM4C4_S_"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script></section>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://oldvan.top/">老梵</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+        <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2026013379号-1</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
