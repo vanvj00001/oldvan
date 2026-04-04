@@ -1,0 +1,22 @@
+# Continue Config for NVIDIA Proxy
+# Reference: https://docs.continue.dev/reference
+
+name: NVIDIA Proxy Config
+version: 1.0.0
+schema: v1
+
+# Define which models can be used
+models:
+  - name: NVIDIA Llama 3.1 405B
+    provider: openai-compatible
+    model: nvidia-proxy/llama-3.1-405b
+    apiBase: http://localhost:8080
+    apiKey: sk-no-key-required
+
+# 自动补全模型 (可选)
+tabAutocompleteModel:
+  name: NVIDIA Llama 3.1 405B
+  provider: openai-compatible
+  model: nvidia-proxy/llama-3.1-405b
+  apiBase: http://localhost:8080
+  apiKey: sk-no-key-required

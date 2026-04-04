@@ -1,0 +1,14 @@
+models:
+  - name: NVIDIA Llama 3.1 405B (Local Proxy)
+    provider: nvidia
+    model: meta/llama-3.1-405b-instruct  # 这里填 NVIDIA 的真实模型 ID
+    apiBase: http://localhost:8080       # 指向你的本地代理
+    apiKey: sk-no-key-required           # 任意填写
+
+# 如果有 tabAutocompleteModel 也一并修改
+tabAutocompleteModel:
+  name: NVIDIA Llama 3.1 405B (Local Proxy)
+  provider: nvidia
+  model: meta/llama-3.1-405b-instruct
+  apiBase: http://localhost:8080
+  apiKey: sk-no-key-required

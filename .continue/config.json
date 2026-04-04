@@ -1,0 +1,19 @@
+{
+  "models": [
+    {
+      "title": "NVIDIA Llama 3.1 405B",
+      "provider": "openai-compatible",
+      "model": "nvidia-proxy/llama-3.1-405b",
+      "apiBase": "http://localhost:8080",
+      "apiKey": "sk-no-key-required"
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "NVIDIA Llama 3.1 405B",
+    "provider": "openai-compatible",
+    "model": "nvidia-proxy/llama-3.1-405b",
+    "apiBase": "http://localhost:8080",
+    "apiKey": "sk-no-key-required"
+  },
+  "allowAnonymousTelemetry": false
+}
