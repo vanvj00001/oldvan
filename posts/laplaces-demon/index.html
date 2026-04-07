@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>拉普拉斯恶魔 | 老梵</title>
+<meta name="keywords" content="拉普拉斯恶魔, 决定论, 自由意志, 量子力学, 不确定性原理, 因果关系, 混沌理论, 意识, 多元宇宙, 科学哲学, 牛顿力学, 爱因斯坦">
+<meta name="description" content="拉普拉斯恶魔：决定论与自由意志的百年交锋
+关键词：拉普拉斯恶魔、决定论、自由意志、量子力学、不确定性原理、因果关系、混沌理论、意识、多元宇宙、科学哲学、牛顿力学、爱因斯坦
+前言
+宇宙是一台精密钟表吗？人类命运早已注定？决定论与自由意志的百年交锋，暗藏着一个关于宇宙与人类的终极之谜。在1814年，法国数学家皮埃尔-西蒙·拉普拉斯提出了一个震撼科学界的思想实验：如果存在一个“恶魔”，知晓宇宙中所有粒子在某一时刻的位置和动量，那么它就能计算出宇宙的过去与未来。这个设想中的“恶魔”不仅挑战了人类对科学的认知，更是直接冲击了我们对自由意志的理解——如果宇宙的一切都遵循严格的物理定律，那么我们的选择是否真的属于自己？还是说，从宇宙大爆炸那一刻起，一切早已注定？">
+<meta name="author" content="map[name:老梵]">
+<link rel="canonical" href="https://vanvj00001.github.io/oldvan/posts/laplaces-demon/">
+<link crossorigin="anonymous" href="/oldvan/assets/css/stylesheet.c1e5b223a196d22178b890862d4992380c762d472c5a5d8a52434c7bb33cea1a.css" integrity="sha256-weWyI6GW0iF4uJCGLUmSOAx2LUcsWl2KUkNMe7M86ho=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/oldvan/js/post-interactions.min.2d187c2a05e9cdd9aa92948752e3fc18da7dbaaa282c54acee46e6d75516b409.js" integrity="sha256-LRh8KgXpzdmqkpSHUuP8GNp9uqooLFSs7kbm11UWtAk="></script>
+<script>
+    window.__PAGE_VIEWS_ENDPOINT = "https://oldvan-page-views.vanvjvanvj.workers.dev";
+</script>
+<script defer crossorigin="anonymous" src="/oldvan/js/page-views.min.3c88c1d0508c8107536fcc2398fbc4e5370d1b217e21a9c7bf958fd81a6860af.js" integrity="sha256-PIjB0FCMgQdTb8wjmPvE5TcNGyF&#43;IanHv5WP2BpoYK8="></script>
+<link rel="icon" href="https://vanvj00001.github.io/oldvan/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://vanvj00001.github.io/oldvan/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://vanvj00001.github.io/oldvan/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://vanvj00001.github.io/oldvan/apple-touch-icon.png">
+<link rel="mask-icon" href="https://vanvj00001.github.io/oldvan/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh-cn" href="https://vanvj00001.github.io/oldvan/posts/laplaces-demon/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://vanvj00001.github.io/oldvan/posts/laplaces-demon/">
+  <meta property="og:site_name" content="老梵">
+  <meta property="og:title" content="拉普拉斯恶魔">
+  <meta property="og:description" content="拉普拉斯恶魔：决定论与自由意志的百年交锋 关键词：拉普拉斯恶魔、决定论、自由意志、量子力学、不确定性原理、因果关系、混沌理论、意识、多元宇宙、科学哲学、牛顿力学、爱因斯坦
+前言
+宇宙是一台精密钟表吗？人类命运早已注定？决定论与自由意志的百年交锋，暗藏着一个关于宇宙与人类的终极之谜。在1814年，法国数学家皮埃尔-西蒙·拉普拉斯提出了一个震撼科学界的思想实验：如果存在一个“恶魔”，知晓宇宙中所有粒子在某一时刻的位置和动量，那么它就能计算出宇宙的过去与未来。这个设想中的“恶魔”不仅挑战了人类对科学的认知，更是直接冲击了我们对自由意志的理解——如果宇宙的一切都遵循严格的物理定律，那么我们的选择是否真的属于自己？还是说，从宇宙大爆炸那一刻起，一切早已注定？">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-07T22:00:00+08:00">
+    <meta property="article:modified_time" content="2026-02-07T22:00:00+08:00">
+    <meta property="article:tag" content="拉普拉斯恶魔">
+    <meta property="article:tag" content="决定论">
+    <meta property="article:tag" content="自由意志">
+    <meta property="article:tag" content="量子力学">
+    <meta property="article:tag" content="不确定性原理">
+    <meta property="article:tag" content="因果关系">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="拉普拉斯恶魔">
+<meta name="twitter:description" content="拉普拉斯恶魔：决定论与自由意志的百年交锋
+关键词：拉普拉斯恶魔、决定论、自由意志、量子力学、不确定性原理、因果关系、混沌理论、意识、多元宇宙、科学哲学、牛顿力学、爱因斯坦
+前言
+宇宙是一台精密钟表吗？人类命运早已注定？决定论与自由意志的百年交锋，暗藏着一个关于宇宙与人类的终极之谜。在1814年，法国数学家皮埃尔-西蒙·拉普拉斯提出了一个震撼科学界的思想实验：如果存在一个“恶魔”，知晓宇宙中所有粒子在某一时刻的位置和动量，那么它就能计算出宇宙的过去与未来。这个设想中的“恶魔”不仅挑战了人类对科学的认知，更是直接冲击了我们对自由意志的理解——如果宇宙的一切都遵循严格的物理定律，那么我们的选择是否真的属于自己？还是说，从宇宙大爆炸那一刻起，一切早已注定？">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://vanvj00001.github.io/oldvan/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "拉普拉斯恶魔",
+      "item": "https://vanvj00001.github.io/oldvan/posts/laplaces-demon/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "拉普拉斯恶魔",
+  "name": "拉普拉斯恶魔",
+  "description": "拉普拉斯恶魔：决定论与自由意志的百年交锋 关键词：拉普拉斯恶魔、决定论、自由意志、量子力学、不确定性原理、因果关系、混沌理论、意识、多元宇宙、科学哲学、牛顿力学、爱因斯坦\n前言\n宇宙是一台精密钟表吗？人类命运早已注定？决定论与自由意志的百年交锋，暗藏着一个关于宇宙与人类的终极之谜。在1814年，法国数学家皮埃尔-西蒙·拉普拉斯提出了一个震撼科学界的思想实验：如果存在一个“恶魔”，知晓宇宙中所有粒子在某一时刻的位置和动量，那么它就能计算出宇宙的过去与未来。这个设想中的“恶魔”不仅挑战了人类对科学的认知，更是直接冲击了我们对自由意志的理解——如果宇宙的一切都遵循严格的物理定律，那么我们的选择是否真的属于自己？还是说，从宇宙大爆炸那一刻起，一切早已注定？\n",
+  "keywords": [
+    "拉普拉斯恶魔", "决定论", "自由意志", "量子力学", "不确定性原理", "因果关系", "混沌理论", "意识", "多元宇宙", "科学哲学", "牛顿力学", "爱因斯坦"
+  ],
+  "articleBody": "拉普拉斯恶魔：决定论与自由意志的百年交锋 关键词：拉普拉斯恶魔、决定论、自由意志、量子力学、不确定性原理、因果关系、混沌理论、意识、多元宇宙、科学哲学、牛顿力学、爱因斯坦\n前言\n宇宙是一台精密钟表吗？人类命运早已注定？决定论与自由意志的百年交锋，暗藏着一个关于宇宙与人类的终极之谜。在1814年，法国数学家皮埃尔-西蒙·拉普拉斯提出了一个震撼科学界的思想实验：如果存在一个“恶魔”，知晓宇宙中所有粒子在某一时刻的位置和动量，那么它就能计算出宇宙的过去与未来。这个设想中的“恶魔”不仅挑战了人类对科学的认知，更是直接冲击了我们对自由意志的理解——如果宇宙的一切都遵循严格的物理定律，那么我们的选择是否真的属于自己？还是说，从宇宙大爆炸那一刻起，一切早已注定？\n一、天才构想：拉普拉斯恶魔如何诞生于科学启蒙时代？ 18世纪末至19世纪初，经典力学发展到黄金时期。牛顿力学能够精确预测行星轨道、潮汐变化甚至彗星回归时间，自然界似乎完全遵循着确定性法则。这种成功让当时的科学家们相信，宇宙的运行就像一台精密的钟表，只要知道初始条件，就能推演出一切未来状态。\n拉普拉斯在其著作《概率论》中提出这一著名设想：“我们可以把宇宙的现状看作是其过去的果与其未来的因。如果一个智能体在某一时刻知道自然界中的所有作用力以及组成自然界的一切物体的位置，那么它就能用一个公式涵盖宇宙中最大天体和最小原子的运动。”这个“智能体”后来被称为“拉普拉斯恶魔”，成为科学决定论的终极代言人。拉普拉斯坚信，宇宙如同一台精密钟表，只要掌握足够信息，就能预测一切。\n这一思想并非拉普拉斯的独创，但他是第一个将其以如此清晰、数学化的方式表达出来的人。在启蒙运动理性至上的氛围中，拉普拉斯恶魔象征着人类理性能够最终洞悉宇宙一切奥秘的雄心。正如哲学家康德所说：“给我物质，我将用它造出一个宇宙。”这种自信植根于牛顿物理学取得的辉煌成就。\n二、决定论巅峰：物理定律真的能决定宇宙万物吗？ 拉普拉斯恶魔代表着决定论的极致形态——基于经典力学框架，宇宙万物运动都遵循严格的因果关系。在这种观点下，宇宙的过去、现在和未来像一个早已写好的剧本，每一个事件都是前一个事件的必然结果。没有任何意外，没有任何真正的随机性，一切都按照既定的轨道运行。\n这种思想在科学界引发了巨大共鸣。爱因斯坦后来也表达过类似观点：“上帝不掷骰子”，表明了他对宇宙确定性的信念。从蝴蝶扇动翅膀到星系演化，理论上都可以通过物理定律来预测。在经典物理学的世界里，如果有一个足够强大的智能体掌握了所有初始条件和物理法则，那么未来就是完全透明的。\n然而，这种极端决定论也带来了哲学困境：如果宇宙的一切都是预先设定好的，那么人类的选择和行动还有什么意义？我们的努力和奋斗是否只是幻觉？如果一个人注定要犯罪，那么法律惩罚他还有什么合理性？如果一个人注定要成功，那么他的勤奋又有什么价值？这些问题直接冲击了道德、法律、教育等人类社会的基础。\n三、自由意志危机：人类是宇宙剧本的提线木偶吗？ 拉普拉斯恶魔最令人不安的暗示在于：自由意志可能并不存在。如果宇宙的一切运动都可以被预测，那么包括人类思维在内的所有过程都只是粒子运动的产物。我们的“决定”不过是大脑中神经元的电化学过程，而这些过程又完全遵循物理定律。从这一角度看，所谓的“自由选择”不过是一种主观体验，而非客观事实。\n哲学家们对此展开了激烈辩论。决定论者认为，自由意志只是一种错觉，我们的“选择”实际上是由先前的物理状态决定的。斯宾诺莎曾言：“人们相信他们是自由的，因为他们意识到自己的意愿和欲望，而忽略了导致他们产生意愿和欲望的原因。”相容论者则试图调和矛盾，认为决定论与自由意志可以共存——即使在确定性的宇宙中，我们仍然能够做出选择，因为“自由”指的是不被外部强制，而不是不被因果决定。\n神经科学家们通过实验发现，在人意识到自己做出决定之前，大脑已经开始了相关活动。本杰明·利贝特在20世纪80年代进行的著名实验表明，在受试者报告“意识到自己决定移动手指”之前约0.3秒，大脑就已经出现了准备电位。这似乎支持了决定论的观点：我们的“选择”实际上是由大脑的物理状态预先决定的，意识只是事后为这个决定“编造”理由。\n四、量子革命：不确定性原理如何摧毁拉普拉斯恶魔？ 20世纪初，量子力学的出现彻底改变了物理学图景。海森堡提出的不确定性原理表明：我们无法同时精确知道一个粒子的位置和动量——这直接击中了拉普拉斯恶魔的核心假设。如果要预测未来，恶魔需要知道所有粒子精确的位置和动量，但量子力学告诉我们，这种精确信息在原理上就是不可获得的。不是因为我们技术不够，而是宇宙本身就没有同时确定的位置和动量。\n量子力学揭示的微观世界是概率性的，而非确定性的。粒子行为似乎具有内在随机性，量子跃迁、叠加态等现象无法用经典决定论解释。例如，一个放射性原子何时衰变是真正的随机事件，没有任何隐藏变量可以预先确定它的衰变时刻。这意味着，即使有一个恶魔，它也无法预测原子衰变的精确时间。\n然而，有趣的是，当代科学对因果关系的理解也在深化。在某些情况下，果因论（效果先于原因）似乎也能成立，特别是在时间对称性的视角下。量子纠缠现象更是挑战了传统的因果观念——两个纠缠粒子即使相隔极远，也能瞬间影响彼此。这种“幽灵般的超距作用”让爱因斯坦深感不安，但实验已经反复证实了它的存在。\n五、意识谜题：现代科学如何重新审视拉普拉斯恶魔？ 尽管量子力学动摇了拉普拉斯恶魔的科学基础，但这一思想实验的价值依然存在。它促使我们思考：意识在宇宙中扮演什么角色？观察者效应表明，在量子层面，观察行为本身会影响被观察对象。著名的双缝实验显示，电子的行为会因是否被观测而改变——当没有观测时，电子表现出波动性；当有观测时，电子表现出粒子性。这是否意味着意识在物理现实中扮演了某种主动角色？\n一些科学家提出，意识可能是宇宙中的基本要素之一。如果这样，那么拉普拉斯恶魔的预测能力即使理论上可能，实际上也无法实现——因为预测行为本身就会改变宇宙状态。一个包含观测者的宇宙，与一个没有观测者的纯物理宇宙，遵循不同的规则。这让人联想到量子力学中的“参与性宇宙”概念：我们不仅是宇宙的旁观者，也是宇宙的共创者。\n现代复杂系统理论也表明，即使宇宙本质是决定性的，复杂系统的混沌行为也使得长期预测实际上不可能。就像天气系统一样，初始条件的微小差异会导致结果的巨大偏差——这就是著名的“蝴蝶效应”。一个拉普拉斯恶魔如果要对宇宙进行精确预测，它需要无限精度的初始条件，而这在物理上不可能。即使没有量子不确定性，经典混沌也足以让决定论预测在实践中失效。\n六、宇宙命运：人类在决定论宇宙中的位置与意义 拉普拉斯恶魔虽然不再被现代物理学完全接受，但它仍然促使我们思考宇宙的本质和人类的地位。即使在确定性宇宙中，人类的意义也不一定消失——也许意义不在于选择是否自由，而在于体验的真实性。我们感受到的喜怒哀乐、爱恨情仇，无论是否被物理定律预先决定，对于正在感受的我们而言，都是无比真实的。\n当前物理学界正在尝试统一量子力学与广义相对论，寻找“万物理论”。一些物理学家提出，时间可能不是基本的，而是涌现的。如果这样，那么传统的因果观念可能需要彻底重构。在某些理论中，过去、现在和未来同时存在，我们的“选择”不过是穿越时空固定路径上的体验。这种观点既令人震撼，也令人困惑。\n多元宇宙理论则提供了另一种可能：每一个选择实际上都在一个平行宇宙中实现，这样既保留了决定论（在每个宇宙中物理定律仍然确定），又为“选择”提供了容身之所。当我们面临A或B的抉择时，宇宙分裂为两个分支，一个分支中的我选择了A，另一个分支中的我选择了B。在这样的图景中，自由意志以一种新的方式存在——我们无法控制自己进入哪个分支，但每个分支中的“我”都体验到了自己的选择。\n七、超越决定论与自由意志：一种新的视角 或许，决定论与自由意志的二元对立本身就是一种思维陷阱。一些哲学家和科学家提出，我们应当超越这种非此即彼的框架，重新定义问题。例如，丹尼尔·丹尼特认为，自由意志不是一种神秘的超自然能力，而是人类在社会互动中演化出来的一种功能。即使我们的行为完全由物理过程决定，我们仍然可以谈论“自由”——只要这种自由指的是能够理性地反思、调整自己的行为，而不是指能够违反物理定律。\n另一种观点来自东方哲学。佛教的“缘起性空”认为，一切现象都是因缘和合而生，没有独立自存的“我”，因此也没有一个需要“自由”的主体。在这种视角下，自由意志的问题被消解了：不是因为决定论为真，而是因为“意志”和“自由”都是概念投射，没有一个固定的实体去拥有或失去自由。\n结语 拉普拉斯恶魔从提出到今天已经过去了两个多世纪，但它引发的问题依然活跃在科学和哲学前沿。它提醒我们，人类对宇宙的认知仍然十分有限。量子力学告诉我们世界可能具有根本的随机性，混沌理论告诉我们即使决定性的系统也无法精确预测，意识科学则告诉我们观察者不能被排除在物理图景之外。\n或许正如拉普拉斯所说：“我们已知的是那么少，未知的是那么多。”在探索宇宙奥秘的道路上，每一个答案都会引出新的问题。而这种永恒的探索，正是科学最迷人的地方。仰望星空，我们不禁思考：宇宙是纯粹机械的，还是包含更多奥秘？人类是宇宙的旁观者，还是参与者？这些问题，仍然等待着我们去解答。无论答案如何，追问本身已经是我们存在的意义之一。\n（全文约3180字）\n",
+  "wordCount" : "3823",
+  "inLanguage": "zh-cn",
+  "datePublished": "2026-02-07T22:00:00+08:00",
+  "dateModified": "2026-02-07T22:00:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": {"name":"老梵"}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://vanvj00001.github.io/oldvan/posts/laplaces-demon/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "老梵",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vanvj00001.github.io/oldvan/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://vanvj00001.github.io/oldvan/" accesskey="h" title="老梵 (Alt + H)">老梵</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://vanvj00001.github.io/oldvan/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://vanvj00001.github.io/oldvan/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://vanvj00001.github.io/oldvan/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://vanvj00001.github.io/oldvan/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://vanvj00001.github.io/oldvan/">Home</a>&nbsp;»&nbsp;<a href="https://vanvj00001.github.io/oldvan/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      拉普拉斯恶魔
+    </h1>
+    <div class="post-meta"><span title='2026-02-07 22:00:00 +0800 CST'>February 7, 2026</span>&nbsp;·&nbsp;<span>8 min</span>&nbsp;·&nbsp;<span class='page-views' data-pageviews-container data-pageviews-mode='hit' data-pageviews-namespace='oldvan-top' data-pageviews-key='posts-372291ca48c75c3740599ed5706f16fa'>阅读量 <span data-pageviews-value>1</span></span>&nbsp;·&nbsp;<span>map[name:老梵]</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e6%8b%89%e6%99%ae%e6%8b%89%e6%96%af%e6%81%b6%e9%ad%94%e5%86%b3%e5%ae%9a%e8%ae%ba%e4%b8%8e%e8%87%aa%e7%94%b1%e6%84%8f%e5%bf%97%e7%9a%84%e7%99%be%e5%b9%b4%e4%ba%a4%e9%94%8b" aria-label="拉普拉斯恶魔：决定论与自由意志的百年交锋">拉普拉斯恶魔：决定论与自由意志的百年交锋</a><ul>
+                        
+                <li>
+                    <a href="#%e4%b8%80%e5%a4%a9%e6%89%8d%e6%9e%84%e6%83%b3%e6%8b%89%e6%99%ae%e6%8b%89%e6%96%af%e6%81%b6%e9%ad%94%e5%a6%82%e4%bd%95%e8%af%9e%e7%94%9f%e4%ba%8e%e7%a7%91%e5%ad%a6%e5%90%af%e8%92%99%e6%97%b6%e4%bb%a3" aria-label="一、天才构想：拉普拉斯恶魔如何诞生于科学启蒙时代？">一、天才构想：拉普拉斯恶魔如何诞生于科学启蒙时代？</a></li>
+                <li>
+                    <a href="#%e4%ba%8c%e5%86%b3%e5%ae%9a%e8%ae%ba%e5%b7%85%e5%b3%b0%e7%89%a9%e7%90%86%e5%ae%9a%e5%be%8b%e7%9c%9f%e7%9a%84%e8%83%bd%e5%86%b3%e5%ae%9a%e5%ae%87%e5%ae%99%e4%b8%87%e7%89%a9%e5%90%97" aria-label="二、决定论巅峰：物理定律真的能决定宇宙万物吗？">二、决定论巅峰：物理定律真的能决定宇宙万物吗？</a></li>
+                <li>
+                    <a href="#%e4%b8%89%e8%87%aa%e7%94%b1%e6%84%8f%e5%bf%97%e5%8d%b1%e6%9c%ba%e4%ba%ba%e7%b1%bb%e6%98%af%e5%ae%87%e5%ae%99%e5%89%a7%e6%9c%ac%e7%9a%84%e6%8f%90%e7%ba%bf%e6%9c%a8%e5%81%b6%e5%90%97" aria-label="三、自由意志危机：人类是宇宙剧本的提线木偶吗？">三、自由意志危机：人类是宇宙剧本的提线木偶吗？</a></li>
+                <li>
+                    <a href="#%e5%9b%9b%e9%87%8f%e5%ad%90%e9%9d%a9%e5%91%bd%e4%b8%8d%e7%a1%ae%e5%ae%9a%e6%80%a7%e5%8e%9f%e7%90%86%e5%a6%82%e4%bd%95%e6%91%a7%e6%af%81%e6%8b%89%e6%99%ae%e6%8b%89%e6%96%af%e6%81%b6%e9%ad%94" aria-label="四、量子革命：不确定性原理如何摧毁拉普拉斯恶魔？">四、量子革命：不确定性原理如何摧毁拉普拉斯恶魔？</a></li>
+                <li>
+                    <a href="#%e4%ba%94%e6%84%8f%e8%af%86%e8%b0%9c%e9%a2%98%e7%8e%b0%e4%bb%a3%e7%a7%91%e5%ad%a6%e5%a6%82%e4%bd%95%e9%87%8d%e6%96%b0%e5%ae%a1%e8%a7%86%e6%8b%89%e6%99%ae%e6%8b%89%e6%96%af%e6%81%b6%e9%ad%94" aria-label="五、意识谜题：现代科学如何重新审视拉普拉斯恶魔？">五、意识谜题：现代科学如何重新审视拉普拉斯恶魔？</a></li>
+                <li>
+                    <a href="#%e5%85%ad%e5%ae%87%e5%ae%99%e5%91%bd%e8%bf%90%e4%ba%ba%e7%b1%bb%e5%9c%a8%e5%86%b3%e5%ae%9a%e8%ae%ba%e5%ae%87%e5%ae%99%e4%b8%ad%e7%9a%84%e4%bd%8d%e7%bd%ae%e4%b8%8e%e6%84%8f%e4%b9%89" aria-label="六、宇宙命运：人类在决定论宇宙中的位置与意义">六、宇宙命运：人类在决定论宇宙中的位置与意义</a></li>
+                <li>
+                    <a href="#%e4%b8%83%e8%b6%85%e8%b6%8a%e5%86%b3%e5%ae%9a%e8%ae%ba%e4%b8%8e%e8%87%aa%e7%94%b1%e6%84%8f%e5%bf%97%e4%b8%80%e7%a7%8d%e6%96%b0%e7%9a%84%e8%a7%86%e8%a7%92" aria-label="七、超越决定论与自由意志：一种新的视角">七、超越决定论与自由意志：一种新的视角</a></li>
+                <li>
+                    <a href="#%e7%bb%93%e8%af%ad" aria-label="结语">结语</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="拉普拉斯恶魔决定论与自由意志的百年交锋">拉普拉斯恶魔：决定论与自由意志的百年交锋<a hidden class="anchor" aria-hidden="true" href="#拉普拉斯恶魔决定论与自由意志的百年交锋">#</a></h1>
+<p><strong>关键词</strong>：拉普拉斯恶魔、决定论、自由意志、量子力学、不确定性原理、因果关系、混沌理论、意识、多元宇宙、科学哲学、牛顿力学、爱因斯坦</p>
+<p>前言</p>
+<p>宇宙是一台精密钟表吗？人类命运早已注定？决定论与自由意志的百年交锋，暗藏着一个关于宇宙与人类的终极之谜。在1814年，法国数学家皮埃尔-西蒙·拉普拉斯提出了一个震撼科学界的思想实验：如果存在一个“恶魔”，知晓宇宙中所有粒子在某一时刻的位置和动量，那么它就能计算出宇宙的过去与未来。这个设想中的“恶魔”不仅挑战了人类对科学的认知，更是直接冲击了我们对自由意志的理解——如果宇宙的一切都遵循严格的物理定律，那么我们的选择是否真的属于自己？还是说，从宇宙大爆炸那一刻起，一切早已注定？</p>
+<h2 id="一天才构想拉普拉斯恶魔如何诞生于科学启蒙时代">一、天才构想：拉普拉斯恶魔如何诞生于科学启蒙时代？<a hidden class="anchor" aria-hidden="true" href="#一天才构想拉普拉斯恶魔如何诞生于科学启蒙时代">#</a></h2>
+<p>18世纪末至19世纪初，经典力学发展到黄金时期。牛顿力学能够精确预测行星轨道、潮汐变化甚至彗星回归时间，自然界似乎完全遵循着确定性法则。这种成功让当时的科学家们相信，宇宙的运行就像一台精密的钟表，只要知道初始条件，就能推演出一切未来状态。</p>
+<p>拉普拉斯在其著作《概率论》中提出这一著名设想：“我们可以把宇宙的现状看作是其过去的果与其未来的因。如果一个智能体在某一时刻知道自然界中的所有作用力以及组成自然界的一切物体的位置，那么它就能用一个公式涵盖宇宙中最大天体和最小原子的运动。”这个“智能体”后来被称为“拉普拉斯恶魔”，成为科学决定论的终极代言人。拉普拉斯坚信，宇宙如同一台精密钟表，只要掌握足够信息，就能预测一切。</p>
+<p>这一思想并非拉普拉斯的独创，但他是第一个将其以如此清晰、数学化的方式表达出来的人。在启蒙运动理性至上的氛围中，拉普拉斯恶魔象征着人类理性能够最终洞悉宇宙一切奥秘的雄心。正如哲学家康德所说：“给我物质，我将用它造出一个宇宙。”这种自信植根于牛顿物理学取得的辉煌成就。</p>
+<h2 id="二决定论巅峰物理定律真的能决定宇宙万物吗">二、决定论巅峰：物理定律真的能决定宇宙万物吗？<a hidden class="anchor" aria-hidden="true" href="#二决定论巅峰物理定律真的能决定宇宙万物吗">#</a></h2>
+<p>拉普拉斯恶魔代表着决定论的极致形态——基于经典力学框架，宇宙万物运动都遵循严格的因果关系。在这种观点下，宇宙的过去、现在和未来像一个早已写好的剧本，每一个事件都是前一个事件的必然结果。没有任何意外，没有任何真正的随机性，一切都按照既定的轨道运行。</p>
+<p>这种思想在科学界引发了巨大共鸣。爱因斯坦后来也表达过类似观点：“上帝不掷骰子”，表明了他对宇宙确定性的信念。从蝴蝶扇动翅膀到星系演化，理论上都可以通过物理定律来预测。在经典物理学的世界里，如果有一个足够强大的智能体掌握了所有初始条件和物理法则，那么未来就是完全透明的。</p>
+<p>然而，这种极端决定论也带来了哲学困境：如果宇宙的一切都是预先设定好的，那么人类的选择和行动还有什么意义？我们的努力和奋斗是否只是幻觉？如果一个人注定要犯罪，那么法律惩罚他还有什么合理性？如果一个人注定要成功，那么他的勤奋又有什么价值？这些问题直接冲击了道德、法律、教育等人类社会的基础。</p>
+<h2 id="三自由意志危机人类是宇宙剧本的提线木偶吗">三、自由意志危机：人类是宇宙剧本的提线木偶吗？<a hidden class="anchor" aria-hidden="true" href="#三自由意志危机人类是宇宙剧本的提线木偶吗">#</a></h2>
+<p>拉普拉斯恶魔最令人不安的暗示在于：自由意志可能并不存在。如果宇宙的一切运动都可以被预测，那么包括人类思维在内的所有过程都只是粒子运动的产物。我们的“决定”不过是大脑中神经元的电化学过程，而这些过程又完全遵循物理定律。从这一角度看，所谓的“自由选择”不过是一种主观体验，而非客观事实。</p>
+<p>哲学家们对此展开了激烈辩论。决定论者认为，自由意志只是一种错觉，我们的“选择”实际上是由先前的物理状态决定的。斯宾诺莎曾言：“人们相信他们是自由的，因为他们意识到自己的意愿和欲望，而忽略了导致他们产生意愿和欲望的原因。”相容论者则试图调和矛盾，认为决定论与自由意志可以共存——即使在确定性的宇宙中，我们仍然能够做出选择，因为“自由”指的是不被外部强制，而不是不被因果决定。</p>
+<p>神经科学家们通过实验发现，在人意识到自己做出决定之前，大脑已经开始了相关活动。本杰明·利贝特在20世纪80年代进行的著名实验表明，在受试者报告“意识到自己决定移动手指”之前约0.3秒，大脑就已经出现了准备电位。这似乎支持了决定论的观点：我们的“选择”实际上是由大脑的物理状态预先决定的，意识只是事后为这个决定“编造”理由。</p>
+<h2 id="四量子革命不确定性原理如何摧毁拉普拉斯恶魔">四、量子革命：不确定性原理如何摧毁拉普拉斯恶魔？<a hidden class="anchor" aria-hidden="true" href="#四量子革命不确定性原理如何摧毁拉普拉斯恶魔">#</a></h2>
+<p>20世纪初，量子力学的出现彻底改变了物理学图景。海森堡提出的不确定性原理表明：我们无法同时精确知道一个粒子的位置和动量——这直接击中了拉普拉斯恶魔的核心假设。如果要预测未来，恶魔需要知道所有粒子精确的位置和动量，但量子力学告诉我们，这种精确信息在原理上就是不可获得的。不是因为我们技术不够，而是宇宙本身就没有同时确定的位置和动量。</p>
+<p>量子力学揭示的微观世界是概率性的，而非确定性的。粒子行为似乎具有内在随机性，量子跃迁、叠加态等现象无法用经典决定论解释。例如，一个放射性原子何时衰变是真正的随机事件，没有任何隐藏变量可以预先确定它的衰变时刻。这意味着，即使有一个恶魔，它也无法预测原子衰变的精确时间。</p>
+<p>然而，有趣的是，当代科学对因果关系的理解也在深化。在某些情况下，果因论（效果先于原因）似乎也能成立，特别是在时间对称性的视角下。量子纠缠现象更是挑战了传统的因果观念——两个纠缠粒子即使相隔极远，也能瞬间影响彼此。这种“幽灵般的超距作用”让爱因斯坦深感不安，但实验已经反复证实了它的存在。</p>
+<h2 id="五意识谜题现代科学如何重新审视拉普拉斯恶魔">五、意识谜题：现代科学如何重新审视拉普拉斯恶魔？<a hidden class="anchor" aria-hidden="true" href="#五意识谜题现代科学如何重新审视拉普拉斯恶魔">#</a></h2>
+<p>尽管量子力学动摇了拉普拉斯恶魔的科学基础，但这一思想实验的价值依然存在。它促使我们思考：意识在宇宙中扮演什么角色？观察者效应表明，在量子层面，观察行为本身会影响被观察对象。著名的双缝实验显示，电子的行为会因是否被观测而改变——当没有观测时，电子表现出波动性；当有观测时，电子表现出粒子性。这是否意味着意识在物理现实中扮演了某种主动角色？</p>
+<p>一些科学家提出，意识可能是宇宙中的基本要素之一。如果这样，那么拉普拉斯恶魔的预测能力即使理论上可能，实际上也无法实现——因为预测行为本身就会改变宇宙状态。一个包含观测者的宇宙，与一个没有观测者的纯物理宇宙，遵循不同的规则。这让人联想到量子力学中的“参与性宇宙”概念：我们不仅是宇宙的旁观者，也是宇宙的共创者。</p>
+<p>现代复杂系统理论也表明，即使宇宙本质是决定性的，复杂系统的混沌行为也使得长期预测实际上不可能。就像天气系统一样，初始条件的微小差异会导致结果的巨大偏差——这就是著名的“蝴蝶效应”。一个拉普拉斯恶魔如果要对宇宙进行精确预测，它需要无限精度的初始条件，而这在物理上不可能。即使没有量子不确定性，经典混沌也足以让决定论预测在实践中失效。</p>
+<h2 id="六宇宙命运人类在决定论宇宙中的位置与意义">六、宇宙命运：人类在决定论宇宙中的位置与意义<a hidden class="anchor" aria-hidden="true" href="#六宇宙命运人类在决定论宇宙中的位置与意义">#</a></h2>
+<p>拉普拉斯恶魔虽然不再被现代物理学完全接受，但它仍然促使我们思考宇宙的本质和人类的地位。即使在确定性宇宙中，人类的意义也不一定消失——也许意义不在于选择是否自由，而在于体验的真实性。我们感受到的喜怒哀乐、爱恨情仇，无论是否被物理定律预先决定，对于正在感受的我们而言，都是无比真实的。</p>
+<p>当前物理学界正在尝试统一量子力学与广义相对论，寻找“万物理论”。一些物理学家提出，时间可能不是基本的，而是涌现的。如果这样，那么传统的因果观念可能需要彻底重构。在某些理论中，过去、现在和未来同时存在，我们的“选择”不过是穿越时空固定路径上的体验。这种观点既令人震撼，也令人困惑。</p>
+<p>多元宇宙理论则提供了另一种可能：每一个选择实际上都在一个平行宇宙中实现，这样既保留了决定论（在每个宇宙中物理定律仍然确定），又为“选择”提供了容身之所。当我们面临A或B的抉择时，宇宙分裂为两个分支，一个分支中的我选择了A，另一个分支中的我选择了B。在这样的图景中，自由意志以一种新的方式存在——我们无法控制自己进入哪个分支，但每个分支中的“我”都体验到了自己的选择。</p>
+<h2 id="七超越决定论与自由意志一种新的视角">七、超越决定论与自由意志：一种新的视角<a hidden class="anchor" aria-hidden="true" href="#七超越决定论与自由意志一种新的视角">#</a></h2>
+<p>或许，决定论与自由意志的二元对立本身就是一种思维陷阱。一些哲学家和科学家提出，我们应当超越这种非此即彼的框架，重新定义问题。例如，丹尼尔·丹尼特认为，自由意志不是一种神秘的超自然能力，而是人类在社会互动中演化出来的一种功能。即使我们的行为完全由物理过程决定，我们仍然可以谈论“自由”——只要这种自由指的是能够理性地反思、调整自己的行为，而不是指能够违反物理定律。</p>
+<p>另一种观点来自东方哲学。佛教的“缘起性空”认为，一切现象都是因缘和合而生，没有独立自存的“我”，因此也没有一个需要“自由”的主体。在这种视角下，自由意志的问题被消解了：不是因为决定论为真，而是因为“意志”和“自由”都是概念投射，没有一个固定的实体去拥有或失去自由。</p>
+<h2 id="结语">结语<a hidden class="anchor" aria-hidden="true" href="#结语">#</a></h2>
+<p>拉普拉斯恶魔从提出到今天已经过去了两个多世纪，但它引发的问题依然活跃在科学和哲学前沿。它提醒我们，人类对宇宙的认知仍然十分有限。量子力学告诉我们世界可能具有根本的随机性，混沌理论告诉我们即使决定性的系统也无法精确预测，意识科学则告诉我们观察者不能被排除在物理图景之外。</p>
+<p>或许正如拉普拉斯所说：“我们已知的是那么少，未知的是那么多。”在探索宇宙奥秘的道路上，每一个答案都会引出新的问题。而这种永恒的探索，正是科学最迷人的地方。仰望星空，我们不禁思考：宇宙是纯粹机械的，还是包含更多奥秘？人类是宇宙的旁观者，还是参与者？这些问题，仍然等待着我们去解答。无论答案如何，追问本身已经是我们存在的意义之一。</p>
+<p>（全文约3180字）</p>
+
+  </div><section
+  class="post-interactions"
+  data-post-interactions
+  data-storage-key="/oldvan/posts/laplaces-demon/#zh-cn"
+  data-follow-url="https://vanvj00001.github.io/oldvan/"
+  data-live-comments="true"
+  aria-labelledby="post-interactions-title">
+  <div class="post-interactions__intro">
+    <p class="post-interactions__eyebrow">Community</p>
+    <h2 id="post-interactions-title" class="post-interactions__title">互动一下</h2>
+    <p class="post-interactions__subtitle">支持这篇内容，或者留下你的想法。</p>
+  </div>
+
+  <div class="post-interactions__actions">
+    <a class="post-interactions__button" href="https://vanvj00001.github.io/oldvan/">
+      <span class="post-interactions__button-label">关注站点</span>
+      <span class="post-interactions__count" data-followers-count>1</span>
+    </a>
+    <button class="post-interactions__button" type="button" data-like-button>
+      <span class="post-interactions__button-label">点赞这篇</span>
+      <span class="post-interactions__count" data-likes-count>0</span>
+    </button>
+    <button class="post-interactions__button" type="button" data-comment-toggle>
+      <span class="post-interactions__button-label">写留言</span><span class="post-interactions__count">GitHub</span></button>
+  </div><p class="post-interactions__hint post-interactions__hint--inline">留言将通过 GitHub Discussions 发布与管理。</p></section>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E6%81%B6%E9%AD%94/">拉普拉斯恶魔</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E5%86%B3%E5%AE%9A%E8%AE%BA/">决定论</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E8%87%AA%E7%94%B1%E6%84%8F%E5%BF%97/">自由意志</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/">量子力学</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E5%8E%9F%E7%90%86/">不确定性原理</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E5%9B%A0%E6%9E%9C%E5%85%B3%E7%B3%BB/">因果关系</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E6%B7%B7%E6%B2%8C%E7%90%86%E8%AE%BA/">混沌理论</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E6%84%8F%E8%AF%86/">意识</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E5%A4%9A%E5%85%83%E5%AE%87%E5%AE%99/">多元宇宙</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E7%A7%91%E5%AD%A6%E5%93%B2%E5%AD%A6/">科学哲学</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E7%89%9B%E9%A1%BF%E5%8A%9B%E5%AD%A6/">牛顿力学</a></li>
+      <li><a href="https://vanvj00001.github.io/oldvan/tags/%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6/">爱因斯坦</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://vanvj00001.github.io/oldvan/posts/supernatural-powers/">
+    <span class="title">« </span>
+    <br>
+    <span>神通</span>
+  </a>
+  <a class="next" href="https://vanvj00001.github.io/oldvan/posts/who-am-i/">
+    <span class="title"> »</span>
+    <br>
+    <span>我是谁？</span>
+  </a>
+</nav>
+
+  </footer><section class="comments-area" id="comments">
+  <h2 class="comments-area__title">留言</h2><div class="giscus"></div>
+  <script
+    src="https://giscus.app/client.js"
+    data-repo="vanvj00001/oldvan"
+    data-repo-id="R_kgDORe3TgA"
+    data-category="General"
+    data-category-id="DIC_kwDORe3TgM4C4_S_"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+  </script></section>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://vanvj00001.github.io/oldvan/">老梵</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+        <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2026013379号-1</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
