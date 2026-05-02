@@ -1,0 +1,47 @@
+{{- $scratch := newScratch }}
+{{- $page := . }}
+{{- $pageViewsMode := "hit" }}
+{{- $hideAuthor := false }}
+{{- if isset . "page" }}
+{{- $page = .page }}
+{{- $pageViewsMode = .pageViewsMode | default "hit" }}
+{{- $hideAuthor = .hideAuthor | default false }}
+{{- end }}
+
+{{- if not $page.Date.IsZero -}}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" ($page.Date) ($page.Date | time.Format (default ":date_long" site.Params.DateFormat)))) }}
+{{- end }}
+
+{{- if ($page.Param "ShowReadingTime") -}}
+{{- $scratch.Add "meta" (slice (printf "<span>%s</span>" (i18n "read_time" $page.ReadingTime | default (printf "%d min" $page.ReadingTime)))) }}
+{{- end }}
+
+{{- if ($page.Param "ShowWordCount") -}}
+{{- $scratch.Add "meta" (slice (printf "<span>%s</span>" (i18n "words" $page.WordCount | default (printf "%d words" $page.WordCount)))) }}
+{{- end }}
+
+{{- if and $page.IsPage ($page.Param "ShowPageViews" | default (site.Params.pageViews.enabled | default true)) -}}
+{{- $pageViewsLabel := site.Params.pageViews.label | default "阅读量" -}}
+{{- $pageViewsNamespace := site.Params.pageViews.namespace | default "oldvan-top" -}}
+{{- $pageViewsSource := $page.Params.pageViewsKey | default "" -}}
+{{- if and (eq $pageViewsSource "") $page.File -}}
+{{- $pageViewsSource = $page.File.Path -}}
+{{- end -}}
+{{- if eq $pageViewsSource "" -}}
+{{- $pageViewsSource = $page.RelPermalink -}}
+{{- end -}}
+{{- $pageViewsKey := printf "%s-%s" $page.Type (md5 $pageViewsSource) -}}
+{{- $scratch.Add "meta" (slice (printf "<span class='page-views' data-pageviews-container data-pageviews-mode='%s' data-pageviews-namespace='%s' data-pageviews-key='%s'>%s <span data-pageviews-value>1</span></span>" $pageViewsMode $pageViewsNamespace $pageViewsKey $pageViewsLabel)) }}
+{{- end }}
+
+{{- if not $hideAuthor -}}
+{{- if not ($page.Param "hideAuthor") -}}
+{{- with (partial "author.html" $page) }}
+{{- $scratch.Add "meta" (slice (printf "<span>%s</span>" .)) }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- with ($scratch.Get "meta") }}
+{{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+{{- end -}}
