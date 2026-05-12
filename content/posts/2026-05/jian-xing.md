@@ -2,7 +2,7 @@
 title: "什么是见性？"
 url: /posts/202605/jian-xing/
 pageViewsKey: /posts/202605/jian-xing/
-date: 2026-05-12T15:00:00+08:00
+date: 2026-05-12T12:00:00+08:00
 draft: false
 categories:
   - 觉悟指南
