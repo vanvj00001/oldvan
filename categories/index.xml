@@ -6,41 +6,20 @@
     <description>Recent content in Categories on 老梵</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 19 May 2026 16:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 10:00:00 +0800</lastBuildDate>
     <atom:link href="https://vanvj00001.github.io/oldvan/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>心灵成长</title>
-      <link>https://vanvj00001.github.io/oldvan/categories/%E5%BF%83%E7%81%B5%E6%88%90%E9%95%BF/</link>
-      <pubDate>Tue, 19 May 2026 16:00:00 +0800</pubDate>
-      <guid>https://vanvj00001.github.io/oldvan/categories/%E5%BF%83%E7%81%B5%E6%88%90%E9%95%BF/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>物理随笔</title>
-      <link>https://vanvj00001.github.io/oldvan/categories/%E7%89%A9%E7%90%86%E9%9A%8F%E7%AC%94/</link>
-      <pubDate>Tue, 19 May 2026 15:00:00 +0800</pubDate>
-      <guid>https://vanvj00001.github.io/oldvan/categories/%E7%89%A9%E7%90%86%E9%9A%8F%E7%AC%94/</guid>
+      <title>修行随笔</title>
+      <link>https://vanvj00001.github.io/oldvan/categories/%E4%BF%AE%E8%A1%8C%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Tue, 19 May 2026 10:00:00 +0800</pubDate>
+      <guid>https://vanvj00001.github.io/oldvan/categories/%E4%BF%AE%E8%A1%8C%E9%9A%8F%E7%AC%94/</guid>
       <description></description>
     </item>
     <item>
       <title>佛学</title>
       <link>https://vanvj00001.github.io/oldvan/categories/%E4%BD%9B%E5%AD%A6/</link>
-      <pubDate>Tue, 19 May 2026 14:00:00 +0800</pubDate>
-      <guid>https://vanvj00001.github.io/oldvan/categories/%E4%BD%9B%E5%AD%A6/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>修行随笔</title>
-      <link>https://vanvj00001.github.io/oldvan/categories/%E4%BF%AE%E8%A1%8C%E9%9A%8F%E7%AC%94/</link>
-      <pubDate>Tue, 19 May 2026 13:00:00 +0800</pubDate>
-      <guid>https://vanvj00001.github.io/oldvan/categories/%E4%BF%AE%E8%A1%8C%E9%9A%8F%E7%AC%94/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>觉悟指南</title>
-      <link>https://vanvj00001.github.io/oldvan/categories/%E8%A7%89%E6%82%9F%E6%8C%87%E5%8D%97/</link>
       <pubDate>Tue, 12 May 2026 12:00:00 +0800</pubDate>
-      <guid>https://vanvj00001.github.io/oldvan/categories/%E8%A7%89%E6%82%9F%E6%8C%87%E5%8D%97/</guid>
+      <guid>https://vanvj00001.github.io/oldvan/categories/%E4%BD%9B%E5%AD%A6/</guid>
       <description></description>
     </item>
     <item>
@@ -51,10 +30,17 @@
       <description></description>
     </item>
     <item>
-      <title>科学哲学</title>
-      <link>https://vanvj00001.github.io/oldvan/categories/%E7%A7%91%E5%AD%A6%E5%93%B2%E5%AD%A6/</link>
-      <pubDate>Mon, 04 May 2026 18:30:00 +0800</pubDate>
-      <guid>https://vanvj00001.github.io/oldvan/categories/%E7%A7%91%E5%AD%A6%E5%93%B2%E5%AD%A6/</guid>
+      <title>物理随笔</title>
+      <link>https://vanvj00001.github.io/oldvan/categories/%E7%89%A9%E7%90%86%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Mon, 04 May 2026 15:00:00 +0800</pubDate>
+      <guid>https://vanvj00001.github.io/oldvan/categories/%E7%89%A9%E7%90%86%E9%9A%8F%E7%AC%94/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>心灵成长</title>
+      <link>https://vanvj00001.github.io/oldvan/categories/%E5%BF%83%E7%81%B5%E6%88%90%E9%95%BF/</link>
+      <pubDate>Fri, 01 May 2026 18:30:00 +0800</pubDate>
+      <guid>https://vanvj00001.github.io/oldvan/categories/%E5%BF%83%E7%81%B5%E6%88%90%E9%95%BF/</guid>
       <description></description>
     </item>
   </channel>
