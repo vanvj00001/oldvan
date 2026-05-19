@@ -14,9 +14,9 @@ disablePathToLower = true
     url = "/archives/"
     weight = 10
   [[languages.zh-cn.menu.main]]
-    identifier = "search"
-    name = "搜索"
-    url = "/search/"
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
     weight = 20
   [[languages.zh-cn.menu.main]]
     identifier = "tags"
