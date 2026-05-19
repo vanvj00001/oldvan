@@ -7,7 +7,7 @@
         <h2 class="single-title animate__animated animate__pulse animate__faster">
             {{- .Params.Title | default "所有归档" -}}
         </h2>
-        {{- $pages := .Site.RegularPages -}}
+        {{- $pages := where .Site.RegularPages "Section" "posts" -}}
         {{- if $pages -}}
             {{- $pages = $pages.GroupByDate "2006-01" -}}
             {{- $paginate := .Site.Params.section.paginate | default 20 -}}
