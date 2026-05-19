@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>清醒 on 老梵</title>
     <link>https://vanvj00001.github.io/oldvan/tags/%E6%B8%85%E9%86%92/</link>
     <description>Recent content in 清醒 on 老梵</description>
-    <generator>Hugo -- 0.161.1</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 19 May 2026 13:00:00 +0800</lastBuildDate>
     <atom:link href="https://vanvj00001.github.io/oldvan/tags/%E6%B8%85%E9%86%92/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,7 @@
       <link>https://vanvj00001.github.io/oldvan/posts/fan-nao-yuan-yu-cuo-ren/</link>
       <pubDate>Tue, 19 May 2026 13:00:00 +0800</pubDate>
       <guid>https://vanvj00001.github.io/oldvan/posts/fan-nao-yuan-yu-cuo-ren/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：烦恼、当下、宇宙、觉知、时间、修行、生命、清醒、自我、自由&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“过去心不可得，现在心不可得，未来心不可得。”
-&lt;cite&gt;——《金刚经》&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;很多人都在寻找“没有烦恼的人生”，于是有人追逐财富，有人追逐关系，有人追逐成就，也有人试图通过修行让自己摆脱痛苦。但走了一圈之后却发现，烦恼并没有真正消失，它只是换了一种形式继续存在。有人开始学习“活在当下”，却又产生新的困惑：如果只关注当下，会不会变得浑浑噩噩？会不会失去目标？会不会碌碌无为？这些疑问的背后，其实都指向同一个问题：我们究竟把什么认错了？&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：烦恼、当下、宇宙、觉知、时间、修行、生命、清醒、自我、自由&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;“过去心不可得，现在心不可得，未来心不可得。”&#xA;&lt;cite&gt;——《金刚经》&lt;/cite&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;&#xA;&lt;p&gt;很多人都在寻找“没有烦恼的人生”，于是有人追逐财富，有人追逐关系，有人追逐成就，也有人试图通过修行让自己摆脱痛苦。但走了一圈之后却发现，烦恼并没有真正消失，它只是换了一种形式继续存在。有人开始学习“活在当下”，却又产生新的困惑：如果只关注当下，会不会变得浑浑噩噩？会不会失去目标？会不会碌碌无为？这些疑问的背后，其实都指向同一个问题：我们究竟把什么认错了？&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

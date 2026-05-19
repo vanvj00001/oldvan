@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>宇宙 on 老梵</title>
     <link>https://vanvj00001.github.io/oldvan/tags/%E5%AE%87%E5%AE%99/</link>
     <description>Recent content in 宇宙 on 老梵</description>
-    <generator>Hugo -- 0.161.1</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 19 May 2026 13:00:00 +0800</lastBuildDate>
     <atom:link href="https://vanvj00001.github.io/oldvan/tags/%E5%AE%87%E5%AE%99/index.xml" rel="self" type="application/rss+xml" />
@@ -13,49 +13,28 @@
       <link>https://vanvj00001.github.io/oldvan/posts/fan-nao-yuan-yu-cuo-ren/</link>
       <pubDate>Tue, 19 May 2026 13:00:00 +0800</pubDate>
       <guid>https://vanvj00001.github.io/oldvan/posts/fan-nao-yuan-yu-cuo-ren/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：烦恼、当下、宇宙、觉知、时间、修行、生命、清醒、自我、自由&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“过去心不可得，现在心不可得，未来心不可得。”
-&lt;cite&gt;——《金刚经》&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;很多人都在寻找“没有烦恼的人生”，于是有人追逐财富，有人追逐关系，有人追逐成就，也有人试图通过修行让自己摆脱痛苦。但走了一圈之后却发现，烦恼并没有真正消失，它只是换了一种形式继续存在。有人开始学习“活在当下”，却又产生新的困惑：如果只关注当下，会不会变得浑浑噩噩？会不会失去目标？会不会碌碌无为？这些疑问的背后，其实都指向同一个问题：我们究竟把什么认错了？&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：烦恼、当下、宇宙、觉知、时间、修行、生命、清醒、自我、自由&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;“过去心不可得，现在心不可得，未来心不可得。”&#xA;&lt;cite&gt;——《金刚经》&lt;/cite&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;&#xA;&lt;p&gt;很多人都在寻找“没有烦恼的人生”，于是有人追逐财富，有人追逐关系，有人追逐成就，也有人试图通过修行让自己摆脱痛苦。但走了一圈之后却发现，烦恼并没有真正消失，它只是换了一种形式继续存在。有人开始学习“活在当下”，却又产生新的困惑：如果只关注当下，会不会变得浑浑噩噩？会不会失去目标？会不会碌碌无为？这些疑问的背后，其实都指向同一个问题：我们究竟把什么认错了？&lt;/p&gt;</description>
     </item>
     <item>
       <title>宇宙没有偶然</title>
       <link>https://vanvj00001.github.io/oldvan/posts/no-coincidence-in-universe/</link>
       <pubDate>Fri, 27 Mar 2026 14:30:00 +0800</pubDate>
       <guid>https://vanvj00001.github.io/oldvan/posts/no-coincidence-in-universe/</guid>
-      <description>&lt;h1 id=&#34;宇宙没有偶然从随机函数到确定性的世界&#34;&gt;宇宙没有偶然：从随机函数到确定性的世界&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：偶然、随机、随机函数、伪随机、决定论、因果律、宇宙秩序、科学哲学、量子力学、拉普拉斯妖、逻辑推导、宇宙稳定性&amp;hellip;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;作为一个程序员，我们每天都在和“随机”打交道。代码里的 &lt;code&gt;rand()&lt;/code&gt;、&lt;code&gt;random()&lt;/code&gt;，看似给我们带来了不可预测的结果。但我们也清楚地知道，这些所谓的“随机数”，背后不过是一套确定的算法——给一个初始值（种子），输出就是确定的。真正的“随机”，在我们的世界里并不存在，我们只是在用“随机”这个词语，来标记那些我们暂时无法预测的领域。&lt;/p&gt;
-&lt;p&gt;那么，把这个逻辑推到整个宇宙呢？科学上常说“偶然事件”、“随机现象”，甚至量子力学里也有“真随机”的说法。但如果我们用同样的逻辑去审视——所谓的偶然，会不会也只是人类认知局限的产物？宇宙本身，真的有“偶然”这回事吗？&lt;/p&gt;
-&lt;p&gt;这个问题看似抽象，却关乎我们如何看待世界、理解因果、安放自身。本文尝试从一个程序员的直觉出发，用逻辑推导的方式，探讨“宇宙是否存在偶然”这一命题。&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;宇宙没有偶然从随机函数到确定性的世界&#34;&gt;宇宙没有偶然：从随机函数到确定性的世界&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：偶然、随机、随机函数、伪随机、决定论、因果律、宇宙秩序、科学哲学、量子力学、拉普拉斯妖、逻辑推导、宇宙稳定性&amp;hellip;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;&#xA;&lt;p&gt;作为一个程序员，我们每天都在和“随机”打交道。代码里的 &lt;code&gt;rand()&lt;/code&gt;、&lt;code&gt;random()&lt;/code&gt;，看似给我们带来了不可预测的结果。但我们也清楚地知道，这些所谓的“随机数”，背后不过是一套确定的算法——给一个初始值（种子），输出就是确定的。真正的“随机”，在我们的世界里并不存在，我们只是在用“随机”这个词语，来标记那些我们暂时无法预测的领域。&lt;/p&gt;&#xA;&lt;p&gt;那么，把这个逻辑推到整个宇宙呢？科学上常说“偶然事件”、“随机现象”，甚至量子力学里也有“真随机”的说法。但如果我们用同样的逻辑去审视——所谓的偶然，会不会也只是人类认知局限的产物？宇宙本身，真的有“偶然”这回事吗？&lt;/p&gt;&#xA;&lt;p&gt;这个问题看似抽象，却关乎我们如何看待世界、理解因果、安放自身。本文尝试从一个程序员的直觉出发，用逻辑推导的方式，探讨“宇宙是否存在偶然”这一命题。&lt;/p&gt;</description>
     </item>
     <item>
       <title>宇宙是一场巨型程序</title>
       <link>https://vanvj00001.github.io/oldvan/posts/universe-as-program/</link>
       <pubDate>Sat, 25 Oct 2025 10:00:00 +0800</pubDate>
       <guid>https://vanvj00001.github.io/oldvan/posts/universe-as-program/</guid>
-      <description>&lt;h1 id=&#34;宇宙是一场巨型程序程序员眼中的创世神话&#34;&gt;宇宙是一场巨型程序？程序员眼中的创世神话&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：宇宙、程序、创世神话、程序员视角、迭代、悟空、物理法则、意识、人生算法、螺旋上升&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;大家好，今天我们不聊代码，聊一个更底层的“神话”——一个程序员才能瞬间心领神会的创世故事。从混沌大爆炸到星系运行，从物理常数的“基础类”到人类意识的“派生实例”，让我们用编程语言重新讲述宇宙的诞生与演化，并从这段叙事中提取关于生命、成长与迭代的实用启示。&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;宇宙是一场巨型程序程序员眼中的创世神话&#34;&gt;宇宙是一场巨型程序？程序员眼中的创世神话&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：宇宙、程序、创世神话、程序员视角、迭代、悟空、物理法则、意识、人生算法、螺旋上升&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;&#xA;&lt;p&gt;大家好，今天我们不聊代码，聊一个更底层的“神话”——一个程序员才能瞬间心领神会的创世故事。从混沌大爆炸到星系运行，从物理常数的“基础类”到人类意识的“派生实例”，让我们用编程语言重新讲述宇宙的诞生与演化，并从这段叙事中提取关于生命、成长与迭代的实用启示。&lt;/p&gt;</description>
     </item>
     <item>
       <title>我们眼中的世界与多元的世界</title>
       <link>https://vanvj00001.github.io/oldvan/posts/multiple-worlds/</link>
       <pubDate>Mon, 22 Sep 2025 10:00:00 +0800</pubDate>
       <guid>https://vanvj00001.github.io/oldvan/posts/multiple-worlds/</guid>
-      <description>&lt;h1 id=&#34;眼中的世界与多元的世界一个关于认知边界的思考&#34;&gt;眼中的世界与多元的世界：一个关于认知边界的思考&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：认知边界、多元世界、私有世界、社会共识、自然世界、宇宙、气泡、真实、感知、科学&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;我们常常默认为，自己看到的世界就是真实的世界。这个默认，像空气一样自然，以至于我们从未质疑过它。然而，当我们静下心来仔细审视，会发现一个令人震惊的事实：我看到的世界，和你看到的世界，和这个世界本身的样子，可能完全是三回事。本文将从个人私有世界、社会共识世界、自然世界与宇宙的边界，以及多元世界的融合等维度，带你重新审视那个你习以为常的“现实”。&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;眼中的世界与多元的世界一个关于认知边界的思考&#34;&gt;眼中的世界与多元的世界：一个关于认知边界的思考&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：认知边界、多元世界、私有世界、社会共识、自然世界、宇宙、气泡、真实、感知、科学&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;&#xA;&lt;p&gt;我们常常默认为，自己看到的世界就是真实的世界。这个默认，像空气一样自然，以至于我们从未质疑过它。然而，当我们静下心来仔细审视，会发现一个令人震惊的事实：我看到的世界，和你看到的世界，和这个世界本身的样子，可能完全是三回事。本文将从个人私有世界、社会共识世界、自然世界与宇宙的边界，以及多元世界的融合等维度，带你重新审视那个你习以为常的“现实”。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
