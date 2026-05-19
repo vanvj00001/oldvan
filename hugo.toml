@@ -75,9 +75,15 @@ disablePathToLower = true
       isCaseSensitive = false
       minMatchCharLength = 2
 
-  [params.home]
-    rss = 10
-    [params.home.profile]
+  [params.footer]
+    enable = true
+    custom = ""
+    hugo = true
+    copyright = true
+    author = true
+    since = 2022
+    icp = '<a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2026013379号-1</a>'
+  [params.home.profile]
       enable = true
       avatarURL = "/images/avatar.png"
       title = "老梵"
