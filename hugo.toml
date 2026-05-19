@@ -34,6 +34,12 @@ disablePathToLower = true
     email = ""
     link = ""
 
+  [params.app]
+    title = "老梵的空中花园"
+
+  [params.header.title]
+    name = "老梵的空中花园"
+
   [params.pageViews]
     enabled = true
     label = "阅读量"
