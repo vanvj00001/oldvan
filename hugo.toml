@@ -7,19 +7,37 @@ hasCJKLanguage = true
 defaultContentLanguage = "zh-cn"
 disablePathToLower = true
 
+[languages.zh-cn.menu]
+  [[languages.zh-cn.menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 10
+  [[languages.zh-cn.menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 20
+  [[languages.zh-cn.menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 30
+  [[languages.zh-cn.menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 40
+
 [params]
   mainSections = ["posts"]
-  disableSpecial1stPost = true
   defaultTheme = "auto"
-  ShowReadingTime = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowToc = true
-  TocOpen = false
+  enableEmoji = true
 
   [params.author]
     name = "老梵"
+    email = ""
+    link = ""
 
   [params.pageViews]
     enabled = true
@@ -44,29 +62,28 @@ disablePathToLower = true
       theme = "preferred_color_scheme"
       lang = "zh-CN"
 
-[[menu.main]]
-  identifier = "archives"
-  name = "归档"
-  url = "/archives/"
-  weight = 10
+  [params.search]
+    enable = true
+    type = "fuse"
+    contentLength = 4000
+    placeholder = "输入关键词..."
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+    [params.search.fuse]
+      isCaseSensitive = false
+      minMatchCharLength = 2
 
-[[menu.main]]
-  identifier = "search"
-  name = "搜索"
-  url = "/search/"
-  weight = 20
-
-[[menu.main]]
-  identifier = "tags"
-  name = "标签"
-  url = "/tags/"
-  weight = 30
-
-[[menu.main]]
-  identifier = "about"
-  name = "关于"
-  url = "/about/"
-  weight = 40
+  [params.home]
+    rss = 10
+    [params.home.profile]
+      enable = true
+      avatarURL = "/images/avatar.png"
+      title = "老梵"
+      subtitle = "个人随笔空间"
+      typeit = false
+      social = false
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
