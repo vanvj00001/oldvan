@@ -9,7 +9,7 @@
         </h2>
         {{- $pages := .Site.RegularPages -}}
         {{- if $pages -}}
-            {{- $pages = $pages.GroupByDate "2006" -}}
+            {{- $pages = $pages.GroupByDate "2006-01" -}}
             {{- $paginate := .Site.Params.section.paginate | default 20 -}}
             {{- $pages = $.Paginate $pages $paginate -}}
             {{- range $pages.PageGroups -}}
