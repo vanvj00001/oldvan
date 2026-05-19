@@ -1,0 +1,10 @@
+{{- $profile := .Site.Params.home.profile -}}
+<div class="home-profile">
+    {{- with $profile.title -}}
+        {{- with $profile.subtitle -}}
+            <h1 class="home-title">{{ $.Site.Params.home.profile.title }} · {{ $.Site.Params.home.profile.subtitle }}</h1>
+        {{- else -}}
+            <h1 class="home-title">{{ . | safeHTML }}</h1>
+        {{- end -}}
+    {{- end -}}
+</div>

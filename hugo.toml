@@ -1,6 +1,6 @@
 baseURL = "https://oldvan.top/"
 languageCode = "zh-cn"
-title = "老梵"
+title = "老梵的空中花园"
 theme = "LoveIt"
 paginate = 8
 hasCJKLanguage = true
@@ -30,7 +30,7 @@ disablePathToLower = true
   enableEmoji = true
 
   [params.author]
-    name = "老梵"
+    name = "老梵的空中花园"
     email = ""
     link = ""
 
