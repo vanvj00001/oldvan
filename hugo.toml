@@ -1,13 +1,14 @@
 baseURL = "https://oldvan.top/"
 languageCode = "zh-cn"
 title = "老梵"
-theme = "PaperMod"
+theme = "ananke"
 paginate = 8
 hasCJKLanguage = true
 defaultContentLanguage = "zh-cn"
 disablePathToLower = true
 
 [params]
+  author = "老梵"
   mainSections = ["posts"]
   disableSpecial1stPost = true
   defaultTheme = "auto"
@@ -40,9 +41,6 @@ disablePathToLower = true
       inputPosition = "bottom"
       theme = "preferred_color_scheme"
       lang = "zh-CN"
-
-  [params.author]
-    name = "老梵"
 
 [[menu.main]]
   identifier = "archives"
