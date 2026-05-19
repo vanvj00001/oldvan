@@ -1,14 +1,13 @@
 baseURL = "https://oldvan.top/"
 languageCode = "zh-cn"
 title = "老梵"
-theme = "ananke"
+theme = "LoveIt"
 paginate = 8
 hasCJKLanguage = true
 defaultContentLanguage = "zh-cn"
 disablePathToLower = true
 
 [params]
-  author = "老梵"
   mainSections = ["posts"]
   disableSpecial1stPost = true
   defaultTheme = "auto"
@@ -18,6 +17,9 @@ disablePathToLower = true
   ShowCodeCopyButtons = true
   ShowToc = true
   TocOpen = false
+
+  [params.author]
+    name = "老梵"
 
   [params.pageViews]
     enabled = true
