@@ -6,7 +6,7 @@ tar -czf /Users/fanweijun/vanbak/oldvan-content-$(date '+%Y%m%d-%H%M%S').tar.gz 
 
 if mount | grep -q "/Volumes/vanvj00001"; then
   echo "备份到 vanvj00001..."
-  rsync -avz --delete /Users/fanweijun/oldvan/content/ /Volumes/vanvj00001/backup/oldvan/
+  tar -czf /Volumes/vanvj00001/backup/oldvan-$(date '+%Y%m%d-%H%M%S').tar.gz -C /Users/fanweijun/oldvan content/
 fi
 
 # 飞牛备份：https://share.fnnas.net/s/afbbf814191643b98b
