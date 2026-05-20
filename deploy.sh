@@ -1,6 +1,9 @@
 #!/bin/bash
 # 发布脚本
 
+echo "备份到 vanbak..."
+rsync -avz --delete /Users/fanweijun/oldvan/content/ /Users/fanweijun/vanbak/
+
 echo "构建 Hugo..."
 hugo
 
