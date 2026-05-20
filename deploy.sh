@@ -2,7 +2,9 @@
 # 发布脚本
 
 echo "备份到 vanbak..."
-rsync -avz --delete /Users/fanweijun/oldvan/content/ /Users/fanweijun/vanbak/
+tar -czf /Users/fanweijun/vanbak/oldvan-content-$(date '+%Y%m%d-%H%M%S').tar.gz -C /Users/fanweijun/oldvan content/
+
+# 飞牛备份：https://share.fnnas.net/s/afbbf814191643b98b
 
 echo "构建 Hugo..."
 hugo
