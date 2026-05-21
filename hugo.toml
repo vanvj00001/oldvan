@@ -6,6 +6,7 @@ paginate = 8
 hasCJKLanguage = true
 defaultContentLanguage = "zh-cn"
 disablePathToLower = true
+enableGitInfo = true
 
 [languages.zh-cn.menu]
   [[languages.zh-cn.menu.main]]
