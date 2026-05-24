@@ -2,7 +2,7 @@
 title: "善知识为何接引恶人：tarot与佛经的同一道题"
 url: /posts/tarot-fofa-justice/
 pageViewsKey: /posts/tarot-fofa-justice/
-date: 2026-05-25T10:00:00+08:00
+date: 2026-05-24T10:00:00+08:00
 draft: false
 weight: 11
 categories:
