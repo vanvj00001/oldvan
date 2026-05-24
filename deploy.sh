@@ -8,10 +8,7 @@ BASEURL_MAIN="https://oldvan.top/"
 echo "备份到 vanbak..."
 tar -czf /Users/fanweijun/vanbak/oldvan-content-$(date '+%Y%m%d-%H%M%S').tar.gz -C /Users/fanweijun/oldvan content/
 
-if mount | grep -q "/Volumes/vanvj00001"; then
-  echo "备份到 vanvj00001..."
-  tar -czf /Volumes/vanvj00001/backup/oldvan-$(date '+%Y%m%d-%H%M%S').tar.gz -C /Users/fanweijun/oldvan content/
-fi
+
 
 # 飞牛备份：https://share.fnnas.net/s/afbbf814191643b98b
 
