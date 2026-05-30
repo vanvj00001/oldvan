@@ -8,6 +8,9 @@ BASEURL_MAIN="https://oldvan.top/"
 echo "备份到 vanbak..."
 tar -czf /Users/fanweijun/vanbak/oldvan-content-$(date '+%Y%m%d-%H%M%S').tar.gz -C /Users/fanweijun/oldvan content/
 
+echo "压缩备份到飞牛NAS..."
+zip -rq "/Volumes/vanvj-INT-1T/备份/代码/oldvan-$(date '+%Y%m%d-%H%M%S').zip" /Users/fanweijun/oldvan --exclude "*/themes/*" --exclude "*/public/*" --exclude "*/.git/*"
+
 
 
 # 飞牛备份：https://share.fnnas.net/s/afbbf814191643b98b
