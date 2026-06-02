@@ -9,14 +9,19 @@ echo "备份到 vanbak..."
 tar -czf /Users/fanweijun/vanbak/oldvan-content-$(date '+%Y%m%d-%H%M%S').tar.gz -C /Users/fanweijun/oldvan content/
 
 echo "压缩备份到飞牛NAS..."
-zip -rq "/Volumes/vanvj-INT-1T/备份/代码/oldvan-$(date '+%Y%m%d-%H%M%S').zip" /Users/fanweijun/oldvan --exclude "*/themes/*" --exclude "*/public/*" --exclude "*/.git/*"
-
-
+echo "正在压缩备份..."
+BACKUP_DIR="/Volumes/vanvj-INT-1T/备份/代码"
+BACKUP_FILE="$BACKUP_DIR/oldvan-$(date '+%Y%m%d-%H%M%S').zip"
+if [ -d "$BACKUP_DIR" ]; then
+  zip -rq "$BACKUP_FILE" /Users/fanweijun/oldvan --exclude '*/themes/*' --exclude '*/public/*' --exclude '*/.git/*'
+else
+  echo "备份目录不存在，跳过飞牛NAS压缩备份：$BACKUP_DIR"
+fi
 
 # 飞牛备份：https://share.fnnas.net/s/afbbf814191643b98b
 
 
-echo "构建 Hugo (主站) ..."
+echo "构建 Hugo(主站) ..."
 # 使用显式 baseURL 构建 public，确保在不同部署目标下链接正确
 hugo -b "$BASEURL_MAIN" -d public
 
