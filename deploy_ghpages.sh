@@ -7,6 +7,7 @@ BRANCH="gh-pages"
 WORKTREE_DIR=".gh-pages"
 
 echo "准备 GitHub Pages 工作区..."
+git fetch --prune "$REMOTE"
 if [ -d "$WORKTREE_DIR" ]; then
   : # 已存在
 else
