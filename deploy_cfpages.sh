@@ -17,4 +17,4 @@ if ! command -v wrangler >/dev/null 2>&1; then
 fi
 
 echo "发布到 Cloudflare Pages..."
-wrangler pages deploy "$OUTDIR" --project-name "$PROJECT"
+wrangler pages deploy "$OUTDIR" --project-name "$PROJECT" --commit-dirty=true
