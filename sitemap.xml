@@ -2,7 +2,6 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://vanvj00001.github.io/oldvan/posts/two-logics-cycle-of-suppression/</loc><lastmod>2026-06-05T08:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/zhu-yao-mao-dun-jie-xi/</loc><lastmod>2026-06-01T02:27:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/zhi-kong-de-biao-xian-yu-chu-lu/</loc><lastmod>2026-05-01T18:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/true-equality-in-heart/</loc><lastmod>2026-04-24T22:00:00&#43;08:00</lastmod></url><url>
@@ -16,15 +15,16 @@
             <loc>https://vanvj00001.github.io/oldvan/posts/zhi-shi-fen-zi-gai-zao-xin-zheng-wang-dao/</loc><lastmod>2026-04-02T14:20:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/%E8%82%89%E8%BA%AB%E7%B2%BE%E7%A5%9E%E5%92%8C%E8%83%BD%E9%87%8F/</loc><lastmod>2026-03-05T14:25:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/communication-gender-differences/</loc><lastmod>2026-02-07T15:30:00&#43;08:00</lastmod></url><url>
-            <loc>https://vanvj00001.github.io/oldvan/posts/microbiome-humble-coexistence/</loc><lastmod>2025-09-20T10:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/xiu-xing-zhen-yi/</loc><lastmod>2026-06-02T09:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/zhen-kong-bu-kong/</loc><lastmod>2026-05-04T15:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/%E5%B9%B8%E7%A6%8F%E5%9C%A8%E5%93%AA%E9%87%8C/</loc><lastmod>2026-03-05T14:41:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/memory-and-cognitive-reality/</loc><lastmod>2026-06-03T10:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/fannao-ji-puti-colonial-interests/</loc><lastmod>2026-05-08T19:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/%E5%AE%87%E5%AE%99%E5%BE%AE%E8%B0%83%E4%B9%8B%E8%B0%9C/</loc><lastmod>2026-03-05T16:41:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/posts/two-logics-cycle-of-suppression/</loc><lastmod>2026-06-05T08:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/fan-nao-yuan-yu-cuo-ren/</loc><lastmod>2026-05-10T13:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/%E6%B7%B7%E6%B2%8C%E5%A4%A7%E7%A5%9E/</loc><lastmod>2026-03-05T23:04:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/posts/book-as-bridge/</loc><lastmod>2026-06-07T08:15:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/shi-jian-xing/</loc><lastmod>2026-05-12T12:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/%E5%AD%A6%E4%BD%9B%E4%BF%AE%E8%A1%8C%E7%9A%84%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4/</loc><lastmod>2026-03-06T09:41:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/tianyan-guanju/</loc><lastmod>2026-05-19T10:00:00&#43;08:00</lastmod></url><url>
@@ -82,9 +82,20 @@
             <loc>https://vanvj00001.github.io/oldvan/posts/no-coincidence-in-universe/</loc><lastmod>2026-03-27T14:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/responsibility-beyond-capability/</loc><lastmod>2026-03-28T08:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/let-go-of-self/</loc><lastmod>2026-03-30T10:30:00&#43;08:00</lastmod></url><url>
-            <loc>https://vanvj00001.github.io/oldvan/categories/</loc><lastmod>2026-06-05T08:00:00&#43;08:00</lastmod></url><url>
-            <loc>https://vanvj00001.github.io/oldvan/posts/</loc><lastmod>2026-06-05T08:00:00&#43;08:00</lastmod></url><url>
-            <loc>https://vanvj00001.github.io/oldvan/tags/</loc><lastmod>2026-06-05T08:00:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/categories/</loc><lastmod>2026-06-07T08:15:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/posts/</loc><lastmod>2026-06-07T08:15:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/tags/</loc><lastmod>2026-06-07T08:15:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/tags/%E8%BE%A9%E8%AF%81%E6%B3%95/</loc><lastmod>2026-06-07T08:15:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/tags/%E6%95%99%E6%9D%A1%E4%B8%BB%E4%B9%89/</loc><lastmod>2026-06-07T08:15:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/tags/%E7%BB%8F%E5%85%B8/</loc><lastmod>2026-06-07T08:15:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/tags/%E7%BB%8F%E4%B9%A6/</loc><lastmod>2026-06-07T08:15:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/tags/%E8%AE%A4%E8%AF%86/</loc><lastmod>2026-06-07T08:15:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/categories/%E8%AE%A4%E8%AF%86%E8%AE%BA/</loc><lastmod>2026-06-07T08:15:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/tags/%E5%AE%9E%E8%B7%B5/</loc><lastmod>2026-06-07T08:15:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/tags/%E4%B9%A6%E7%B1%8D/</loc><lastmod>2026-06-07T08:15:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/tags/%E5%AD%A6%E4%B9%A0/</loc><lastmod>2026-06-07T08:15:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/tags/%E7%9C%9F%E7%90%86/</loc><lastmod>2026-06-07T08:15:00&#43;08:00</lastmod></url><url>
+            <loc>https://vanvj00001.github.io/oldvan/tags/%E6%99%BA%E6%85%A7/</loc><lastmod>2026-06-07T08:15:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/</loc><lastmod>2026-06-05T08:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E9%81%93%E5%BE%B7%E5%93%B2%E5%AD%A6/</loc><lastmod>2026-06-05T08:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E5%90%88%E4%BD%9C%E9%80%BB%E8%BE%91/</loc><lastmod>2026-06-05T08:00:00&#43;08:00</lastmod></url><url>
@@ -118,7 +129,6 @@
             <loc>https://vanvj00001.github.io/oldvan/tags/%E6%97%A0%E7%A5%9E%E8%AE%BA/</loc><lastmod>2026-06-02T09:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E4%BF%AE%E8%A1%8C/</loc><lastmod>2026-06-02T09:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E8%87%AA%E6%B8%A1/</loc><lastmod>2026-06-02T09:30:00&#43;08:00</lastmod></url><url>
-            <loc>https://vanvj00001.github.io/oldvan/tags/%E8%BE%A9%E8%AF%81%E6%B3%95/</loc><lastmod>2026-06-01T02:27:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E6%A0%BC%E5%B1%80/</loc><lastmod>2026-06-01T02:27:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/categories/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/</loc><lastmod>2026-06-01T02:27:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E5%86%B3%E7%AD%96%E6%96%B9%E6%B3%95/</loc><lastmod>2026-06-01T02:27:00&#43;08:00</lastmod></url><url>
@@ -265,7 +275,6 @@
             <loc>https://vanvj00001.github.io/oldvan/tags/%E5%B9%B3%E7%AD%89/</loc><lastmod>2026-04-24T22:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/</loc><lastmod>2026-04-24T22:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E5%BF%83/</loc><lastmod>2026-04-24T22:00:00&#43;08:00</lastmod></url><url>
-            <loc>https://vanvj00001.github.io/oldvan/tags/%E6%99%BA%E6%85%A7/</loc><lastmod>2026-04-24T22:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E4%BC%97%E7%94%9F/</loc><lastmod>2026-04-24T22:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E8%87%AA%E5%AA%92%E4%BD%93/</loc><lastmod>2026-04-24T22:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E5%AD%98%E5%9C%A8/</loc><lastmod>2026-04-16T09:30:00&#43;08:00</lastmod></url><url>
@@ -328,7 +337,6 @@
             <loc>https://vanvj00001.github.io/oldvan/tags/%E4%B8%89%E6%B3%95%E5%8D%B0/</loc><lastmod>2026-04-08T10:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E5%AE%9E%E7%9B%B8/</loc><lastmod>2026-04-08T10:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E6%97%A0%E4%B8%BA%E6%B3%95/</loc><lastmod>2026-04-08T10:00:00&#43;08:00</lastmod></url><url>
-            <loc>https://vanvj00001.github.io/oldvan/tags/%E7%9C%9F%E7%90%86/</loc><lastmod>2026-04-08T10:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E9%9B%86%E4%BD%93%E6%97%A0%E6%84%8F%E8%AF%86/</loc><lastmod>2026-04-07T12:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E8%BF%9B%E5%8C%96%E8%AE%BA/</loc><lastmod>2026-04-07T12:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E5%81%B6%E5%83%8F%E5%B4%87%E6%8B%9C/</loc><lastmod>2026-04-07T12:00:00&#43;08:00</lastmod></url><url>
@@ -540,7 +548,6 @@
             <loc>https://vanvj00001.github.io/oldvan/tags/%E5%92%8C%E8%B0%90/</loc><lastmod>2026-03-15T16:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E5%85%AD%E5%92%8C%E6%95%AC/</loc><lastmod>2026-03-15T16:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E5%B8%88%E5%85%84%E5%BC%9F/</loc><lastmod>2026-03-15T16:30:00&#43;08:00</lastmod></url><url>
-            <loc>https://vanvj00001.github.io/oldvan/tags/%E5%AD%A6%E4%B9%A0/</loc><lastmod>2026-03-15T16:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E5%BF%A0%E8%AF%9A/</loc><lastmod>2026-03-15T16:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E5%B8%83%E6%96%BD/</loc><lastmod>2026-03-15T13:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E7%A6%8F%E6%8A%A5/</loc><lastmod>2026-03-15T13:30:00&#43;08:00</lastmod></url><url>
@@ -615,7 +622,6 @@
             <loc>https://vanvj00001.github.io/oldvan/tags/%E4%B8%96%E4%BF%97%E8%B0%9B/</loc><lastmod>2026-03-12T10:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E5%B0%8F%E4%B9%98%E4%BD%9B%E6%95%99/</loc><lastmod>2026-03-12T10:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E9%98%BF%E9%9A%BE/</loc><lastmod>2026-03-11T02:30:00&#43;08:00</lastmod></url><url>
-            <loc>https://vanvj00001.github.io/oldvan/tags/%E7%BB%8F%E5%85%B8/</loc><lastmod>2026-03-11T02:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E4%BA%86%E4%B9%89%E7%BB%8F/</loc><lastmod>2026-03-11T02:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E8%87%AA%E6%80%A7%E4%B8%89%E5%AE%9D/</loc><lastmod>2026-03-11T02:30:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E5%87%BA%E4%B8%96%E9%97%B4%E6%B3%95/</loc><lastmod>2026-03-10T11:30:00&#43;08:00</lastmod></url><url>
@@ -1060,9 +1066,6 @@
             <loc>https://vanvj00001.github.io/oldvan/tags/%E7%A7%81%E6%9C%89%E4%B8%96%E7%95%8C/</loc><lastmod>2025-09-22T10:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/posts/multiple-worlds/</loc><lastmod>2025-09-22T10:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/tags/%E8%87%AA%E7%84%B6%E4%B8%96%E7%95%8C/</loc><lastmod>2025-09-22T10:00:00&#43;08:00</lastmod></url><url>
-            <loc>https://vanvj00001.github.io/oldvan/tags/%E5%85%B1%E5%AD%98/</loc><lastmod>2025-09-20T10:00:00&#43;08:00</lastmod></url><url>
-            <loc>https://vanvj00001.github.io/oldvan/tags/%E8%B0%A6%E5%8D%91/</loc><lastmod>2025-09-20T10:00:00&#43;08:00</lastmod></url><url>
-            <loc>https://vanvj00001.github.io/oldvan/posts/heart-lamp/</loc><lastmod>2025-09-15T10:00:00&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/</loc><lastmod>2026-05-20T12:50:17&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/about/</loc><lastmod>2026-05-19T22:55:54&#43;08:00</lastmod></url><url>
             <loc>https://vanvj00001.github.io/oldvan/about/</loc></url><url>
