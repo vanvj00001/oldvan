@@ -6,7 +6,20 @@ set -euo pipefail
 BASEURL_MAIN="https://oldvan.top/"
 
 echo "备份到 vanbak..."
-tar -czf /Users/fanweijun/vanbak/oldvan-content-$(date '+%Y%m%d-%H%M%S').tar.gz -C /Users/fanweijun/oldvan content/
+BAK_DIR="/Users/fanweijun/vanbak"
+
+# 清理旧备份: 只保留最新 3 个 oldvan-content-*.tar.gz, 多余的删掉
+KEEP_COUNT=3
+EXISTING=$(ls -t "$BAK_DIR"/oldvan-content-*.tar.gz 2>/dev/null || true)
+EXISTING_COUNT=$(echo "$EXISTING" | grep -c . || true)
+if [ "$EXISTING_COUNT" -gt "$KEEP_COUNT" ]; then
+    REMOVE=$(echo "$EXISTING" | tail -n +$((KEEP_COUNT + 1)))
+    echo "清理旧备份 (保留最新 $KEEP_COUNT 个, 删除 $((EXISTING_COUNT - KEEP_COUNT)) 个)..."
+    echo "$REMOVE" | xargs rm -f
+    echo "旧备份已删除"
+fi
+
+tar -czf "$BAK_DIR"/oldvan-content-$(date '+%Y%m%d-%H%M%S').tar.gz -C /Users/fanweijun/oldvan content/
 
 echo "压缩备份到飞牛NAS..."
 echo "正在压缩备份..."
