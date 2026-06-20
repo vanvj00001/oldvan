@@ -1,5 +1,5 @@
 ---
-title: 完美的悖论：从“H大师”的一句话看见不二
+title: 完美的悖论：从“H大师”的一句话看见断灭
 url: /posts/wan-mei-de-bei-lun/
 pageViewsKey: /posts/wan-mei-de-bei-lun/
 date: 2026-06-19T22:00:00+08:00
@@ -20,7 +20,7 @@ tags:
   - 心境
 ---
 
-<strong>关键词</strong>：完美、二元对立、不二、随喜、众生知见、佛知见、苏轼、佛印、禅宗、心境
+<strong>关键词</strong>：完美、二元对立、不二、随喜、众生知见、佛知见、苏轼、佛印、禅宗、心境、断灭
 
 ***
 
