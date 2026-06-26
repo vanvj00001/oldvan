@@ -60,4 +60,17 @@ fi
 echo "同步到服务器..."
 rsync -avz -e "ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no" --delete /Users/fanweijun/oldvan/public/ root@122.51.71.6:/www/wwwroot/oldvan/
 
-echo "完成！"
+echo "构建 NAS 版..."
+hugo -b "http://192.168.2.233:8089/" -d public_nas
+
+echo "同步到飞牛 NAS..."
+rsync -avz --delete -e "sshpass -p van89bian ssh -o StrictHostKeyChecking=no" /Users/fanweijun/oldvan/public_nas/ vanvj@192.168.2.233:/vol3/1000/vanvj-EXT-12T/7900/oldvan-site/
+
+echo "清理 NAS 构建..."
+rm -rf public_nas
+echo "NAS 部署完成"
+
+echo ""
+echo "全部完成！"
+echo "  GitHub Pages: https://oldvan.top"
+echo "  NAS:         http://192.168.2.233:8089/"
