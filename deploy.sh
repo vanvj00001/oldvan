@@ -64,7 +64,7 @@ echo "构建 NAS 版..."
 hugo -b "http://192.168.2.233:8089/" -d public_nas
 
 echo "同步到飞牛 NAS..."
-rsync -avz --delete -e "sshpass -p van89bian ssh -o StrictHostKeyChecking=no" /Users/fanweijun/oldvan/public_nas/ vanvj@192.168.2.233:/vol3/1000/vanvj-EXT-12T/7900/oldvan-site/
+rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" /Users/fanweijun/oldvan/public_nas/ vanvj@192.168.2.233:/vol3/1000/vanvj-EXT-12T/7900/oldvan-site/
 
 echo "清理 NAS 构建..."
 rm -rf public_nas
