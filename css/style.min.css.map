@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/fanweijun/oldvan",
+	"sourceRoot": "/Users/fanweijun/project/oldvan",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/lib/modern-normalize/modern-normalize.css",
