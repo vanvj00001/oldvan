@@ -1,0 +1,37 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>因果关系 - 标签 - 老梵的空中花园</title>
+        <link>https://oldvan.pages.dev/tags/%E5%9B%A0%E6%9E%9C%E5%85%B3%E7%B3%BB/</link>
+        <description>因果关系 - 标签 - 老梵的空中花园</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 27 Mar 2026 14:30:00 &#43;0800</lastBuildDate><atom:link href="https://oldvan.pages.dev/tags/%E5%9B%A0%E6%9E%9C%E5%85%B3%E7%B3%BB/" rel="self" type="application/rss+xml" /><item>
+    <title>宇宙没有偶然</title>
+    <link>https://oldvan.pages.dev/posts/no-coincidence-in-universe/</link>
+    <pubDate>Fri, 27 Mar 2026 14:30:00 &#43;0800</pubDate>
+    <author>老梵的空中花园</author>
+    <guid>https://oldvan.pages.dev/posts/no-coincidence-in-universe/</guid>
+    <description><![CDATA[<p><strong>关键词</strong>：偶然、随机、决定论、宇宙、逻辑、因果关系、哲学、科学、确定性、世界观、拉普拉斯妖</p>
+<hr>
+<blockquote>
+<p>&ldquo;一切因果，世界微尘，因心成体&rdquo;
+<cite>——《楞严经》</cite></p>
+</blockquote>
+<hr>
+<h2 id="前言">前言</h2>
+<p>作为一个程序员，我们每天都在和“随机”打交道。代码里的 <code>rand()</code>、<code>random()</code>，看似给我们带来了不可预测的结果。但我们也清楚地知道，这些所谓的“随机数”，背后不过是一套确定的算法——给一个初始值（种子），输出就是确定的。真正的“随机”，在我们的世界里并不存在，我们只是在用“随机”这个词语，来标记那些我们暂时无法预测的领域。</p>
+<p>那么，把这个逻辑推到整个宇宙呢？科学上常说“偶然事件”、“随机现象”，甚至量子力学里也有“真随机”的说法。但如果我们用同样的逻辑去审视——所谓的偶然，会不会也只是人类认知局限的产物？宇宙本身，真的有“偶然”这回事吗？</p>
+<p>这个问题看似抽象，却关乎我们如何看待世界、理解因果、安放自身。本文尝试从一个程序员的直觉出发，用逻辑推导的方式，探讨“宇宙是否存在偶然”这一命题。</p>]]></description>
+</item>
+<item>
+    <title>拉普拉斯恶魔</title>
+    <link>https://oldvan.pages.dev/posts/laplaces-demon/</link>
+    <pubDate>Sat, 07 Feb 2026 22:00:00 &#43;0800</pubDate>
+    <author>老梵的空中花园</author>
+    <guid>https://oldvan.pages.dev/posts/laplaces-demon/</guid>
+    <description><![CDATA[<p><strong>关键词</strong>：拉普拉斯恶魔、决定论、自由意志、量子力学、不确定性原理、因果关系、混沌理论、意识、多元宇宙、科学哲学、牛顿力学、爱因斯坦</p>
+<hr>
+<h2 id="前言">前言</h2>
+<p>前言</p>
+<p>宇宙是一台精密钟表吗？人类命运早已注定？决定论与自由意志的百年交锋，暗藏着一个关于宇宙与人类的终极之谜。在1814年，法国数学家皮埃尔-西蒙·拉普拉斯提出了一个震撼科学界的思想实验：如果存在一个“恶魔”，知晓宇宙中所有粒子在某一时刻的位置和动量，那么它就能计算出宇宙的过去与未来。这个设想中的“恶魔”不仅挑战了人类对科学的认知，更是直接冲击了我们对自由意志的理解——如果宇宙的一切都遵循严格的物理定律，那么我们的选择是否真的属于自己？还是说，从宇宙大爆炸那一刻起，一切早已注定？</p>]]></description>
+</item>
+</channel>
+</rss>

@@ -19,14 +19,14 @@ if [ "$EXISTING_COUNT" -gt "$KEEP_COUNT" ]; then
     echo "旧备份已删除"
 fi
 
-tar -czf "$BAK_DIR"/oldvan-content-$(date '+%Y%m%d-%H%M%S').tar.gz -C /Users/fanweijun/oldvan content/
+tar -czf "$BAK_DIR"/oldvan-content-$(date '+%Y%m%d-%H%M%S').tar.gz -C /Users/fanweijun/project/oldvan content/
 
 echo "压缩备份到飞牛NAS..."
 echo "正在压缩备份..."
 BACKUP_DIR="/Volumes/vanvj-INT-1T/备份/代码"
 BACKUP_FILE="$BACKUP_DIR/oldvan-$(date '+%Y%m%d-%H%M%S').zip"
 if [ -d "$BACKUP_DIR" ]; then
-  zip -rq "$BACKUP_FILE" /Users/fanweijun/oldvan --exclude '*/themes/*' --exclude '*/public/*' --exclude '*/.git/*'
+  zip -rq "$BACKUP_FILE" /Users/fanweijun/project/oldvan --exclude '*/themes/*' --exclude '*/public/*' --exclude '*/.git/*'
 else
   echo "备份目录不存在，跳过飞牛NAS压缩备份：$BACKUP_DIR"
 fi
@@ -57,14 +57,14 @@ if ! ./deploy_cfpages.sh; then
   echo "Cloudflare Pages 发布失败，继续后续步骤。"
 fi
 
-echo "同步到服务器..."
-rsync -avz -e "ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no" --delete /Users/fanweijun/oldvan/public/ root@122.51.71.6:/www/wwwroot/oldvan/
+echo "同步到阿里云服务器..."
+rsync -avz -e "ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no" --delete /Users/fanweijun/project/oldvan/public/ root@122.51.71.6:/www/wwwroot/oldvan/
 
 echo "构建 NAS 版..."
-hugo -b "http://192.168.2.233:8090/" -d public_nas
+hugo -b "http://192.168.2.233:8093/" -d public_nas
 
 echo "同步到飞牛 NAS..."
-rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" /Users/fanweijun/oldvan/public_nas/ vanvj@192.168.2.233:/vol3/1000/vanvj-EXT-12T/7900/oldvan-site/
+rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" /Users/fanweijun/project/oldvan/public_nas/ vanvj@192.168.2.233:/vol3/1000/vanvj-EXT-12T/7900/oldvan-site/
 
 echo "清理 NAS 构建..."
 rm -rf public_nas
@@ -73,4 +73,4 @@ echo "NAS 部署完成"
 echo ""
 echo "全部完成！"
 echo "  GitHub Pages: https://oldvan.top"
-echo "  NAS:         http://192.168.2.233:8090/"
+echo "  NAS:         http://192.168.2.233:8093/"
