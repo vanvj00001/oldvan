@@ -8,9 +8,18 @@ WORKTREE_DIR=".gh-pages"
 
 echo "准备 GitHub Pages 工作区..."
 git fetch --prune "$REMOTE"
-if [ -d "$WORKTREE_DIR" ]; then
-  : # 已存在
+# 检查现有 worktree 是否可用：目录存在 + .git 链接指向有效路径 + 在 worktree 列表里
+if [ -d "$WORKTREE_DIR" ] && [ -f "$WORKTREE_DIR/.git" ] && \
+   git -C "$WORKTREE_DIR" rev-parse --git-dir >/dev/null 2>&1 && \
+   git worktree list --porcelain | grep -q "^worktree.*$WORKTREE_DIR\$"; then
+  : # 已存在且有效
 else
+  # 清理无效 worktree（指向旧路径/死链接）
+  if [ -d "$WORKTREE_DIR" ]; then
+    echo "清理无效 worktree: $WORKTREE_DIR"
+    git worktree remove --force "$WORKTREE_DIR" 2>/dev/null || rm -rf "$WORKTREE_DIR"
+    git worktree prune
+  fi
   if git show-ref --quiet "refs/remotes/${REMOTE}/${BRANCH}"; then
     git worktree add "$WORKTREE_DIR" "${REMOTE}/${BRANCH}"
   else
