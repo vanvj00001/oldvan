@@ -37,7 +37,7 @@
 <meta name="apple-mobile-web-app-title" content="老梵的空中花园">
 <meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://vanvj00001.github.io/oldvan/posts/fourier-transform-juice/" /><link rel="prev" href="https://vanvj00001.github.io/oldvan/posts/eastern-western-ai-ceiling/" /><link rel="next" href="https://vanvj00001.github.io/oldvan/posts/let-go-of-self/" /><link rel="stylesheet" href="/oldvan/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://vanvj00001.github.io/oldvan/posts/fourier-transform-juice/" /><link rel="prev" href="https://vanvj00001.github.io/oldvan/posts/ai-prediction-boundary/" /><link rel="next" href="https://vanvj00001.github.io/oldvan/posts/%E5%AD%A6%E4%BD%9B%E4%BF%AE%E8%A1%8C%E7%9A%84%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4/" /><link rel="stylesheet" href="/oldvan/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -48,7 +48,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/vanvj00001.github.io\/oldvan\/posts\/fourier-transform-juice\/"
-        },"genre": "posts","keywords": "傅立叶变换, 频域, 信号处理, 数学思维, 底層規律, 认知论, 思维方式, 科学, 简化, 拆解","wordcount":  3055 ,
+        },"genre": "posts","keywords": "傅立叶变换, 频域, 信号处理, 数学思维, 底層規律, 认知论, 思维方式, 科学, 简化, 拆解","wordcount":  3087 ,
         "url": "https:\/\/vanvj00001.github.io\/oldvan\/posts\/fourier-transform-juice\/","datePublished": "2026-07-14T22:00:00+08:00","dateModified": "2026-07-14T22:00:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -133,7 +133,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">傅立叶变换：一杯果汁的味觉分离器</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/oldvan/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>老梵的空中花园</a></span>&nbsp;<span class="post-category">收录于 <a href="/oldvan/categories/%E8%AE%A4%E7%9F%A5%E8%AE%BA/"><i class="far fa-folder" aria-hidden="true"></i>认知论</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2026-07-14">2026-07-14</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;约 3055 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2026-07-14">2026-07-14</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;约 3087 字&nbsp;
                 <i class="far fa-clock" aria-hidden="true"></i>&nbsp;预计阅读 7 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -251,7 +251,7 @@
 <h3 id="41-公式的本质">4.1 公式的本质</h3>
 <p>你可能听说过那个著名的公式——</p>
 <p>$$
-F(\omega) = \int_{-\infty}^{\infty} f(t) , e^{-i\omega t} , dt \tag{1}
+F(\omega) = \int_{-\infty}^{\infty} f(t) , e^{-i\omega t} , dt \tag{1}（哈哈，连续傅立叶变换公式没法打出来，没有渲染引擎）
 $$</p>
 <p>看起来很吓人对不对？但你现在知道它是什么意思了。那个 ( e^{-i\omega t} ) 本质上就是一个&quot;标准筛子&quot;——它不断以某个特定频率转动，和你的信号比一比，&ldquo;有没有这个频率？有的话多大的分量？&rdquo;</p>
 <p>每一把筛子对应一个频率，筛完全部频率，就得到了整张&quot;频率成分清单&quot;。</p>
@@ -291,8 +291,8 @@ $$</p>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/oldvan/posts/eastern-western-ai-ceiling/" class="prev" rel="prev" title="东西方AI思维方式之争"><i class="fas fa-angle-left" aria-hidden="true"></i>东西方AI思维方式之争</a>
-            <a href="/oldvan/posts/let-go-of-self/" class="next" rel="next" title="与自己和解">与自己和解<i class="fas fa-angle-right" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/oldvan/posts/ai-prediction-boundary/" class="prev" rel="prev" title="AI预测的边界：从中美AI竞争谈起"><i class="fas fa-angle-left" aria-hidden="true"></i>AI预测的边界：从中美AI竞争谈起</a>
+            <a href="/oldvan/posts/%E5%AD%A6%E4%BD%9B%E4%BF%AE%E8%A1%8C%E7%9A%84%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4/" class="next" rel="next" title="学佛修行的具体步骤">学佛修行的具体步骤<i class="fas fa-angle-right" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">

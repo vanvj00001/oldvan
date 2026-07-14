@@ -4,6 +4,25 @@
         <link>https://vanvj00001.github.io/oldvan/tags/%E7%A7%91%E5%AD%A6/</link>
         <description>科学 - 标签 - 老梵的空中花园</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 14 Jul 2026 22:00:00 &#43;0800</lastBuildDate><atom:link href="https://vanvj00001.github.io/oldvan/tags/%E7%A7%91%E5%AD%A6/" rel="self" type="application/rss+xml" /><item>
+    <title>傅立叶变换：一杯果汁的味觉分离器</title>
+    <link>https://vanvj00001.github.io/oldvan/posts/fourier-transform-juice/</link>
+    <pubDate>Tue, 14 Jul 2026 22:00:00 &#43;0800</pubDate>
+    <author>老梵的空中花园</author>
+    <guid>https://vanvj00001.github.io/oldvan/posts/fourier-transform-juice/</guid>
+    <description><![CDATA[<p><strong>关键词</strong>：傅立叶变换、频域、信号处理、数学思维、底层规律、认知论、思维方式、科学、简化、拆解</p>
+<hr>
+<blockquote>
+<p>&ldquo;把任何复杂、混乱、看似无规律的东西，强行拆解成一系列标准、完美的波的叠加。&rdquo;
+<cite>——傅立叶变换的朴素哲学</cite></p>
+</blockquote>
+<hr>
+<h2 id="前言">前言</h2>
+<p>如果你去问一个理科生什么是傅立叶变换，他大概率会背课本：&ldquo;傅立叶变换是把时域信号转到频域。&rdquo; 你肯定一头雾水。</p>
+<p>我如果换个问法：<strong>给你一杯混合果汁，你光靠喝，能不能把里面加了哪些水果、各加了多少克，全部列出来？</strong></p>
+<p>傅立叶变换，干的就是这个活儿。</p>
+<p>它不是什么高深的数学魔法。它只是一个视角转换的工具——一个帮你从&quot;这团乱麻到底是什么&quot;切换到&quot;这团乱麻由哪些基本元素构成&quot;的透镜。这篇文章的目的，就是把这个工具用最朴素的语言讲清楚，让你以后再听到&quot;傅立叶变换&quot;四个字时，脑子里浮现的不是公式，而是一杯果汁。</p>]]></description>
+</item>
+<item>
     <title>尺子带来的思考</title>
     <link>https://vanvj00001.github.io/oldvan/posts/%E5%B0%BA%E5%AD%90%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%80%9D%E8%80%83/</link>
     <pubDate>Fri, 06 Mar 2026 21:38:00 &#43;0800</pubDate>
@@ -59,25 +78,6 @@
 <p>作为一个程序员，我们每天都在和“随机”打交道。代码里的 <code>rand()</code>、<code>random()</code>，看似给我们带来了不可预测的结果。但我们也清楚地知道，这些所谓的“随机数”，背后不过是一套确定的算法——给一个初始值（种子），输出就是确定的。真正的“随机”，在我们的世界里并不存在，我们只是在用“随机”这个词语，来标记那些我们暂时无法预测的领域。</p>
 <p>那么，把这个逻辑推到整个宇宙呢？科学上常说“偶然事件”、“随机现象”，甚至量子力学里也有“真随机”的说法。但如果我们用同样的逻辑去审视——所谓的偶然，会不会也只是人类认知局限的产物？宇宙本身，真的有“偶然”这回事吗？</p>
 <p>这个问题看似抽象，却关乎我们如何看待世界、理解因果、安放自身。本文尝试从一个程序员的直觉出发，用逻辑推导的方式，探讨“宇宙是否存在偶然”这一命题。</p>]]></description>
-</item>
-<item>
-    <title>傅立叶变换：一杯果汁的味觉分离器</title>
-    <link>https://vanvj00001.github.io/oldvan/posts/fourier-transform-juice/</link>
-    <pubDate>Tue, 14 Jul 2026 22:00:00 &#43;0800</pubDate>
-    <author>老梵的空中花园</author>
-    <guid>https://vanvj00001.github.io/oldvan/posts/fourier-transform-juice/</guid>
-    <description><![CDATA[<p><strong>关键词</strong>：傅立叶变换、频域、信号处理、数学思维、底层规律、认知论、思维方式、科学、简化、拆解</p>
-<hr>
-<blockquote>
-<p>&ldquo;把任何复杂、混乱、看似无规律的东西，强行拆解成一系列标准、完美的波的叠加。&rdquo;
-<cite>——傅立叶变换的朴素哲学</cite></p>
-</blockquote>
-<hr>
-<h2 id="前言">前言</h2>
-<p>如果你去问一个理科生什么是傅立叶变换，他大概率会背课本：&ldquo;傅立叶变换是把时域信号转到频域。&rdquo; 你肯定一头雾水。</p>
-<p>我如果换个问法：<strong>给你一杯混合果汁，你光靠喝，能不能把里面加了哪些水果、各加了多少克，全部列出来？</strong></p>
-<p>傅立叶变换，干的就是这个活儿。</p>
-<p>它不是什么高深的数学魔法。它只是一个视角转换的工具——一个帮你从&quot;这团乱麻到底是什么&quot;切换到&quot;这团乱麻由哪些基本元素构成&quot;的透镜。这篇文章的目的，就是把这个工具用最朴素的语言讲清楚，让你以后再听到&quot;傅立叶变换&quot;四个字时，脑子里浮现的不是公式，而是一杯果汁。</p>]]></description>
 </item>
 <item>
     <title>神通</title>
