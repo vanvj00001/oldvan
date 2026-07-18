@@ -3,7 +3,7 @@
         <title>认知论 - 分类 - 老梵的空中花园</title>
         <link>https://vanvj00001.github.io/oldvan/categories/%E8%AE%A4%E7%9F%A5%E8%AE%BA/</link>
         <description>认知论 - 分类 - 老梵的空中花园</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 14 Jul 2026 21:00:00 &#43;0800</lastBuildDate><atom:link href="https://vanvj00001.github.io/oldvan/categories/%E8%AE%A4%E7%9F%A5%E8%AE%BA/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 18 Jul 2026 11:00:00 &#43;0800</lastBuildDate><atom:link href="https://vanvj00001.github.io/oldvan/categories/%E8%AE%A4%E7%9F%A5%E8%AE%BA/" rel="self" type="application/rss+xml" /><item>
     <title>傅立叶变换：一杯果汁的味觉分离器</title>
     <link>https://vanvj00001.github.io/oldvan/posts/fourier-transform-juice/</link>
     <pubDate>Tue, 14 Jul 2026 21:00:00 &#43;0800</pubDate>
@@ -21,6 +21,25 @@
 <p>我如果换个问法：<strong>给你一杯混合果汁，你光靠喝，能不能把里面加了哪些水果、各加了多少克，全部列出来？</strong></p>
 <p>傅立叶变换，干的就是这个活儿。</p>
 <p>它不是什么高深的数学魔法。它只是一个视角转换的工具——一个帮你从&quot;这团乱麻到底是什么&quot;切换到&quot;这团乱麻由哪些基本元素构成&quot;的透镜。这篇文章的目的，就是把这个工具用最朴素的语言讲清楚，让你以后再听到&quot;傅立叶变换&quot;四个字时，脑子里浮现的不是公式，而是一杯果汁。</p>]]></description>
+</item>
+<item>
+    <title>得意忘言：中国古代&#34;术&#34;与&#34;意&#34;的辩证智慧</title>
+    <link>https://vanvj00001.github.io/oldvan/posts/shu-yi-zhi-huan-wang-yan/</link>
+    <pubDate>Sat, 18 Jul 2026 11:00:00 &#43;0800</pubDate>
+    <author>老梵的空中花园</author>
+    <guid>https://vanvj00001.github.io/oldvan/posts/shu-yi-zhi-huan-wang-yan/</guid>
+    <description><![CDATA[<p><strong>关键词</strong>：得意忘言、术与意、中庸、阴阳、形意拳、庖丁解牛、孙子兵法、医者意也、架构师、IT 行业</p>
+<hr>
+<blockquote>
+<p>&ldquo;书不尽言，言不尽意。然则圣人之意，其不可见乎？&rdquo;
+<cite>——《周易·系辞上》</cite></p>
+</blockquote>
+<hr>
+<h2 id="前言">前言</h2>
+<p>在中国思想史中，有一把古老的锁困扰了无数求道者——它就是心与物、理与气、知与行、体与用之间的二元对立。在这些对子之中，&ldquo;术&quot;和&quot;意&quot;的关系尤为微妙且关键。</p>
+<p>&ldquo;术是方法，意是心。&ldquo;这句简洁的概括道出了两者本质上的分野。然而，古人真正的智慧在于不执着于区分，而是超越它。只重术者沦为机械工匠，刻板僵化；只重意者则陷入虚妄空想，飘忽无根。中国古代最伟大的心灵，在术的精熟与意的升华之间找到了一条中道——既不过分堆砌方法，也不沉溺于心灵独舞，而是让两者如阴阳双鱼在永恒追逐交融之中生生不息。</p>
+<p>这种终极状态被古人称为&quot;得意忘言&rdquo;：为了得到&quot;意&rdquo;，必须借助语言（术）；但若执着于语言，则永远得不到&quot;意&rdquo;。拿到&quot;意&quot;之后，又必须果断抛弃&quot;术&quot;的拐杖。这一拿起与放下的反复轮回，正是中国智慧最具反极端主义的思辨张力。</p>
+<p>让我穿透历史烟云，在艺术、医学、兵法、武学、IT 五个维度中探寻术与意的博弈交融及超越。</p>]]></description>
 </item>
 <item>
     <title>认知跃迁：从科学理性到宇宙敬畏</title>
