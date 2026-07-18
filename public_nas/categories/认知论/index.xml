@@ -1,0 +1,64 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>认知论 - 分类 - 老梵的空中花园</title>
+        <link>http://192.168.2.233:8093/categories/%E8%AE%A4%E7%9F%A5%E8%AE%BA/</link>
+        <description>认知论 - 分类 - 老梵的空中花园</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 18 Jul 2026 11:00:00 &#43;0800</lastBuildDate><atom:link href="http://192.168.2.233:8093/categories/%E8%AE%A4%E7%9F%A5%E8%AE%BA/" rel="self" type="application/rss+xml" /><item>
+    <title>傅立叶变换：一杯果汁的味觉分离器</title>
+    <link>http://192.168.2.233:8093/posts/fourier-transform-juice/</link>
+    <pubDate>Tue, 14 Jul 2026 21:00:00 &#43;0800</pubDate>
+    <author>老梵的空中花园</author>
+    <guid>http://192.168.2.233:8093/posts/fourier-transform-juice/</guid>
+    <description><![CDATA[<p><strong>关键词</strong>：傅立叶变换、频域、信号处理、数学思维、底层规律、认知论、思维方式、科学、简化、拆解</p>
+<hr>
+<blockquote>
+<p>&ldquo;把任何复杂、混乱、看似无规律的东西，强行拆解成一系列标准、完美的波的叠加。&rdquo;
+<cite>——傅立叶变换的朴素哲学</cite></p>
+</blockquote>
+<hr>
+<h2 id="前言">前言</h2>
+<p>如果你去问一个理科生什么是傅立叶变换，他大概率会背课本：&ldquo;傅立叶变换是把时域信号转到频域。&rdquo; 你肯定一头雾水。</p>
+<p>我如果换个问法：<strong>给你一杯混合果汁，你光靠喝，能不能把里面加了哪些水果、各加了多少克，全部列出来？</strong></p>
+<p>傅立叶变换，干的就是这个活儿。</p>
+<p>它不是什么高深的数学魔法。它只是一个视角转换的工具——一个帮你从&quot;这团乱麻到底是什么&quot;切换到&quot;这团乱麻由哪些基本元素构成&quot;的透镜。这篇文章的目的，就是把这个工具用最朴素的语言讲清楚，让你以后再听到&quot;傅立叶变换&quot;四个字时，脑子里浮现的不是公式，而是一杯果汁。</p>]]></description>
+</item>
+<item>
+    <title>得意忘言：中国古代&#34;术&#34;与&#34;意&#34;的辩证智慧</title>
+    <link>http://192.168.2.233:8093/posts/shu-yi-zhi-huan-wang-yan/</link>
+    <pubDate>Sat, 18 Jul 2026 11:00:00 &#43;0800</pubDate>
+    <author>老梵的空中花园</author>
+    <guid>http://192.168.2.233:8093/posts/shu-yi-zhi-huan-wang-yan/</guid>
+    <description><![CDATA[<p><strong>关键词</strong>：得意忘言、术与意、中庸、阴阳、形意拳、庖丁解牛、孙子兵法、医者意也、架构师、IT 行业</p>
+<hr>
+<blockquote>
+<p>&ldquo;书不尽言，言不尽意。然则圣人之意，其不可见乎？&rdquo;
+<cite>——《周易·系辞上》</cite></p>
+</blockquote>
+<hr>
+<h2 id="前言">前言</h2>
+<p>在中国思想史中，有一把古老的锁困扰了无数求道者——它就是心与物、理与气、知与行、体与用之间的二元对立。在这些对子之中，&ldquo;术&quot;和&quot;意&quot;的关系尤为微妙且关键。</p>
+<p>&ldquo;术是方法，意是心。&ldquo;这句简洁的概括道出了两者本质上的分野。然而，古人真正的智慧在于不执着于区分，而是超越它。只重术者沦为机械工匠，刻板僵化；只重意者则陷入虚妄空想，飘忽无根。中国古代最伟大的心灵，在术的精熟与意的升华之间找到了一条中道——既不过分堆砌方法，也不沉溺于心灵独舞，而是让两者如阴阳双鱼在永恒追逐交融之中生生不息。</p>
+<p>这种终极状态被古人称为&quot;得意忘言&rdquo;：为了得到&quot;意&rdquo;，必须借助语言（术）；但若执着于语言，则永远得不到&quot;意&rdquo;。拿到&quot;意&quot;之后，又必须果断抛弃&quot;术&quot;的拐杖。这一拿起与放下的反复轮回，正是中国智慧最具反极端主义的思辨张力。</p>
+<p>让我穿透历史烟云，在艺术、医学、兵法、武学、IT 五个维度中探寻术与意的博弈交融及超越。</p>]]></description>
+</item>
+<item>
+    <title>认知跃迁：从科学理性到宇宙敬畏</title>
+    <link>http://192.168.2.233:8093/posts/cognitive-leap/</link>
+    <pubDate>Mon, 29 Jun 2026 20:00:00 &#43;0800</pubDate>
+    <author>老梵的空中花园</author>
+    <guid>http://192.168.2.233:8093/posts/cognitive-leap/</guid>
+    <description><![CDATA[<p><strong>关键词</strong>：科学、信仰、认知跃迁、总观效应、物理学、宇宙、敬畏、第一人称、内在平静、欲望</p>
+<hr>
+<blockquote>
+<p>&ldquo;宇宙不仅比我们想象的更奇特，而且比我们能够想象的更奇特。&rdquo;
+<cite>——J.B.S. 霍尔丹，英国遗传学家</cite></p>
+</blockquote>
+<hr>
+<h2 id="前言">前言</h2>
+<p>这个话题很沉重，宇航员的经历最能说明问题。</p>
+<p><strong>詹姆斯·欧文</strong>（James Irwin，阿波罗15号登月宇航员）回来后成了一名牧师，创办了&quot;高飞基金会&quot;，余生都在传道。<strong>埃德加·米切尔</strong>（Edgar Mitchell，阿波罗14号）在月球上做实验时感受到一种&quot;与宇宙融为一体的意识&quot;，回来后创办了<strong>&ldquo;意识科学研究所&rdquo;</strong>（Institute of Noetic Sciences），专门研究意念、直觉和超常感知。<strong>查尔斯·杜克</strong>（Charlie Duke，阿波罗16号）在月球漫步后皈依了基督教，从此全球巡回布道。还有很多类似的例子，都是关于返回后作出人生大改变的。他们的妻子都说回来的人不是同一个人。他们和人说话时眼神像在看着你的背后。这些人原本是什么出身？空军试飞员、麻省理工的工程师、绝对的精英中的精英，最后却全部变得看上去&quot;不科学&quot;了。</p>
+<p>我自己的经历也是类似的轨迹。爷爷、父亲到我自己都是大学生，我儿子现在读到了博士。建国后家里连续四代大学生，标准的读书人家庭。父亲搞机械工程，我学电子工程，根正苗红的唯物主义路线。但在南大读硕士时，物理系一位老先生告诉我，他们教研室90%的人都有宗教信仰，而且是深信不疑的那种。我当时非常诧异。后来我自己接触到物理学的深层内容，看待世界的方式也完全改变了。</p>
+<p>本文从宇航员的&quot;总观效应&quot;、物理学家的认知悬崖、以及我个人的认知跃迁经历三条线索，试图探讨一个核心问题：当工具理性触摸到自身的边界时，人会发生什么？</p>]]></description>
+</item>
+</channel>
+</rss>

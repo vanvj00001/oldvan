@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>傅立叶变换：一杯果汁的味觉分离器 - 老梵的空中花园</title><meta name="Description" content="This is my cool site"><meta property="og:url" content="http://192.168.2.233:8093/posts/fourier-transform-juice/">
+  <meta property="og:site_name" content="老梵的空中花园">
+  <meta property="og:title" content="傅立叶变换：一杯果汁的味觉分离器">
+  <meta property="og:description" content="关键词：傅立叶变换、频域、信号处理、数学思维、底层规律、认知论、思维方式、科学、简化、拆解
+“把任何复杂、混乱、看似无规律的东西，强行拆解成一系列标准、完美的波的叠加。” ——傅立叶变换的朴素哲学
+前言 如果你去问一个理科生什么是傅立叶变换，他大概率会背课本：“傅立叶变换是把时域信号转到频域。” 你肯定一头雾水。
+我如果换个问法：给你一杯混合果汁，你光靠喝，能不能把里面加了哪些水果、各加了多少克，全部列出来？
+傅立叶变换，干的就是这个活儿。
+它不是什么高深的数学魔法。它只是一个视角转换的工具——一个帮你从&#34;这团乱麻到底是什么&#34;切换到&#34;这团乱麻由哪些基本元素构成&#34;的透镜。这篇文章的目的，就是把这个工具用最朴素的语言讲清楚，让你以后再听到&#34;傅立叶变换&#34;四个字时，脑子里浮现的不是公式，而是一杯果汁。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-07-14T21:00:00+08:00">
+    <meta property="article:modified_time" content="2026-07-14T21:00:00+08:00">
+    <meta property="article:tag" content="傅立叶变换">
+    <meta property="article:tag" content="频域">
+    <meta property="article:tag" content="信号处理">
+    <meta property="article:tag" content="数学思维">
+    <meta property="article:tag" content="底層規律">
+    <meta property="article:tag" content="认知论">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="傅立叶变换：一杯果汁的味觉分离器">
+  <meta name="twitter:description" content="关键词：傅立叶变换、频域、信号处理、数学思维、底层规律、认知论、思维方式、科学、简化、拆解
+“把任何复杂、混乱、看似无规律的东西，强行拆解成一系列标准、完美的波的叠加。” ——傅立叶变换的朴素哲学
+前言 如果你去问一个理科生什么是傅立叶变换，他大概率会背课本：“傅立叶变换是把时域信号转到频域。” 你肯定一头雾水。
+我如果换个问法：给你一杯混合果汁，你光靠喝，能不能把里面加了哪些水果、各加了多少克，全部列出来？
+傅立叶变换，干的就是这个活儿。
+它不是什么高深的数学魔法。它只是一个视角转换的工具——一个帮你从&#34;这团乱麻到底是什么&#34;切换到&#34;这团乱麻由哪些基本元素构成&#34;的透镜。这篇文章的目的，就是把这个工具用最朴素的语言讲清楚，让你以后再听到&#34;傅立叶变换&#34;四个字时，脑子里浮现的不是公式，而是一杯果汁。">
+<meta name="application-name" content="老梵的空中花园">
+<meta name="apple-mobile-web-app-title" content="老梵的空中花园">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://192.168.2.233:8093/posts/fourier-transform-juice/" /><link rel="prev" href="http://192.168.2.233:8093/posts/ai-prediction-boundary/" /><link rel="next" href="http://192.168.2.233:8093/posts/%E5%AD%A6%E4%BD%9B%E4%BF%AE%E8%A1%8C%E7%9A%84%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "傅立叶变换：一杯果汁的味觉分离器",
+        "inLanguage": "zh-cn",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/192.168.2.233:8093\/posts\/fourier-transform-juice\/"
+        },"genre": "posts","keywords": "傅立叶变换, 频域, 信号处理, 数学思维, 底層規律, 认知论, 思维方式, 科学, 简化, 拆解","wordcount":  3167 ,
+        "url": "http:\/\/192.168.2.233:8093\/posts\/fourier-transform-juice\/","datePublished": "2026-07-14T21:00:00+08:00","dateModified": "2026-07-14T21:00:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "老梵的空中花园"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>
+          const query = window.matchMedia('(prefers-color-scheme: dark)');
+          function applyTheme() {
+            let theme = window.localStorage?.getItem('theme') || 'auto';
+            let isDark = theme === 'dark' || (theme === 'auto' && query.matches);
+            document.body.setAttribute('theme', isDark? 'dark' : 'light');
+            document.body.setAttribute('cfg-theme', theme);
+          }
+
+          applyTheme();
+          query.addEventListener('change', applyTheme);
+        </script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="老梵的空中花园">老梵的空中花园</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/archives/"> 归档 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="输入关键词..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="老梵的空中花园">老梵的空中花园</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="输入关键词..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/archives/" title="">归档</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">傅立叶变换：一杯果汁的味觉分离器</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>老梵的空中花园</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E8%AE%A4%E7%9F%A5%E8%AE%BA/"><i class="far fa-folder" aria-hidden="true"></i>认知论</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2026-07-14">2026-07-14</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;约 3167 字&nbsp;
+                <i class="far fa-clock" aria-hidden="true"></i>&nbsp;预计阅读 7 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#一它到底是什么一杯果汁理论">一、它到底是什么？一杯果汁理论</a>
+      <ul>
+        <li><a href="#11-波的本质">1.1 波的本质</a></li>
+        <li><a href="#12-直观类比">1.2 直观类比</a></li>
+      </ul>
+    </li>
+    <li><a href="#二为什么它这么牛因为人类太笨了">二、为什么它这么牛？因为人类太&quot;笨&quot;了</a>
+      <ul>
+        <li><a href="#21-音色的秘密">2.1 音色的秘密</a></li>
+        <li><a href="#22-mp3压缩的真相">2.2 MP3压缩的真相</a></li>
+      </ul>
+    </li>
+    <li><a href="#三两个世界的切换时域-vs-频域">三、两个世界的切换（时域 vs 频域）</a>
+      <ul>
+        <li><a href="#31-时域视角">3.1 时域视角</a></li>
+        <li><a href="#32-频域视角">3.2 频域视角</a></li>
+        <li><a href="#33-这就是傅立叶变换最大的用处">3.3 这就是傅立叶变换最大的用处</a></li>
+      </ul>
+    </li>
+    <li><a href="#四简单粗暴的哲学总结">四、简单粗暴的哲学总结</a>
+      <ul>
+        <li><a href="#41-公式的本质">4.1 公式的本质</a></li>
+        <li><a href="#42-从果汁到世界观">4.2 从果汁到世界观</a></li>
+      </ul>
+    </li>
+    <li><a href="#结论">结论</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><strong>关键词</strong>：傅立叶变换、频域、信号处理、数学思维、底层规律、认知论、思维方式、科学、简化、拆解</p>
+<hr>
+<blockquote>
+<p>&ldquo;把任何复杂、混乱、看似无规律的东西，强行拆解成一系列标准、完美的波的叠加。&rdquo;
+<cite>——傅立叶变换的朴素哲学</cite></p>
+</blockquote>
+<hr>
+<h2 id="前言">前言</h2>
+<p>如果你去问一个理科生什么是傅立叶变换，他大概率会背课本：&ldquo;傅立叶变换是把时域信号转到频域。&rdquo; 你肯定一头雾水。</p>
+<p>我如果换个问法：<strong>给你一杯混合果汁，你光靠喝，能不能把里面加了哪些水果、各加了多少克，全部列出来？</strong></p>
+<p>傅立叶变换，干的就是这个活儿。</p>
+<p>它不是什么高深的数学魔法。它只是一个视角转换的工具——一个帮你从&quot;这团乱麻到底是什么&quot;切换到&quot;这团乱麻由哪些基本元素构成&quot;的透镜。这篇文章的目的，就是把这个工具用最朴素的语言讲清楚，让你以后再听到&quot;傅立叶变换&quot;四个字时，脑子里浮现的不是公式，而是一杯果汁。</p>
+<hr>
+<h2 id="一它到底是什么一杯果汁理论">一、它到底是什么？一杯果汁理论</h2>
+<p>假设你喝到一杯奶昔，味道很复杂，有草莓味、香蕉味，还有一点点芒果味。</p>
+<p>你喝到的这口&quot;混合味&quot;，就是我们在现实中看到的样子——<strong>这叫&quot;时域&quot;</strong>。时域就是你感知到的原始信号，它随时间变化，乱七八糟地搅在一起。音乐是时域里的波形，股市是时域里的K线，心电图的曲线也是时域。</p>
+<p><strong>傅立叶变换</strong>，就是递给你一个&quot;味觉分离器&quot;。你把这杯果汁倒进去，机器&quot;哔&quot;一声，吐出一张清单：</p>
+<ol>
+<li>草莓：30克</li>
+<li>香蕉：50克</li>
+<li>芒果：10克</li>
+</ol>
+<p>这张清单，就是**&ldquo;频域&rdquo;**。频域告诉你：这个看似复杂的东西，实际上是由哪些最纯粹的成分组成的，每种成分占多少分量。</p>
+<h3 id="11-波的本质">1.1 波的本质</h3>
+<p>这里的关键概念是&quot;波&quot;——或者说正弦波。正弦波是最简单、最纯粹的振荡形式。你可以把它理解成&quot;纯草莓汁&quot;：没有杂味，就是一个干净的频率。</p>
+<p>傅立叶变换的本质就是告诉我们：<strong>任何复杂的波形，无论看起来多乱，都可以被分解成一组不同频率、不同振幅、不同相位的正弦波之和。</strong></p>
+<p>就像音乐里的和弦——你听到的可能是丰满的和声，但它实际上就是几个不同频率的单音同时响起。</p>
+<h3 id="12-直观类比">1.2 直观类比</h3>
+<p>声音的角度更容易理解：</p>
+<ul>
+<li>低音提琴拉一个音，波形在时域里看着很干净，频率低、周期长。</li>
+<li>小提琴拉同一个音，波形更复杂一些，频率相同但多了高频泛音。</li>
+<li>两把乐器同时拉，波形就彻底乱了——但在频域里，它们就是两条清晰的竖线。</li>
+</ul>
+<p>这就是傅立叶变换最直观的用途：<strong>在时域里乱成一团的东西，切到频域就清清楚楚。</strong></p>
+<hr>
+<h2 id="二为什么它这么牛因为人类太笨了">二、为什么它这么牛？因为人类太&quot;笨&quot;了</h2>
+<p>我们人眼看东西，看的是&quot;颜色、形状&quot;；人耳听东西，听的是&quot;响度、音色&quot;。但物理世界根本不认这些东西。</p>
+<p>物理世界只认**&ldquo;频率&rdquo;**。</p>
+<h3 id="21-音色的秘密">2.1 音色的秘密</h3>
+<p>为什么我们能分辨出钢琴和小提琴弹同一个音？不是因为响度不同，不是因为时长不同，而是因为频率成分不同。</p>
+<p>傅立叶变换告诉我们：钢琴的那个音里，除了主频率（比如440Hz的A音），还夹杂着不同比例的&quot;泛音&quot;（高次谐波，比如880Hz、1320Hz、1760Hz……）。小提琴的&quot;配方表&quot;不一样——泛音的比例、衰减速度不同，所以音色不同。</p>
+<p>所谓音色，就是一张<strong>频率成分的配方表</strong>。</p>
+<h3 id="22-mp3压缩的真相">2.2 MP3压缩的真相</h3>
+<p>你手机里的MP3为什么能压缩到那么小？因为傅立叶变换把音频拆开后，编码器干了这么一件事：</p>
+<ol>
+<li>把整段音频切成极短的时间片（每片约几十毫秒）</li>
+<li>对每一片做傅立叶变换，得到它的频率成分清单</li>
+<li>查人类听觉模型——耳朵只能听到20Hz到20000Hz的频率</li>
+<li>把那些超出听力范围的频率直接扔掉（反正你也听不出来）</li>
+<li>把那些被更响的声音遮蔽掉的弱频率也扔掉（这叫&quot;听觉掩蔽效应&quot;）</li>
+</ol>
+<p>剩下的，再编码存储。</p>
+<p>这就是MP3压缩原理——<strong>不是把音频压小了，而是把人类听不到的部分丢了</strong>。傅立叶变换就是那个&quot;拆解+筛选&quot;的底层工具。没有它，数字音乐、语音识别、图像压缩这些技术都无从谈起。</p>
+<hr>
+<h2 id="三两个世界的切换时域-vs-频域">三、两个世界的切换（时域 vs 频域）</h2>
+<p>想象你在看一个心电图，那条弯弯曲曲的线。</p>
+<h3 id="31-时域视角">3.1 时域视角</h3>
+<p>时域看过去，这根线在剧烈抖动，像地震一样，乱得一塌糊涂。你根本看不出这个人怎么了——心跳是否规律？有没有早搏？信号里有没有干扰？全被杂音盖住了。</p>
+<h3 id="32-频域视角">3.2 频域视角</h3>
+<p>傅立叶变换一分析，画面立刻清晰了。原来这里面有：</p>
+<ul>
+<li><strong>一个每分钟72次的平稳心跳（低频）</strong></li>
+<li><strong>一大堆杂乱无章的肌肉颤抖噪音（高频）</strong></li>
+</ul>
+<p>这时候医生想干嘛？<strong>把那个高频噪音（杂质）过滤掉</strong>，只保留那个平稳的72次心跳。在时域里直接过滤很难——你不知道哪些是心跳、哪些是杂音。但在频域里，这就是一刀切：把高频部分置零，逆变换回来，干净的心跳信号就出来了。</p>
+<h3 id="33-这就是傅立叶变换最大的用处">3.3 这就是傅立叶变换最大的用处</h3>
+<p><strong>在&quot;时域&quot;里很难处理的问题，把它扔到&quot;频域&quot;里，变得一目了然，随手就能把&quot;坏波&quot;摘出去。</strong></p>
+<p>这个思路太重要了，所以我再换个角度说一遍。</p>
+<p>你有一个混合信号。在时域里，所有的信息混在一起，像一杯搅匀的果汁。你没法直接挑出某一个成分。傅立叶变换把果汁分离成一杯清水上面飘着的几层油——每层油对应一个成分。这时你就能用手指轻轻一撇，把最上面那层不需要的油去掉。</p>
+<p>这个&quot;分离→处理→还原&quot;的三步流程，在信号处理、图像处理、音频处理、通信工程里无处不在。</p>
+<hr>
+<h2 id="四简单粗暴的哲学总结">四、简单粗暴的哲学总结</h2>
+<p>如果非要我用傅立叶变换悟出点人生道理，那就是：</p>
+<p><strong>这世上再复杂、再让你头疼的事情（信号），本质上都是由几个最纯粹、最简单的底层规律（基础频率）组成的。</strong></p>
+<p>你看不清它，觉得乱，是因为你一直陷在&quot;当下（时域）&ldquo;里。每天被各种琐碎的事情轰炸，情绪此起彼伏，你看到的只是剧烈波动的线，找不到规律，看不到方向。</p>
+<p>傅立叶变换给我们的启发是：<strong>试着把视角拉高，进行一次频域层面的思考。</strong> 把那些干扰你的杂音、情绪的高频波动滤掉，你会发现，支撑这件事运行的底层&quot;主频&rdquo;，往往就那么一两个。</p>
+<h3 id="41-公式的本质">4.1 公式的本质</h3>
+<p>你可能听说过那个著名的公式——</p>
+<p>$$
+F(\omega) = \int_{-\infty}^{\infty} f(t) , e^{-i\omega t} , dt \tag{1}（哈哈，连续傅立叶变换公式没法打出来，没有渲染引擎）
+$$</p>
+<p>看起来很吓人对不对？但你现在知道它是什么意思了。那个 ( e^{-i\omega t} ) 本质上就是一个&quot;标准筛子&quot;——它不断以某个特定频率转动，和你的信号比一比，&ldquo;有没有这个频率？有的话多大的分量？&rdquo;</p>
+<p>每一把筛子对应一个频率，筛完全部频率，就得到了整张&quot;频率成分清单&quot;。</p>
+<h3 id="42-从果汁到世界观">4.2 从果汁到世界观</h3>
+<p>所以下次你遇到一个看似无法理解的问题时，问自己三个问题：</p>
+<ol>
+<li><strong>这个问题由哪些基本要素组成？</strong>（找频率成分）</li>
+<li><strong>哪些要素是真正的核心？</strong>（找主频）</li>
+<li><strong>哪些要素是干扰？</strong>（找噪音/高频）</li>
+</ol>
+<p>回答了这三个问题，你已经完成了一次傅立叶变换。</p>
+<hr>
+<h2 id="结论">结论</h2>
+<p>傅立叶变换不是什么高深莫测的数学概念。它是一个视角转换的工具——把混乱的时域信号，变成清晰的频域清单。</p>
+<p>它是一个思维方式：再复杂的东西，也可以拆解为最基本、最纯粹的元素之和。</p>
+<p>它是一个实用利器：从MP3压缩到心电图分析，从图像处理到语音识别，傅立叶变换在背后默默支撑着现代数字世界的运转。</p>
+<p>你可以不记得公式，可以不会手动计算。但如果你从这个故事里带走一个念头——<strong>复杂是由简单构成的，混乱的背后是清晰的频谱</strong>——那傅立叶变换对你来说，就不再是一个需要背诵的考点，而是一个陪伴终身的认知工具。</p>
+<p>人生亦然，很多时候会发现时域内无解，但是你切换到频域去思考的时候，豁然开朗，有一种“我悟了“的感觉，祝大家熟练运用傅立叶变换的思维方式去解工作、解生活、解人生。</p>
+<p><em>（全文约4100字）</em>  </p>
+<hr></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2026-07-14</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 X" data-sharer="x" data-url="http://192.168.2.233:8093/posts/fourier-transform-juice/" data-title="傅立叶变换：一杯果汁的味觉分离器" data-hashtags="傅立叶变换,频域,信号处理,数学思维,底層規律,认知论,思维方式,科学,简化,拆解"><i class="fab fa-x-twitter" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Threads" data-sharer="threads" data-url="http://192.168.2.233:8093/posts/fourier-transform-juice/" data-title="傅立叶变换：一杯果汁的味觉分离器"><i class="fab fa-threads" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://192.168.2.233:8093/posts/fourier-transform-juice/" data-hashtag="傅立叶变换"><i class="fab fa-facebook-square" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="http://192.168.2.233:8093/posts/fourier-transform-juice/" data-title="傅立叶变换：一杯果汁的味觉分离器"><i class="fab fa-hacker-news" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://192.168.2.233:8093/posts/fourier-transform-juice/" data-title="傅立叶变换：一杯果汁的味觉分离器"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@16.9.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://192.168.2.233:8093/posts/fourier-transform-juice/" data-title="傅立叶变换：一杯果汁的味觉分离器"><i class="fab fa-weibo" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Diaspora" data-sharer="diaspora" data-url="http://192.168.2.233:8093/posts/fourier-transform-juice/" data-title="傅立叶变换：一杯果汁的味觉分离器" data-description=""><i class="fab fa-diaspora" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2f192.168.2.233%3a8093%2fposts%2ffourier-transform-juice%2f&amp;text=%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2%ef%bc%9a%e4%b8%80%e6%9d%af%e6%9e%9c%e6%b1%81%e7%9a%84%e5%91%b3%e8%a7%89%e5%88%86%e7%a6%bb%e5%99%a8" target="_blank" title="分享到 Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<a href="/tags/%E5%82%85%E7%AB%8B%E5%8F%B6%E5%8F%98%E6%8D%A2/">傅立叶变换</a>,&nbsp;<a href="/tags/%E9%A2%91%E5%9F%9F/">频域</a>,&nbsp;<a href="/tags/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/">信号处理</a>,&nbsp;<a href="/tags/%E6%95%B0%E5%AD%A6%E6%80%9D%E7%BB%B4/">数学思维</a>,&nbsp;<a href="/tags/%E5%BA%95%E5%B1%A4%E8%A6%8F%E5%BE%8B/">底層規律</a>,&nbsp;<a href="/tags/%E8%AE%A4%E7%9F%A5%E8%AE%BA/">认知论</a>,&nbsp;<a href="/tags/%E6%80%9D%E7%BB%B4%E6%96%B9%E5%BC%8F/">思维方式</a>,&nbsp;<a href="/tags/%E7%A7%91%E5%AD%A6/">科学</a>,&nbsp;<a href="/tags/%E7%AE%80%E5%8C%96/">简化</a>,&nbsp;<a href="/tags/%E6%8B%86%E8%A7%A3/">拆解</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/ai-prediction-boundary/" class="prev" rel="prev" title="AI预测的边界：从中美AI竞争谈起"><i class="fas fa-angle-left" aria-hidden="true"></i>AI预测的边界：从中美AI竞争谈起</a>
+            <a href="/posts/%E5%AD%A6%E4%BD%9B%E4%BF%AE%E8%A1%8C%E7%9A%84%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4/" class="next" rel="next" title="学佛修行的具体步骤">学佛修行的具体步骤<i class="fas fa-angle-right" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.160.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 1.0.0"><i class="far fa-kiss-wink-heart" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">老梵的空中花园</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp"><a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2026013379号-1</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment" aria-hidden="true"></i>
+            </a>
+        </div><script src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.2/sharer.min.js"></script><script>window.config={"comment":{},"search":{"fuseIndexURL":"/index.json","fuseOpts":{"distance":100,"findAllMatches":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"minMatchCharLength":2,"threshold":0.3},"highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":30,"type":"fuse"}};</script><script src="/js/theme.js"></script></body>
+</html>

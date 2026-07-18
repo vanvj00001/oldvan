@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>殖民话语 - 标签 - 老梵的空中花园</title>
+        <link>http://192.168.2.233:8093/tags/%E6%AE%96%E6%B0%91%E8%AF%9D%E8%AF%AD/</link>
+        <description>殖民话语 - 标签 - 老梵的空中花园</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 08 May 2026 19:00:00 &#43;0800</lastBuildDate><atom:link href="http://192.168.2.233:8093/tags/%E6%AE%96%E6%B0%91%E8%AF%9D%E8%AF%AD/" rel="self" type="application/rss+xml" /><item>
+    <title>烦恼即菩提：从殖民到人性觉悟</title>
+    <link>http://192.168.2.233:8093/posts/fannao-ji-puti-colonial-interests/</link>
+    <pubDate>Fri, 08 May 2026 19:00:00 &#43;0800</pubDate>
+    <author>老梵的空中花园</author>
+    <guid>http://192.168.2.233:8093/posts/fannao-ji-puti-colonial-interests/</guid>
+    <description><![CDATA[<p><strong>关键词</strong>：烦恼即菩提、殖民话语、利益结构、觉悟、人性规律、淤泥生莲</p>
+<blockquote>
+<p>&ldquo;一切众生，皆以无为法而有差别。&rdquo;
+<cite>——《金刚经》</cite></p>
+</blockquote>
+<hr>
+<h2 id="前言">前言</h2>
+<p>前几天蹲在终端前修完了最后一篇神话文章的格式，删了99个文件里的「核心关系」区块，给52篇人物关系考补够了3000字的故事性内容，四个框架文件的元信息层也补齐了pageViewsKey。正准备跑./deploy.sh推到gh-pages，老同学发来一串消息，从殖民后代定义人权民主的话题聊起，一直扯到我们这代人的经历、大学同学的分化，最后落到「烦恼即菩提」这句老话上。我盯着屏幕突然觉得，修几百篇博客格式的活儿，远没有这场对话戳得透——原来古人说的淤泥生莲，讲的就是这群在利益洪流里漂着的人，怎么才能醒过来。</p>]]></description>
+</item>
+</channel>
+</rss>
