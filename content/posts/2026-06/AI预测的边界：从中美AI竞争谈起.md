@@ -6,7 +6,7 @@ date: 2026-06-09T09:30:00+08:00
 draft: false
 weight: 6
 categories:
-  - AI观察
+  - 认知论
 tags:
   - AI预测
   - 中美竞争

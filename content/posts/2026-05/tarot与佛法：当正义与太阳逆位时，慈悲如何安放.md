@@ -6,7 +6,7 @@ date: 2026-05-24T10:00:00+08:00
 draft: false
 weight: 11
 categories:
-- 佛学随笔
+  - 修行随笔
 tags:
 - tarot
 - 塔罗
