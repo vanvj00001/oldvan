@@ -20,6 +20,11 @@ enableGitInfo = true
     url = "/tags/"
     weight = 30
   [[languages.zh-cn.menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 20
+  [[languages.zh-cn.menu.main]]
     identifier = "about"
     name = "关于"
     url = "/about/"

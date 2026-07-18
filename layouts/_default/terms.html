@@ -1,31 +1,68 @@
-{{- define "main" }}
+{{- /*
+  Taxonomy terms 列表页(/categories/, /tags/)
+  - categories → 用 LoveIt 风格的 categories-card
+  - tags → 用紧凑的 tag-cloud 风格
+  override 主题的 baseof.html 缺省 {{ block "content" . }}
+*/ -}}
 
-{{- if .Title }}
-<header class="page-header">
-    <h1>{{ .Title }}</h1>
-    {{- if .Description }}
-    <div class="post-description">
-        {{ .Description }}
-    </div>
-    {{- end }}
-</header>
-{{- end }}
+{{- $isCategories := eq .Data.Plural "categories" -}}
+{{- $isTags := eq .Data.Plural "tags" -}}
 
-<div class="tags-total">
-    <p>总标签数: {{ len .Data.Terms.Alphabetical }}</p>
+<div class="page archive taxonomy-terms-page">
+    {{- /* Title */ -}}
+    <h2 class="single-title animate__animated animate__pulse animate__faster">
+        {{- if $isCategories -}}
+            <i class="far fa-folder-open" aria-hidden="true"></i>&nbsp;所有分类
+        {{- else if $isTags -}}
+            <i class="fas fa-tags" aria-hidden="true"></i>&nbsp;所有标签
+        {{- else -}}
+            {{- .Data.Plural -}}
+        {{- end -}}
+    </h2>
+
+    {{- if $isCategories -}}
+        {{- /* categories: 卡片网格,每类显示最新 5 篇 */ -}}
+        <div class="categories-card">
+            {{- range $term := first 50 (.Data.Terms.ByCount) -}}
+                {{- $name := $term.Name -}}
+                {{- $count := $term.Count -}}
+                {{- $pages := $term.Pages -}}
+                {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) -}}
+                    <div class="card-item">
+                        <div class="card-item-wrapper">
+                            <h3 class="card-item-title">
+                                <a href="{{ .RelPermalink }}">
+                                    <i class="far fa-folder" aria-hidden="true"></i>&nbsp;{{ .Page.Title }}
+                                    <span class="card-item-count">{{ $count }}</span>
+                                </a>
+                            </h3>
+                            {{- range first 5 $pages -}}
+                                <article class="archive-item">
+                                    <a href="{{ .RelPermalink }}" class="archive-item-link">
+                                        {{- .Title | emojify -}}
+                                    </a>
+                                </article>
+                            {{- end -}}
+                            {{- if gt (len $pages) 5 -}}
+                                <span class="more-post">
+                                    <a href="{{ .RelPermalink }}" class="more-single-link">查看更多 >></a>
+                                </span>
+                            {{- end -}}
+                        </div>
+                    </div>
+                {{- end -}}
+            {{- end -}}
+        </div>
+    {{- else -}}
+        {{- /* tags: 紧凑云 */ -}}
+        <div class="tags-cloud">
+            {{- range $term := (.Data.Terms.Alphabetical) -}}
+                {{- with $.Site.GetPage (printf "/%s/%s" $.Data.Plural $term.Name) -}}
+                    <a href="{{ .Permalink }}" class="tag-cloud-item">
+                        {{- .Name -}}<sup>{{ $term.Count }}</sup>
+                    </a>
+                {{- end -}}
+            {{- end -}}
+        </div>
+    {{- end -}}
 </div>
-
-<ul class="terms-tags">
-    {{- $type := .Type }}
-    {{- range $key, $value := .Data.Terms.Alphabetical }}
-    {{- $name := .Name }}
-    {{- $count := .Count }}
-    {{- with site.GetPage (printf "/%s/%s" $type $name) }}
-    <li>
-        <a href="{{ .Permalink }}">{{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
-    </li>
-    {{- end }}
-    {{- end }}
-</ul>
-
-{{- end }}{{/* end main */ -}}
