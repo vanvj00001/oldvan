@@ -7,6 +7,7 @@ BASEURL_MAIN="https://oldvan.top/"
 
 echo "备份到 vanbak..."
 BAK_DIR="/Users/fanweijun/vanbak"
+mkdir -p "$BAK_DIR"
 
 # 清理旧备份: 只保留最新 3 个 oldvan-content-*.tar.gz, 多余的删掉
 KEEP_COUNT=3
