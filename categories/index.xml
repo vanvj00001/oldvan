@@ -6,8 +6,15 @@
     <description>Recent content in Categories on 老梵的空中花园</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 27 Jul 2026 10:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2026 10:56:32 +0800</lastBuildDate>
     <atom:link href="https://vanvj00001.github.io/oldvan/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>修行随笔</title>
+      <link>https://vanvj00001.github.io/oldvan/categories/%E4%BF%AE%E8%A1%8C%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Sun, 02 Aug 2026 04:00:00 +0800</pubDate>
+      <guid>https://vanvj00001.github.io/oldvan/categories/%E4%BF%AE%E8%A1%8C%E9%9A%8F%E7%AC%94/</guid>
+      <description></description>
+    </item>
     <item>
       <title>修验实参</title>
       <link>https://vanvj00001.github.io/oldvan/categories/%E4%BF%AE%E9%AA%8C%E5%AE%9E%E5%8F%82/</link>
@@ -48,13 +55,6 @@
       <link>https://vanvj00001.github.io/oldvan/categories/%E4%BF%AE%E8%A1%8C%E6%97%A5%E8%AE%B0/</link>
       <pubDate>Mon, 22 Jun 2026 10:30:00 +0800</pubDate>
       <guid>https://vanvj00001.github.io/oldvan/categories/%E4%BF%AE%E8%A1%8C%E6%97%A5%E8%AE%B0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>修行随笔</title>
-      <link>https://vanvj00001.github.io/oldvan/categories/%E4%BF%AE%E8%A1%8C%E9%9A%8F%E7%AC%94/</link>
-      <pubDate>Fri, 29 May 2026 11:30:00 +0800</pubDate>
-      <guid>https://vanvj00001.github.io/oldvan/categories/%E4%BF%AE%E8%A1%8C%E9%9A%8F%E7%AC%94/</guid>
       <description></description>
     </item>
   </channel>
