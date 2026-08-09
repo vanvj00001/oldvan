@@ -1,5 +1,6 @@
 ---
 title: "善知识为何接引恶人：tarot与佛经的同一道题"
+description: "众生皆有佛性，但业力各有归处。——《塔罗解读》与《法华经》共同指向的答案一位求问者找到塔罗师，他的问题是：敬爱的老师竟然接引了一个品行不端的弟子——这让他感到困惑、痛心，甚至开始动摇对老师的信心。"
 url: /posts/tarot-fofa-justice/
 pageViewsKey: /posts/tarot-fofa-justice/
 date: 2026-05-24T10:00:00+08:00

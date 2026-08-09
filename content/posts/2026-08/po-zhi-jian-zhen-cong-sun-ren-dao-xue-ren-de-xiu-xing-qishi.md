@@ -1,5 +1,6 @@
 ---
 title: '破执见真：从"损人"到"学人"的修行启示'
+description: "一切有为法，如梦幻泡影，如露亦如电，应作如是观。——《金刚经》善哉。世间万象，皆由心念所生。有人观察到一个现象：在乡村小邑，人易因他人成功而生嫉妒，甚至暗中破坏；而在繁华都市，人却更善于从他人成就中学习、借鉴，进而超越。"
 url: /posts/po-zhi-jian-zhen-cong-sun-ren-dao-xue-ren-de-xiu-xing-qishi/
 pageViewsKey: /posts/po-zhi-jian-zhen-cong-sun-ren-dao-xue-ren-de-xiu-xing-qishi/
 date: 2026-08-02T11:50:00+08:00

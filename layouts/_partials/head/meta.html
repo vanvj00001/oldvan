@@ -1,0 +1,37 @@
+{{- $params := .Scratch.Get "params" -}}
+
+{{- /* SEO: use page description > site description > auto-summary */ -}}
+{{- $desc := "" -}}
+{{- with $params.description -}}
+    {{- $desc = . -}}
+{{- else -}}
+    {{- with .Description -}}
+        {{- $desc = . -}}
+    {{- else -}}
+        {{- /* Auto-generate from content summary, strip HTML, limit to 160 chars */ -}}
+        {{- with .Summary -}}
+            {{- $raw := . | plainify | truncate 160 -}}
+            {{- $desc = $raw -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+<meta name="description" content="{{ $desc }}">
+
+{{- partial "opengraph.html" . -}}
+{{- partial "twitter_cards.html" . -}}
+
+<meta name="application-name" content="{{ .Site.Params.app.title | default .Site.Title }}">
+<meta name="apple-mobile-web-app-title" content="{{ .Site.Params.app.title | default .Site.Title }}">
+<meta name="referrer" content="no-referrer" />
+{{- with .Site.Params.app.themeColor -}}
+    <meta name="theme-color" content="{{ . }}">
+{{- end -}}
+
+{{- with .Site.Params.app.tileColor -}}
+    <meta name="msapplication-TileColor" content="{{ . }}">
+{{- end -}}
+
+{{- /* Content-Security-Policy meta tag (when HTTP headers cannot be set) - see https://content-security-policy.com/examples/meta/ */ -}}
+{{- with .Site.Params.security.contentSecurityPolicy -}}
+    <meta http-equiv="Content-Security-Policy" content="{{ . }}">
+{{- end -}}

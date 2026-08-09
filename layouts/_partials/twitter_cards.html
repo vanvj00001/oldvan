@@ -1,0 +1,30 @@
+{{- $params := .Scratch.Get "params" -}}
+
+{{- /* Twitter Cards */ -}}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+{{- with .Description | default .Site.Params.description -}}
+<meta name="twitter:description" content="{{ . }}">
+{{- end -}}
+
+{{- /* Twitter image - same as og:image */ -}}
+{{- $image := "" -}}
+{{- if .IsPage -}}
+    {{- with .Resources.GetMatch "featured-image" -}}
+        {{- $image = .RelPermalink -}}
+    {{- end -}}
+    {{- with .Resources.GetMatch "featured-image-preview" -}}
+        {{- $image = .RelPermalink -}}
+    {{- end -}}
+{{- end -}}
+{{- with $params.featuredimagepreview | default $params.featuredimage -}}
+    {{- $image = . | absURL -}}
+{{- end -}}
+{{- with .Site.Params.seo.image -}}
+    {{- if not $image -}}
+        {{- $image = . | absURL -}}
+    {{- end -}}
+{{- end -}}
+{{- with $image -}}
+<meta name="twitter:image" content="{{ . }}">
+{{- end -}}

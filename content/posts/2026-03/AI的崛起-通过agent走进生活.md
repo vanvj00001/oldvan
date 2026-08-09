@@ -1,5 +1,6 @@
 ---
 title: "AI的崛起:通过agent走进生活"
+description: "《金刚经》云：凡所有相，皆是虚妄。若见诸相非相，即见如来。一切技术革新、商业模式、社会变革，皆是因缘和合之相。唯有超越表象，方能洞察本质。2025年末，字节跳动推出的豆包手机尝试在系统层面集成AI Agent，让用户通过语音直接完成购物、订票等操作。"
 url: /posts/ai-agent-revolution/
 pageViewsKey: /posts/ai-agent-revolution/
 date: 2026-03-21T15:30:00+08:00

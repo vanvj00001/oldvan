@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>混沌 - 标签 - 老梵的空中花园</title>
+        <link>http://192.168.2.233:8093/tags/%E6%B7%B7%E6%B2%8C/</link>
+        <description>混沌 - 标签 - 老梵的空中花园</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 05 Mar 2026 23:04:00 &#43;0800</lastBuildDate><atom:link href="http://192.168.2.233:8093/tags/%E6%B7%B7%E6%B2%8C/" rel="self" type="application/rss+xml" /><item>
+    <title>混沌大神</title>
+    <link>http://192.168.2.233:8093/posts/%E6%B7%B7%E6%B2%8C%E5%A4%A7%E7%A5%9E/</link>
+    <pubDate>Thu, 05 Mar 2026 23:04:00 &#43;0800</pubDate>
+    <author>老梵的空中花园</author>
+    <guid>http://192.168.2.233:8093/posts/%E6%B7%B7%E6%B2%8C%E5%A4%A7%E7%A5%9E/</guid>
+    <description><![CDATA[<p><strong>关键词</strong>：混沌、悟空、基础类、实例、死循环、螺旋上升、顺势而为</p>
+<hr>
+<blockquote>
+<p>&ldquo;道生一，一生二，二生三，三生万物。&rdquo;
+<cite>——《道德经》</cite></p>
+</blockquote>
+<hr>
+<h2 id="前言">前言</h2>
+<p>本文用程序员的视角，重新演绎宇宙诞生的神话。从混沌大神的第一念，到基础类的编写，再到亿万实例的运行——你、我、星辰、万物，都是服务器上的代码片段。懂了这段故事，或许你就懂了&quot;我是谁&quot;，以及该如何写好自己人生的这段程序。</p>
+<p>如果你懂一点编程，那这个关于宇宙的故事，会让你会心一笑。如果你不懂编程，也没关系——这个故事讲的，其实就是你和我，以及我们为什么在这里。</p>
+<hr>]]></description>
+</item>
+</channel>
+</rss>

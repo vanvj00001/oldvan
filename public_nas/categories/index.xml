@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 老梵的空中花园</title>
+    <link>http://192.168.2.233:8093/categories/</link>
+    <description>Recent content in Categories on 老梵的空中花园</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 02 Aug 2026 13:58:53 +0800</lastBuildDate>
+    <atom:link href="http://192.168.2.233:8093/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>修行随笔</title>
+      <link>http://192.168.2.233:8093/categories/%E4%BF%AE%E8%A1%8C%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Sun, 02 Aug 2026 11:50:00 +0800</pubDate>
+      <guid>http://192.168.2.233:8093/categories/%E4%BF%AE%E8%A1%8C%E9%9A%8F%E7%AC%94/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>修验实参</title>
+      <link>http://192.168.2.233:8093/categories/%E4%BF%AE%E9%AA%8C%E5%AE%9E%E5%8F%82/</link>
+      <pubDate>Mon, 27 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>http://192.168.2.233:8093/categories/%E4%BF%AE%E9%AA%8C%E5%AE%9E%E5%8F%82/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>认知论</title>
+      <link>http://192.168.2.233:8093/categories/%E8%AE%A4%E7%9F%A5%E8%AE%BA/</link>
+      <pubDate>Sun, 19 Jul 2026 10:30:00 +0800</pubDate>
+      <guid>http://192.168.2.233:8093/categories/%E8%AE%A4%E7%9F%A5%E8%AE%BA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>佛学开示</title>
+      <link>http://192.168.2.233:8093/categories/%E4%BD%9B%E5%AD%A6%E5%BC%80%E7%A4%BA/</link>
+      <pubDate>Tue, 14 Jul 2026 11:00:00 +0800</pubDate>
+      <guid>http://192.168.2.233:8093/categories/%E4%BD%9B%E5%AD%A6%E5%BC%80%E7%A4%BA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>人生随笔</title>
+      <link>http://192.168.2.233:8093/categories/%E4%BA%BA%E7%94%9F%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Wed, 01 Jul 2026 12:30:00 +0800</pubDate>
+      <guid>http://192.168.2.233:8093/categories/%E4%BA%BA%E7%94%9F%E9%9A%8F%E7%AC%94/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>佛学</title>
+      <link>http://192.168.2.233:8093/categories/%E4%BD%9B%E5%AD%A6/</link>
+      <pubDate>Sat, 27 Jun 2026 00:48:33 +0800</pubDate>
+      <guid>http://192.168.2.233:8093/categories/%E4%BD%9B%E5%AD%A6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>修行日记</title>
+      <link>http://192.168.2.233:8093/categories/%E4%BF%AE%E8%A1%8C%E6%97%A5%E8%AE%B0/</link>
+      <pubDate>Mon, 22 Jun 2026 10:30:00 +0800</pubDate>
+      <guid>http://192.168.2.233:8093/categories/%E4%BF%AE%E8%A1%8C%E6%97%A5%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

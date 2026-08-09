@@ -31,9 +31,18 @@ enableGitInfo = true
     weight = 40
 
 [params]
+  description = "老梵的空中花园 — 修行随笔、认知论、佛学思考、人生感悟。静观世事，咀嚼人生，一炷心香，同参造化。"
   mainSections = ["posts"]
   defaultTheme = "auto"
   enableEmoji = true
+
+  [params.seo]
+    image = "/images/avatar.png"
+
+  [params.verification]
+    google = "googlec944df8ea413f945"
+    # Bing Webmaster 验证码（注册后填入）
+    bing = ""
 
   [params.author]
     name = "老梵的空中花园"
