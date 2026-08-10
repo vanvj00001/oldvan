@@ -43,6 +43,11 @@ enableGitInfo = true
     google = "googlec944df8ea413f945"
     # Bing Webmaster 验证码（注册后填入）
     bing = ""
+    # 百度搜索资源平台验证码（注册后填入）
+    baidu = "codeva-psetnTx3C4"
+  
+  # 百度自动推送 token（注册后填入，启用后每次访问自动推送）
+  baidu_push_token = ""
 
   [params.author]
     name = "老梵的空中花园"
