@@ -21,12 +21,12 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 BAIDU_PUSH_API = "http://data.zz.baidu.com/urls"
-SITE = "https://oldvan.top"
+SITE = "https://www.oldvan.top"
 BATCH_SIZE = 1000  # 百度每次最多接收 1000 条
 
 
 def load_urls_from_sitemap(sitemap_path):
-    """从 sitemap.xml 提取所有 URL"""
+    """从 sitemap.xml 提取所有 URL，自动替换为百度注册域名"""
     tree = ET.parse(sitemap_path)
     root = tree.getroot()
     ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
@@ -34,7 +34,10 @@ def load_urls_from_sitemap(sitemap_path):
     for url_elem in root.findall("s:url", ns):
         loc = url_elem.find("s:loc", ns)
         if loc is not None and loc.text:
-            urls.append(loc.text.strip())
+            url = loc.text.strip()
+            # 百度注册的是 www.oldvan.top，sitemap 里是 oldvan.top，需替换
+            url = url.replace("https://oldvan.top", "https://www.oldvan.top")
+            urls.append(url)
     return urls
 
 
