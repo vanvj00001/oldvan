@@ -44,8 +44,10 @@ enableGitInfo = true
     google = "googlec944df8ea413f945"
     # Bing Webmaster 验证码（注册后填入）
     bing = ""
-    # 百度搜索资源平台验证码（注册后填入）
+    # 百度搜索资源平台验证码（oldvan.top）
     baidu = "codeva-psetnTx3C4"
+    # 百度搜索资源平台验证码（www.oldvan.top）
+    baidu2 = "codeva-gdv3lokGf1"
 
   [params.author]
     name = "老梵的空中花园"
