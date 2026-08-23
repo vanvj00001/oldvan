@@ -5,7 +5,7 @@ url: /posts/wo-men-zai-yong-shen-me-ting/
 pageViewsKey: /posts/wo-men-zai-yong-shen-me-ting/
 date: 2026-08-18T15:30:00+08:00
 draft: false
-weight: 2
+weight: 4
 categories:
   - 认知论
 tags:
