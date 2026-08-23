@@ -3,7 +3,7 @@ title: '从"冷暖自知"说起——那件世人都在争的衣'
 description: "如人饮水，冷暖自知。那水喝下去是烫是凉，只有喝的人自己知道。惠明在衣钵前转身说：我为法来，不为衣来。可这世上，忙的从来都是一件衣——房子是衣，位子是衣，连修行人嘴里念着的法脉传承，也不过是换了名字的衣。佛来世间，只为开示悟入佛之知见。法不是物件，不能被拥有；法是一种看见，一种醒来。那件衣从头到尾都是空的，但你得穿过它，才能知道它是空的。"
 url: /posts/cong-leng-nuan-zi-zhi-shuo-qi-na-jian-shi-ren-du-zai-zheng-de-yi/
 pageViewsKey: /posts/cong-leng-nuan-zi-zhi-shuo-qi-na-jian-shi-ren-du-zai-zheng-de-yi/
-date: 2026-08-24T10:00:00+08:00
+date: 2026-08-24T01:00:00+08:00
 draft: false
 weight: 6
 categories:
