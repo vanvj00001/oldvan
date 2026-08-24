@@ -24,13 +24,29 @@ tar -czf "$BAK_DIR"/oldvan-content-$(date '+%Y%m%d-%H%M%S').tar.gz -C /Users/fan
 
 echo "压缩备份到飞牛NAS..."
 echo "正在压缩备份..."
-BACKUP_DIR="/Volumes/vanvj-INT-1T/备份/代码"
-BACKUP_FILE="$BACKUP_DIR/oldvan-$(date '+%Y%m%d-%H%M%S').zip"
-if [ -d "$BACKUP_DIR" ]; then
-  zip -rq "$BACKUP_FILE" /Users/fanweijun/project/oldvan --exclude '*/themes/*' --exclude '*/public/*' --exclude '*/.git/*'
+NAS_SSH="ssh -o StrictHostKeyChecking=no"
+NAS_HOST="vanvj@192.168.2.233"
+NAS_BACKUP_DIR="/vol3/1000/vanvj-EXT-12T/7900/backup/oldvan"
+NAS_KEEP_COUNT=3
+STAMP=$(date '+%Y%m%d-%H%M%S')
+
+# 确保 NAS 备份目录存在
+$NAS_SSH "$NAS_HOST" "mkdir -p '$NAS_BACKUP_DIR'"
+
+# 打包源码(排除 themes/public/.git 及构建产物)并通过 SSH 管道直接写入 NAS
+echo "打包并传输到飞牛NAS ($NAS_BACKUP_DIR)..."
+if tar -czf - -C /Users/fanweijun/project/oldvan \
+    --exclude='./.git' --exclude='./themes' --exclude='./public' \
+    --exclude='./public_nas' --exclude='./.gh-pages' --exclude='./.cf-pages' \
+    --exclude='./resources' --exclude='./.DS_Store' --exclude='./.hugo_build.lock' \
+    . | $NAS_SSH "$NAS_HOST" "cat > '$NAS_BACKUP_DIR/oldvan-$STAMP.tar.gz'"; then
+  echo "NAS 备份成功: $NAS_BACKUP_DIR/oldvan-$STAMP.tar.gz"
 else
-  echo "备份目录不存在，跳过飞牛NAS压缩备份：$BACKUP_DIR"
+  echo "NAS 备份失败，继续后续步骤。"
 fi
+
+# 清理 NAS 旧备份: 只保留最新 $NAS_KEEP_COUNT 个
+$NAS_SSH "$NAS_HOST" "cd '$NAS_BACKUP_DIR' && ls -t oldvan-*.tar.gz 2>/dev/null | tail -n +$((NAS_KEEP_COUNT+1)) | xargs -r rm -f" || true
 
 # 飞牛备份：https://share.fnnas.net/s/afbbf814191643b98b
 

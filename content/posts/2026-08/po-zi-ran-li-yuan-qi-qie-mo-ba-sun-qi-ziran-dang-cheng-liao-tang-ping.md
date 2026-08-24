@@ -3,7 +3,7 @@ title: 破“自然”立缘起——切莫把“顺其自然”当成了躺平
 description: “阿难闻佛开示见性不是因缘所生，转而疑惑它是不是“自然”的。佛陀破斥：若自然者，须有自然体。以明为自应不见暗，以空为自应不见塞。见性非自然，亦非因缘。原来当年印度有一类“自然外道”，主张万物无因自有、否定因果。龙树《中论》破之：诸法不自生，不共不无因。佛陀的正法是缘起——此有故彼有。但佛法破的是无因论，不是缘起之后的从容。真正的“顺其自然”恰恰要在透彻了知因果之后才谈得上。”
 url: /posts/po-zhi-zi-ran-li-yuan-qi-qie-mo-ba-sun-qi-ziran-dang-cheng-liao-tang-ping/
 pageViewsKey: /posts/po-zhi-zi-ran-li-yuan-qi-qie-mo-ba-sun-qi-ziran-dang-cheng-liao-tang-ping/
-date: 2026-08-24T10:00:00+08:00
+date: 2026-08-24T09:00:00+08:00
 draft: false
 weight: 7
 categories:
