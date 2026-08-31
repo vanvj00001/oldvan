@@ -26,7 +26,7 @@ echo "压缩备份到飞牛NAS..."
 echo "正在压缩备份..."
 NAS_SSH="ssh -o StrictHostKeyChecking=no"
 NAS_HOST="vanvj@192.168.2.233"
-NAS_BACKUP_DIR="/vol3/1000/vanvj-EXT-12T/7900/backup/oldvan"
+NAS_BACKUP_DIR="/vol2/1000/vanvj-EXT-12T/7900/backup/oldvan"
 NAS_KEEP_COUNT=3
 STAMP=$(date '+%Y%m%d-%H%M%S')
 
@@ -81,7 +81,7 @@ echo "构建 NAS 版..."
 hugo -b "http://192.168.2.233:8093/" -d public_nas
 
 echo "同步到飞牛 NAS..."
-rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" /Users/fanweijun/project/oldvan/public_nas/ vanvj@192.168.2.233:/vol3/1000/vanvj-EXT-12T/7900/site/oldvan-site/
+rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" /Users/fanweijun/project/oldvan/public_nas/ vanvj@192.168.2.233:/vol2/1000/vanvj-EXT-12T/7900/site/oldvan-site/
 
 echo "清理 NAS 构建..."
 rm -rf public_nas
