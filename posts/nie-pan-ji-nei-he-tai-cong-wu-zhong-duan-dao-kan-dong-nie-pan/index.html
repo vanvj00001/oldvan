@@ -6,7 +6,7 @@
         <title>涅槃即内核态——从&#34;永不被中断&#34;看懂涅槃 - 老梵的空中花园</title><meta name="description" content="大多数人一辈子活在应用程序界面层，被弹窗、通知、信息流不断打断——这就是生死轮回。而涅槃，简单说就是：系统依然在运行，但你从用户态退入了内核态，把所有通知、弹窗、广告推送永久屏蔽，不再有任何一个弹窗能把你拖进新的应用。涅槃不是关机（断灭），不是换主题（升天），也不是杀掉所有进程（断烦恼）。它是有余涅槃时系统照常运行而弹窗被永久屏蔽，无余涅槃时系统正常关机。而每一刹那，你都可以在弹窗前练习不被它打断。"><meta property="og:url" content="https://vanvj00001.github.io/oldvan/posts/nie-pan-ji-nei-he-tai-cong-wu-zhong-duan-dao-kan-dong-nie-pan/">
 <meta property="og:site_name" content="老梵的空中花园">
 <meta property="og:title" content="涅槃即内核态——从&#34;永不被中断&#34;看懂涅槃"><meta property="og:description" content="大多数人一辈子活在应用程序界面层，被弹窗、通知、信息流不断打断——这就是生死轮回。而涅槃，简单说就是：系统依然在运行，但你从用户态退入了内核态，把所有通知、弹窗、广告推送永久屏蔽，不再有任何一个弹窗能把你拖进新的应用。涅槃不是关机（断灭），不是换主题（升天），也不是杀掉所有进程（断烦恼）。它是有余涅槃时系统照常运行而弹窗被永久屏蔽，无余涅槃时系统正常关机。而每一刹那，你都可以在弹窗前练习不被它打断。"><meta property="og:locale" content="zh_cn"><meta property="og:type" content="article">
-<meta property="article:section" content="posts"><meta property="article:published_time" content="2026-09-01T10:00:00&#43;08:00"><meta property="article:modified_time" content="2026-09-04T12:59:15&#43;08:00"><meta property="article:tag" content="涅槃"><meta property="article:tag" content="内核态"><meta property="article:tag" content="有余涅槃"><meta property="article:tag" content="无余涅槃"><meta property="article:tag" content="计算机类比"><meta property="article:tag" content="中论"><meta property="article:tag" content="龙树"><meta property="article:tag" content="轮回"><meta property="article:tag" content="修行"><meta property="article:tag" content="解脱"><meta property="og:image" content="https://vanvj00001.github.io/images/avatar.png">
+<meta property="article:section" content="posts"><meta property="article:published_time" content="2026-09-01T10:00:00&#43;08:00"><meta property="article:modified_time" content="2026-09-04T13:11:06&#43;08:00"><meta property="article:tag" content="涅槃"><meta property="article:tag" content="内核态"><meta property="article:tag" content="有余涅槃"><meta property="article:tag" content="无余涅槃"><meta property="article:tag" content="计算机类比"><meta property="article:tag" content="中论"><meta property="article:tag" content="龙树"><meta property="article:tag" content="轮回"><meta property="article:tag" content="修行"><meta property="article:tag" content="解脱"><meta property="og:image" content="https://vanvj00001.github.io/images/avatar.png">
 <meta property="og:image:alt" content="涅槃即内核态——从&#34;永不被中断&#34;看懂涅槃"><meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="涅槃即内核态——从&#34;永不被中断&#34;看懂涅槃"><meta name="twitter:description" content="大多数人一辈子活在应用程序界面层，被弹窗、通知、信息流不断打断——这就是生死轮回。而涅槃，简单说就是：系统依然在运行，但你从用户态退入了内核态，把所有通知、弹窗、广告推送永久屏蔽，不再有任何一个弹窗能把你拖进新的应用。涅槃不是关机（断灭），不是换主题（升天），也不是杀掉所有进程（断烦恼）。它是有余涅槃时系统照常运行而弹窗被永久屏蔽，无余涅槃时系统正常关机。而每一刹那，你都可以在弹窗前练习不被它打断。"><meta name="twitter:image" content="https://vanvj00001.github.io/images/avatar.png"><meta name="application-name" content="老梵的空中花园">
 <meta name="apple-mobile-web-app-title" content="老梵的空中花园">
@@ -105,8 +105,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">涅槃即内核态——从"永不被中断"看懂涅槃</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/oldvan/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>老梵的空中花园</a></span>&nbsp;<span class="post-category">收录于 <a href="/oldvan/categories/%E4%BD%9B%E5%AD%A6%E9%9A%8F%E7%AC%94/"><i class="far fa-folder" aria-hidden="true"></i>佛学随笔</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2026-09-01">2026-09-01</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;约 3911 字&nbsp;
-                <i class="far fa-clock" aria-hidden="true"></i>&nbsp;预计阅读 8 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2026-09-01">2026-09-01</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;约 4075 字&nbsp;
+                <i class="far fa-clock" aria-hidden="true"></i>&nbsp;预计阅读 9 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -125,7 +125,8 @@
     <li><a href="#heading"><em>（全文约3500字）</em></a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><blockquote>
+            </div><div class="content" id="content"><p><strong>内容提要</strong>：大多数人一辈子活在应用程序的界面层，被弹窗、通知、信息流不停打断——这就是生死轮回。而涅槃，用大白话讲就是：系统还在运行，但你从用户态退进了内核态，把一切弹窗和广告推送永久屏蔽。这篇文章用一个你天天在用的比喻，把「涅槃即内核态」讲得清清楚楚：它不是关机断灭，也不是升天换主题，而是每一刻你都能练习——不被任何弹窗打断。</p>
+<blockquote>
 <p>&ldquo;涅槃与世间，无有少分别。&rdquo;
 <cite>——《中论》</cite></p>
 </blockquote>
