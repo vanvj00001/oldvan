@@ -27,7 +27,8 @@
     <pubDate>Fri, 27 Mar 2026 14:30:00 &#43;0800</pubDate>
     <author>老梵的空中花园</author>
     <guid>https://vanvj00001.github.io/oldvan/posts/no-coincidence-in-universe/</guid>
-    <description><![CDATA[<blockquote>
+    <description><![CDATA[<p><strong>内容提要</strong>：作为程序员，我们天天和随机打交道——代码里的 rand、random 看似不可预测，可我们都清楚：这些所谓随机数背后不过是一套确定算法，给个种子，输出就定了。那这个宇宙呢？「一切因果，世界微尘，因心成体」。这篇文章用编程的确定性，推开一扇门：宇宙里，究竟有没有真正的偶然？</p>
+<blockquote>
 <p>&ldquo;一切因果，世界微尘，因心成体&rdquo;
 <cite>——《楞严经》</cite></p>
 </blockquote>

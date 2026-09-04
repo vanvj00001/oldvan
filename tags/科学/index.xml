@@ -9,7 +9,8 @@
     <pubDate>Tue, 14 Jul 2026 21:00:00 &#43;0800</pubDate>
     <author>老梵的空中花园</author>
     <guid>https://vanvj00001.github.io/oldvan/posts/fourier-transform-juice/</guid>
-    <description><![CDATA[<blockquote>
+    <description><![CDATA[<p><strong>内容提要</strong>：问理科生什么是傅立叶变换，他多半背课本：把时域信号转到频域。你一头雾水。可如果我说，它就像一台把橙汁分离成水、糖、酸、香精的机器——任何复杂混乱的东西，都能拆成一组标准纯净波的叠加，你是不是立刻就懂了？这篇文章不堆公式，用它当味觉分离器，把傅立叶变换讲到连文科生都能会心一笑。</p>
+<blockquote>
 <p>&ldquo;把任何复杂、混乱、看似无规律的东西，强行拆解成一系列标准、完美的波的叠加。&rdquo;
 <cite>——傅立叶变换的朴素哲学</cite></p>
 </blockquote>
@@ -26,7 +27,8 @@
     <pubDate>Fri, 06 Mar 2026 21:38:00 &#43;0800</pubDate>
     <author>老梵的空中花园</author>
     <guid>https://vanvj00001.github.io/oldvan/posts/%E5%B0%BA%E5%AD%90%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%80%9D%E8%80%83/</guid>
-    <description><![CDATA[<blockquote>
+    <description><![CDATA[<p><strong>内容提要</strong>：一把普通的尺子，刻着密密麻麻的刻度。可这些刻度之间的距离，我们真的都能准确读出来吗？——这问题听着无聊：尺子不就是用来测量的吗？可尼尔斯·玻尔说，物理学不能告诉我们世界是什么，只能告诉我们关于世界我们能说什么。这篇文章从一把尺子出发，带你走到人类认知的边界上看一看。</p>
+<blockquote>
 <p>&ldquo;物理学不能告诉我们世界是什么，只能告诉我们关于世界我们能说什么。&rdquo;
 <cite>——尼尔斯·玻尔</cite></p>
 </blockquote>
@@ -44,7 +46,8 @@
     <pubDate>Mon, 29 Jun 2026 20:00:00 &#43;0800</pubDate>
     <author>老梵的空中花园</author>
     <guid>https://vanvj00001.github.io/oldvan/posts/cognitive-leap/</guid>
-    <description><![CDATA[<blockquote>
+    <description><![CDATA[<p><strong>内容提要</strong>：阿波罗15号的宇航员欧文从月球回来后，成了一名牧师，余生都在传道。一个把理性推演到极限、见过宇宙真容的人，为何转身投向信仰？宇宙不仅比我们想象的更奇特，而且比我们能想象的更奇特。这篇文章顺着这条沉重的认知跃迁之路，带你看一个人如何从「科学能解释一切」的傲慢，走到对宇宙的敬畏。</p>
+<blockquote>
 <p>&ldquo;宇宙不仅比我们想象的更奇特，而且比我们能够想象的更奇特。&rdquo;
 <cite>——J.B.S. 霍尔丹，英国遗传学家</cite></p>
 </blockquote>
@@ -61,7 +64,8 @@
     <pubDate>Fri, 27 Mar 2026 14:30:00 &#43;0800</pubDate>
     <author>老梵的空中花园</author>
     <guid>https://vanvj00001.github.io/oldvan/posts/no-coincidence-in-universe/</guid>
-    <description><![CDATA[<blockquote>
+    <description><![CDATA[<p><strong>内容提要</strong>：作为程序员，我们天天和随机打交道——代码里的 rand、random 看似不可预测，可我们都清楚：这些所谓随机数背后不过是一套确定算法，给个种子，输出就定了。那这个宇宙呢？「一切因果，世界微尘，因心成体」。这篇文章用编程的确定性，推开一扇门：宇宙里，究竟有没有真正的偶然？</p>
+<blockquote>
 <p>&ldquo;一切因果，世界微尘，因心成体&rdquo;
 <cite>——《楞严经》</cite></p>
 </blockquote>
@@ -77,7 +81,8 @@
     <pubDate>Sat, 07 Feb 2026 23:00:00 &#43;0800</pubDate>
     <author>老梵的空中花园</author>
     <guid>https://vanvj00001.github.io/oldvan/posts/supernatural-powers/</guid>
-    <description><![CDATA[<h2 id="前言">前言</h2>
+    <description><![CDATA[<p><strong>内容提要</strong>：神通，本质上是一种人类感知能力的深层拓展与精微化显现——它不是玄学或神秘主义的专属，更像一种潜在的生物神经机制的高度开发。常说的六根清净，正是指感知系统不再被杂念情绪干扰，能更清晰广阔地接收信息；而神通，可视为这种清净状态下六根功能的自然强化。这篇文章不猎奇，把「神通」拉回理性的地面，看看它到底是什么。</p>
+<h2 id="前言">前言</h2>
 <p>前言</p>
 <p>神通，本质上是一种人类感知能力的深层拓展与精微化显现。它并非玄学或神秘主义的专属领域，而更像是一种潜在的生物-神经机制的高度开发。我们常说的“六根清净”，在修行语境中正是指感知系统不再被杂念和情绪干扰，从而能够更清晰、更广阔地接收信息——而神通，则可视为这种“清净”状态下，六根功能自然强化的表现。本文将从科学、修行与实践三个维度，探讨神通的本质、条件、局限及其在修行道路上的正确位置。</p>]]></description>
 </item>
@@ -87,7 +92,8 @@
     <pubDate>Mon, 22 Sep 2025 10:00:00 &#43;0800</pubDate>
     <author>老梵的空中花园</author>
     <guid>https://vanvj00001.github.io/oldvan/posts/multiple-worlds/</guid>
-    <description><![CDATA[<h2 id="前言">前言</h2>
+    <description><![CDATA[<p><strong>内容提要</strong>：我们常常默认，自己看到的世界就是真实的世界——这个默认像空气一样自然，以致我们从未质疑过。可当你静下心来仔细审视，会发现一个令人震惊的事实：我看到的世界、你看到的世界、这个世界本身的样子，可能完全是三回事。这篇文章带你重新打量那个你习以为常的「现实」，看见认知的边界。</p>
+<h2 id="前言">前言</h2>
 <p>我们常常默认为，自己看到的世界就是真实的世界。这个默认，像空气一样自然，以至于我们从未质疑过它。然而，当我们静下心来仔细审视，会发现一个令人震惊的事实：我看到的世界，和你看到的世界，和这个世界本身的样子，可能完全是三回事。本文将从个人私有世界、社会共识世界、自然世界与宇宙的边界，以及多元世界的融合等维度，带你重新审视那个你习以为常的“现实”。</p>]]></description>
 </item>
 </channel>
