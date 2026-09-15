@@ -5,7 +5,7 @@ url: /posts/ruo-zhe-yao-zi-qiang-mao-dun-yao-hua-jie/
 pageViewsKey: /posts/ruo-zhe-yao-zi-qiang-mao-dun-yao-hua-jie/
 date: 2026-09-04T09:30:00+08:00
 draft: false
-weight: 5
+weight: 3
 categories:
   - 佛学开示
 tags:
