@@ -8,6 +8,44 @@ set -uo pipefail
 # 主站点 baseURL，用于在构建 `public/` 时生成正确的绝对/相对链接
 BASEURL_MAIN="https://oldvan.top/"
 
+# ===== NAS 地址（主备回退）=====
+# 192.168.2.233 是家里的局域网地址（快）；100.66.233.2 是 Tailscale 地址（在外可用）。
+# 两者是同一台飞牛 NAS。脚本会优先用局域网地址，不通时自动回退到 Tailscale。
+NAS_HOST_LAN="192.168.2.233"
+NAS_HOST_TS="100.66.233.2"
+NAS_USER="vanvj"
+
+# 探测某个地址是否可作为 NAS 使用（3 秒超时）
+# 用真实 SSH 连接探测，比端口扫描可靠：
+# 本机若有 Clash 等 TUN 代理，nc 会把不可达地址误判为可达。
+nas_reachable() {
+  local host="$1"
+  ssh -o StrictHostKeyChecking=no -o ConnectTimeout=3 -o BatchMode=yes \
+      "$NAS_USER@$host" "true" >/dev/null 2>&1
+}
+
+# 选出可用地址，结果写入全局变量 NAS_HOST / NAS_HOSTNAME_ACTIVE
+NAS_HOST=""
+NAS_HOSTNAME_ACTIVE=""
+select_nas_host() {
+  if nas_reachable "$NAS_HOST_LAN"; then
+    NAS_HOSTNAME_ACTIVE="$NAS_HOST_LAN"
+  elif nas_reachable "$NAS_HOST_TS"; then
+    echo "局域网地址 $NAS_HOST_LAN 不可达，回退到 Tailscale 地址 $NAS_HOST_TS"
+    NAS_HOSTNAME_ACTIVE="$NAS_HOST_TS"
+  else
+    NAS_HOSTNAME_ACTIVE=""
+  fi
+  NAS_HOST="$NAS_USER@$NAS_HOSTNAME_ACTIVE"
+}
+
+select_nas_host
+if [ -z "$NAS_HOSTNAME_ACTIVE" ]; then
+  echo "警告: 局域网($NAS_HOST_LAN)与 Tailscale($NAS_HOST_TS) 均不可达，NAS 相关步骤将被跳过。"
+else
+  echo "NAS 地址: $NAS_HOSTNAME_ACTIVE"
+fi
+
 echo "备份到 vanbak..."
 BAK_DIR="/Users/fanweijun/vanbak"
 mkdir -p "$BAK_DIR"
@@ -28,17 +66,30 @@ tar -czf "$BAK_DIR"/oldvan-content-$(date '+%Y%m%d-%H%M%S').tar.gz -C /Users/fan
 echo "压缩备份到飞牛NAS..."
 echo "正在压缩备份..."
 NAS_SSH="ssh -o StrictHostKeyChecking=no"
-NAS_HOST="vanvj@192.168.2.233"
 NAS_BACKUP_DIR="/vol2/1000/vanvj-EXT-12T/7900/backup/oldvan"
 NAS_KEEP_COUNT=3
 STAMP=$(date '+%Y%m%d-%H%M%S')
 
 # 确保 NAS 备份目录存在
-if ! $NAS_SSH -o ConnectTimeout=10 "$NAS_HOST" "mkdir -p '$NAS_BACKUP_DIR'"; then
-  echo "警告: 无法连接备份服务器 ($NAS_HOST)，跳过 NAS 备份，继续后续步骤。"
-else
+if ! $NAS_SSH -o ConnectTimeout=10 "$NAS_HOST" "mkdir -p '$NAS_BACKUP_DIR'" 2>/dev/null; then
+  echo "警告: 无法连接备份服务器 ($NAS_HOSTNAME_ACTIVE)，尝试另一个地址..."
+  if [ "$NAS_HOSTNAME_ACTIVE" = "$NAS_HOST_LAN" ]; then
+    NAS_HOSTNAME_ACTIVE="$NAS_HOST_TS"
+  else
+    NAS_HOSTNAME_ACTIVE="$NAS_HOST_LAN"
+  fi
+  NAS_HOST="$NAS_USER@$NAS_HOSTNAME_ACTIVE"
+  if ! $NAS_SSH -o ConnectTimeout=10 "$NAS_HOST" "mkdir -p '$NAS_BACKUP_DIR'" 2>/dev/null; then
+    echo "警告: 两个地址均不可达，跳过 NAS 备份，继续后续步骤。"
+    NAS_HOSTNAME_ACTIVE=""
+  else
+    echo "改用 $NAS_HOSTNAME_ACTIVE 连接成功。"
+  fi
+fi
+
+if [ -n "$NAS_HOSTNAME_ACTIVE" ]; then
   # 打包源码(排除 themes/public/.git 及构建产物)并通过 SSH 管道直接写入 NAS
-  echo "打包并传输到飞牛NAS ($NAS_BACKUP_DIR)..."
+  echo "打包并传输到飞牛NAS ($NAS_HOSTNAME_ACTIVE:$NAS_BACKUP_DIR)..."
   if tar -czf - -C /Users/fanweijun/project/oldvan \
       --exclude='./.git' --exclude='./themes' --exclude='./public' \
       --exclude='./public_nas' --exclude='./.gh-pages' --exclude='./.cf-pages' \
@@ -89,14 +140,29 @@ if ! rsync -avz -e "ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -o ConnectT
 fi
 
 echo "构建 NAS 版..."
-if ! hugo -b "http://192.168.2.233:8093/" -d public_nas; then
+# NAS 版用局域网地址作为 baseURL（页面链接以局域网为准）
+if ! hugo -b "http://$NAS_HOST_LAN:8093/" -d public_nas; then
   echo "错误: NAS 版构建失败，跳过 NAS 部署。"
 else
   echo "同步到飞牛 NAS..."
-  if ! rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -o ConnectTimeout=10" /Users/fanweijun/project/oldvan/public_nas/ vanvj@192.168.2.233:/vol2/1000/vanvj-EXT-12T/7900/site/oldvan-site/; then
-    echo "部署到 233(NAS) 失败，继续后续步骤。"
-  else
-    echo "NAS 部署完成"
+  # 优先用当前选中的地址；若未选中，再试局域网/Tailscale 两个地址
+  NAS_DEPLOY_OK=0
+  for try_host in "$NAS_HOSTNAME_ACTIVE" "$NAS_HOST_LAN" "$NAS_HOST_TS"; do
+    [ -z "$try_host" ] && continue
+    echo "尝试部署到 $try_host ..."
+    if rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -o ConnectTimeout=10" \
+        /Users/fanweijun/project/oldvan/public_nas/ \
+        "$NAS_USER@$try_host:/vol2/1000/vanvj-EXT-12T/7900/site/oldvan-site/"; then
+      echo "NAS 部署完成 ($try_host)"
+      NAS_DEPLOY_OK=1
+      break
+    else
+      echo "部署到 $try_host 失败，尝试下一个地址..."
+    fi
+  done
+
+  if [ "$NAS_DEPLOY_OK" -eq 0 ]; then
+    echo "部署到 233(NAS) 失败（两个地址均不可达），继续后续步骤。"
   fi
 
   echo "清理 NAS 构建..."
@@ -106,4 +172,8 @@ fi
 echo ""
 echo "全部完成！"
 echo "  GitHub Pages: https://oldvan.top"
-echo "  NAS:         http://192.168.2.233:8093/"
+if [ -n "$NAS_HOSTNAME_ACTIVE" ]; then
+  echo "  NAS:         http://$NAS_HOSTNAME_ACTIVE:8093/"
+else
+  echo "  NAS:         未部署（局域网与 Tailscale 地址均不可达）"
+fi
