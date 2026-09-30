@@ -3,7 +3,7 @@ title: "宽容——忍辱波罗蜜的修行"
 description: "用计算机/系统类比解读忍辱波罗蜜（kshanti）。宽容不是软弱，不是压抑，而是看透了所以不执着。当你能看到对方的行为也是缘起的产物，愤怒就失去了根基。"
 url: /posts/kuan-rong/
 pageViewsKey: /posts/kuan-rong/
-date: 2026-10-07T10:00:00+08:00
+date: 2026-10-31T10:00:00+08:00
 draft: false
 weight: 6
 series: "爱情关系的要素"

@@ -3,7 +3,7 @@ title: "伦理经济学——布施波罗蜜与资源分配"
 description: "经济学假设人是理性的自利者，佛学说人是无明的执着者。布施不是损失，而是打破'我所有'的幻觉。资源分配的本质是业力的流转。"
 url: /posts/lun-li-jing-jie-xue/
 pageViewsKey: /posts/lun-li-jing-jie-xue/
-date: 2026-10-05T10:00:00+08:00
+date: 2026-10-19T10:00:00+08:00
 draft: false
 weight: 4
 series: "爱情关系的要素"

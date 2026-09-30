@@ -3,7 +3,7 @@ title: "创造性意识和精神力量——般若智慧的创造力"
 description: "创造力不是产生新东西，而是看到本来就有的东西。般若让你看到事物的本来面目，这就是最大的创造力。精神力量不是意志力，而是觉知的力量。"
 url: /posts/chuang-zao-xing-yi-shi-he-jing-shen-li-liang/
 pageViewsKey: /posts/chuang-zao-xing-yi-shi-he-jing-shen-li-liang/
-date: 2026-10-04T10:00:00+08:00
+date: 2026-10-13T10:00:00+08:00
 draft: false
 weight: 3
 series: "爱情关系的要素"

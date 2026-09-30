@@ -3,7 +3,7 @@ title: "觉悟与清醒——正念与觉知的日常修行"
 description: "用计算机/系统类比解读正念（sati）与觉知（awareness）：觉悟不是一次性的开悟，而是每一刹那的清醒。"
 url: /posts/jue-wu-yu-qing-xing/
 pageViewsKey: /posts/jue-wu-yu-qing-xing/
-date: 2026-10-02T10:00:00+08:00
+date: 2026-10-07T10:00:00+08:00
 draft: false
 weight: 2
 series: "爱情关系的要素"

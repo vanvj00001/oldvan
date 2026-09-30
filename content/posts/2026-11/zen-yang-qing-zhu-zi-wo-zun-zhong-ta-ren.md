@@ -3,7 +3,7 @@ title: "怎样庆祝自我、尊重他人——自他平等的慈悲观"
 description: "用计算机/系统类比解读自他平等与慈悲观：庆祝自我不是自恋，而是承认自己也是缘起的一部分；尊重他人不是客气，而是看到他人也是同样的缘起过程。"
 url: /posts/zen-yang-qing-zhu-zi-wo-zun-zhong-ta-ren/
 pageViewsKey: /posts/zen-yang-qing-zhu-zi-wo-zun-zhong-ta-ren/
-date: 2026-10-10T10:00:00+08:00
+date: 2026-11-13T10:00:00+08:00
 draft: false
 weight: 9
 series: "爱情关系的要素"

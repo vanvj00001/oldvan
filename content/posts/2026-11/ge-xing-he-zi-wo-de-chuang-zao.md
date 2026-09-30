@@ -3,7 +3,7 @@ title: "个性和自我的创造——无我观下的身份建构"
 description: "用无我观和唯识学分析'个性'和'自我'是如何被创造出来的。自我不是固定实体，而是五蕴和合的流动过程。个性是业力种子在阿赖耶识中的显现。创造个性不是'发现'自己，而是'编织'自己。"
 url: /posts/ge-xing-he-zi-wo-de-chuang-zao/
 pageViewsKey: /posts/ge-xing-he-zi-wo-de-chuang-zao/
-date: 2026-10-13T10:00:00+08:00
+date: 2026-11-25T10:00:00+08:00
 draft: false
 weight: 12
 series: "爱情关系的要素"

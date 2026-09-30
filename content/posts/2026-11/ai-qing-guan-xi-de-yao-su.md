@@ -3,7 +3,7 @@ title: "爱情关系的要素——缘起观下的亲密关系"
 description: "用缘起观拆解爱情中的爱、信任、尊重、沟通、承诺：每个要素都是因缘和合的产物，没有独立自性。爱情不是找到对的人，而是创造对的因缘。"
 url: /posts/ai-qing-guan-xi-de-yao-su/
 pageViewsKey: /posts/ai-qing-guan-xi-de-yao-su/
-date: 2026-10-14T10:00:00+08:00
+date: 2026-11-30T10:00:00+08:00
 draft: false
 weight: 13
 series: "爱情关系的要素"

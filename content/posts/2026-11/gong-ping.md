@@ -3,7 +3,7 @@ title: "公平——业力观下的因果平衡"
 description: "公平不是外在的分配，而是内在的因果平衡。每个人都是自己业力的承受者，这就是最深层的公平。业力不是宿命论，真正的公平是因果不虚，而不是人人相同。"
 url: /posts/gong-ping/
 pageViewsKey: /posts/gong-ping/
-date: 2026-10-08T10:00:00+08:00
+date: 2026-11-01T10:00:00+08:00
 draft: false
 weight: 7
 series: "爱情关系的要素"
