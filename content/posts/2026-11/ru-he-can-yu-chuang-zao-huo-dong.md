@@ -3,7 +3,7 @@ title: "如何参与创造活动——般若与方便的二谛修行"
 description: "用计算机/系统类比解读般若与方便：创造不是无中生有，而是缘起有。在空性中创造，在创造中体悟空性。"
 url: /posts/ru-he-can-yu-chuang-zao-huo-dong/
 pageViewsKey: /posts/ru-he-can-yu-chuang-zao-huo-dong/
-date: 2026-10-11T10:00:00+08:00
+date: 2026-11-19T10:00:00+08:00
 draft: false
 weight: 10
 series: "爱情关系的要素"

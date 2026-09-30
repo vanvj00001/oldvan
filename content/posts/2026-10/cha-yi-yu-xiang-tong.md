@@ -3,7 +3,7 @@ title: "差异与相同——空性中的多元统一"
 description: "用空性和缘起分析差异与相同：差异是缘起的显现，相同是空性的本质。两者不矛盾，这就是中道。"
 url: /posts/cha-yi-yu-xiang-tong/
 pageViewsKey: /posts/cha-yi-yu-xiang-tong/
-date: 2026-10-06T10:00:00+08:00
+date: 2026-10-25T10:00:00+08:00
 draft: false
 weight: 5
 series: "爱情关系的要素"

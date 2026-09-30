@@ -3,7 +3,7 @@ title: "欢乐的性表达——欲界与解脱的辩证"
 description: "佛教不是禁欲主义，而是不执着于欲。用计算机/系统类比解读佛学对性的态度：关键不是能不能，而是是否清醒。"
 url: /posts/huan-le-de-xing-biao-da/
 pageViewsKey: /posts/huan-le-de-xing-biao-da/
-date: 2026-10-09T10:00:00+08:00
+date: 2026-11-07T10:00:00+08:00
 draft: false
 weight: 8
 series: "爱情关系的要素"
