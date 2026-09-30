@@ -4,27 +4,21 @@ set -euo pipefail
 BASEURL="https://vanvj00001.github.io/oldvan/"
 REMOTE="origin"
 BRANCH="gh-pages"
-WORKTREE_DIR=".gh-pages"
+WORKTREE_DIR=""
 
 echo "准备 GitHub Pages 工作区..."
 git fetch --prune "$REMOTE"
-# 检查现有 worktree 是否可用：目录存在 + .git 链接指向有效路径 + 在 worktree 列表里
-if [ -d "$WORKTREE_DIR" ] && [ -f "$WORKTREE_DIR/.git" ] && \
-   git -C "$WORKTREE_DIR" rev-parse --git-dir >/dev/null 2>&1 && \
-   git worktree list --porcelain | grep -q "^worktree.*$WORKTREE_DIR\$"; then
-  : # 已存在且有效
+WORKTREE_DIR=$(mktemp -d "${TMPDIR:-/tmp}/oldvan-gh-pages.XXXXXX")
+rmdir "$WORKTREE_DIR"
+cleanup() {
+  git worktree remove --force "$WORKTREE_DIR" >/dev/null 2>&1 || rm -rf "$WORKTREE_DIR"
+}
+trap cleanup EXIT
+
+if git show-ref --quiet "refs/remotes/${REMOTE}/${BRANCH}"; then
+  git worktree add --detach "$WORKTREE_DIR" "${REMOTE}/${BRANCH}"
 else
-  # 清理无效 worktree（指向旧路径/死链接）
-  if [ -d "$WORKTREE_DIR" ]; then
-    echo "清理无效 worktree: $WORKTREE_DIR"
-    git worktree remove --force "$WORKTREE_DIR" 2>/dev/null || rm -rf "$WORKTREE_DIR"
-    git worktree prune
-  fi
-  if git show-ref --quiet "refs/remotes/${REMOTE}/${BRANCH}"; then
-    git worktree add "$WORKTREE_DIR" "${REMOTE}/${BRANCH}"
-  else
-    git worktree add -B "$BRANCH" "$WORKTREE_DIR"
-  fi
+  git worktree add --detach "$WORKTREE_DIR" HEAD
 fi
 
 echo "清理并构建..."
@@ -38,4 +32,4 @@ if git -C "$WORKTREE_DIR" diff --cached --quiet; then
 else
   git -C "$WORKTREE_DIR" commit -m "Deploy: $(date '+%Y-%m-%d %H:%M:%S')"
 fi
-git -C "$WORKTREE_DIR" push "$REMOTE" "$BRANCH"
+git -C "$WORKTREE_DIR" push "$REMOTE" "HEAD:$BRANCH"
