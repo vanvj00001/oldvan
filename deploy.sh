@@ -174,7 +174,27 @@ if [ -n "$NAS_GIT_HOST" ]; then
         echo "    4) 完成后重新运行 ./deploy.sh"
         echo "  若想放弃本次 rebase:  git rebase --abort"
         if [ "$STASHED" -eq 1 ]; then
-          echo "  注意: 你未提交的改动已暂存，解决后用 git stash pop 恢复。"
+          # 你未提交的改动（含新写的文章）仍在 stash 中，不会丢。
+          # 但文件不在目录里会让人以为丢了，所以主动恢复未跟踪的新文件。
+          echo
+          echo "  注意: 你未提交的改动已暂存（在 stash 中，不会丢失）。"
+          echo "  正在把未跟踪的新文件恢复到工作目录..."
+          # stash 把未跟踪文件存放在第三个父提交 ^3
+          if git rev-parse --verify -q 'stash@{0}^3' >/dev/null 2>&1; then
+            git ls-tree -r --name-only 'stash@{0}^3' 2>/dev/null | while IFS= read -r f; do
+              [ -z "$f" ] && continue
+              if [ ! -e "$f" ]; then
+                mkdir -p "$(dirname "$f")" 2>/dev/null
+                if git checkout "stash@{0}^3" -- "$f" 2>/dev/null; then
+                  echo "    ✓ 已恢复: $f"
+                fi
+              else
+                echo "    · 已存在，跳过: $f"
+              fi
+            done
+          fi
+          echo
+          echo "  已跟踪文件的改动仍在 stash 中，解决冲突后用: git stash pop"
         fi
         exit 1
       fi
