@@ -3,7 +3,7 @@
         <title>佛学随笔 - 分类 - 老梵的空中花园</title>
         <link>https://vanvj00001.github.io/oldvan/categories/%E4%BD%9B%E5%AD%A6%E9%9A%8F%E7%AC%94/</link>
         <description>佛学随笔 - 分类 - 老梵的空中花园</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 14 Oct 2026 09:30:00 &#43;0800</lastBuildDate><atom:link href="https://vanvj00001.github.io/oldvan/categories/%E4%BD%9B%E5%AD%A6%E9%9A%8F%E7%AC%94/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 23 Oct 2026 13:00:00 &#43;0800</lastBuildDate><atom:link href="https://vanvj00001.github.io/oldvan/categories/%E4%BD%9B%E5%AD%A6%E9%9A%8F%E7%AC%94/" rel="self" type="application/rss+xml" /><item>
     <title>诚实与责任——业力观下的言行一致</title>
     <link>https://vanvj00001.github.io/oldvan/posts/cheng-shi-yu-ze-ren/</link>
     <pubDate>Thu, 01 Oct 2026 10:00:00 &#43;0800</pubDate>
@@ -72,6 +72,14 @@
 <p>但佛学告诉你一个完全不同的视角：创造力不是&quot;产生新东西&quot;，而是&quot;看到本来就有的东西&quot;。精神力量不是&quot;意志力&quot;，而是&quot;觉知的力量&quot;。</p>
 <p>用计算机的话说：你不是在写新代码，你是在读懂已经存在的系统。你不是在给自己打鸡血，你是在关掉那些一直在后台偷跑资源的进程。</p>
 <hr>]]></description>
+</item>
+<item>
+    <title>伦理经济学——布施波罗蜜与资源分配</title>
+    <link>https://vanvj00001.github.io/oldvan/posts/lun-li-jing-jie-xue/</link>
+    <pubDate>Mon, 19 Oct 2026 10:00:00 &#43;0800</pubDate>
+    <author>老梵的空中花园</author>
+    <guid>https://vanvj00001.github.io/oldvan/posts/lun-li-jing-jie-xue/</guid>
+    <description><![CDATA[<p><strong>内容提要</strong>：经济学说人是理性的自利者，佛学说人是无明的执着者——两个学科其实在回答同一个问题：人到底怎么跟&quot;拥有&quot;这件事相处？更关键的是，&ldquo;经济&quot;本不是&quot;节省&quot;的意思，而是&quot;经世济民&rdquo;，只是后来把&quot;济&quot;字丢了，只剩算计。这篇用布施波罗蜜（dana）重新理解资源分配：布施是系统里的资源重分配协议，它打破的正是那个&quot;这些资源是我的&quot;的默认独占假设。不是道德说教，是系统分析——从&quot;独占&quot;到&quot;流动&quot;，这就是经世济民。</p>]]></description>
 </item>
 <item>
     <title>不必解释——从&#39;一境四见&#39;到活回自己，论众生眼里的你，与你眼里的众生</title>
@@ -156,24 +164,6 @@
 <p>这一问，引出《楞严经》卷二中一段极为精彩的破斥。佛陀没有简单地回答&quot;是&quot;或&quot;不是&quot;，而是把&quot;自然&quot;二字放在手术台上，一层一层剖开，让你亲眼看到：所谓&quot;自然而然&quot;，其实立不住脚。</p>
 <p>而破掉&quot;自然&quot;之后立起来的是什么？是<strong>缘起</strong>。</p>
 <p>这篇文章，就从这段经文说起，谈谈佛陀到底在破什么、立什么，以及一个我们特别容易犯的糊涂——把&quot;顺其自然&quot;当成了不努力的理由。这两件事，差的可不是一点点。</p>
-<hr>]]></description>
-</item>
-<item>
-    <title>缘起即程序——从计算机启动看&#34;因缘所生&#34;的真相</title>
-    <link>https://vanvj00001.github.io/oldvan/posts/li-yuan-ji-ren-zhi-cong-dian-nao-qi-dong-kan-jian-yuan-qi-yin-yuan-suo-sheng-guo-bao/</link>
-    <pubDate>Wed, 26 Aug 2026 10:00:00 &#43;0800</pubDate>
-    <author>老梵的空中花园</author>
-    <guid>https://vanvj00001.github.io/oldvan/posts/li-yuan-ji-ren-zhi-cong-dian-nao-qi-dong-kan-jian-yuan-qi-yin-yuan-suo-sheng-guo-bao/</guid>
-    <description><![CDATA[<p><strong>内容提要</strong>：上一篇我们讲佛陀破「自然」、立「缘起」——这世上没有任何东西是无因而有的。可「缘起」二字，说起来容易，体会起来难：它和「因缘所生」是一回事吗？你每天尝到的苦乐，又处在哪一层？这篇文章干脆用一个你天天在用的计算机启动过程，把「缘起、因缘所生、果报」三层一次性讲透。下次按下电源键、看着桌面亮起来时，你也许会忽然明白——佛法对世界的描述，就藏在你眼前的这台机器里。</p>
-<blockquote>
-<p>&ldquo;因缘所生法，我说即是空。&rdquo;
-<cite>——《中论》</cite></p>
-</blockquote>
-<hr>
-<h2 id="前言">前言</h2>
-<p>上一篇我们讲到佛陀破&quot;自然&quot;、立&quot;缘起&quot;——说穿了，就是一句话：这世上没有任何东西是无因而有的，一切皆有其因缘。</p>
-<p>但&quot;缘起&quot;这个词，讲起来容易，体会起来难。它到底是什么意思？跟&quot;因缘所生&quot;是不是一回事？我们每天尝到的苦乐，又处在哪一层？</p>
-<p>这篇文章，用一个完整的<strong>计算机启动过程</strong>，把<strong>缘起、因缘所生、果报</strong>这三层一次性说清楚。当你再次按下电脑电源键、看着桌面一点点亮起来的时候，也许你会忽然明白：原来佛法对世界的描述，就藏在你每一天都会做的这个动作里。</p>
 <hr>]]></description>
 </item>
 </channel>
